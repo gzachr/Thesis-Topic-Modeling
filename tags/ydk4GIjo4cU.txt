@@ -1,0 +1,1 @@
+['outdoor, cooking, show',, 'backyard, cooking, pinoy',, 'pinoy, planet, outdoor',, 'filipino, cooking, show',, 'filipino, food',, 'cooking, inihaw, na, isda',, 'filipino, grilled, fish',, 'inihaw, na, mackerel',, 'inihaw, na, trout',, 'dutch, try, inihaw, na, isda']

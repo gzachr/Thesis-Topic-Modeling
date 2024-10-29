@@ -1,0 +1,1 @@
+['which, filipio, food, is, your, favorite',, 'which, filipino, food',, 'filipino, food',, 'favorite, food',, 'choose, favorite, food',, 'pinoy, planet, vlog',, 'laing, pinoy, planet',, 'cassava, cake, pinoy, planet',, 'sinigang, pinoy, planet',, 'sisig, pinoy, planet',, 'pinoy, favorite',, 'farm, life',, 'alpaca',, 'alpacas',, 'dutch, village, life']

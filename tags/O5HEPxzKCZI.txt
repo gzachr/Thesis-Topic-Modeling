@@ -1,0 +1,1 @@
+['pinoy',, 'pinay',, 'filipino',, 'filipina',, 'philippines',, 'japan',, 'japanese',, 'hapon',, 'high, school',, 'highschool',, 'high, school, student',, 'jk',, 'ljk',, 'senior, high',, 'shs',, 'hs',, 'senior, high, school',, 'anime',, 'mangga',, 'graduation',, 'last, day',, 'graduating',, 'graduating, student',, 'student',, 'koukou',, 'saikou',, 'tanoshii']

@@ -1,0 +1,1 @@
+['tiger, sugar, philippines',, 'bonifacio, global, city, 2019',, 'tiger, sugar',, 'marianne, salonga',, 'entertainment',, 'food, review',, 'milk, tea, review',, 'bonifacio, global, city, tour']

@@ -1,0 +1,1 @@
+['dutch, family, tries, lechon, belly',, 'dutch, try, lechon',, 'lechon, belly',, 'filipino, food, reaction',, 'filipino, food',, 'crispy, pork, belly',, 'pinoy, planet',, 'foreigner, cooks, filipino, food',, 'foreigners, try, filipino, food',, 'lechon, belly, oven',, 'lechon, baboy',, 'cooking, filipino, food, in, the, netherlands']

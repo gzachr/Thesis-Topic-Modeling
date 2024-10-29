@@ -1,0 +1,75 @@
+We can now make a table to present it in a
+better way.
+All borders.
+If you do not want lines here, you can chose
+no border.
+Then, we can again chose "All borders" for them. Same goes here. "All borders" for them.
+If you do not border here, we can either select
+no border or can use format painter.
+Ok, we are ready with the table.
+Outside, we can make a thick box border.
+So, it will look nicer.
+All the names, we can put in one color.
+Just to show them nicely.
+All the months, we can put in different color.
+Grand total, we can put in another color.
+Ok, Let's move on to the lesson how to insert
+a chart to show or present it to management
+team or somebody else.
+We need to select the whole table, except
+the total.
+We do not need to select the total.
+We can select the data in the table for the
+chart.
+If we know the chart type, we can directly
+insert from here or if we want to search for
+more chart type, we can go around here (up
+and down).
+For the simplicity sake, I will just select
+the chart type "column".
+Here, we goes.
+Our chart is ready.
+We can see one extra color, which has no employee
+name.
+That is coming because we selected one extra
+row, which is empty.
+How to correct that error is that we can just
+pull down the range, it will automatically
+correct it.
+We want to increase the size of our chart,
+we can hold it and increase or decrease.
+It is up to us, how we want to present it
+to management or somebody else. On horizontal axis, we have months.
+This is called horizontal axis, we have January,
+February, March, April and May on it.
+On vertical axis, we have the amount they
+spent in Indian rupees here. Indian rupees (a currency) is only for an example.
+So, how to read the chart.
+In January, A spends 50.
+January, A is in blue color, showing 50.
+Now, we need to check if these 2 are co-relating
+each other or not.
+The table and chart should co-relate.
+If we change anything in the table, chart
+should get updated also.
+Let's see an example, if we change amount
+spent by C in March from 55 to 35.
+We should be seeing here change in March and
+size of the green bar should reduce.
+Ok, we click it as 35, it will reduce.
+We will do one more random check, In C or
+let's go to the D. If D spends 100 Indian
+rupees in May.
+This should go up to here.
+Let's check whether it is correct or not.
+Yes, it is correct.
+So, D now became 100 in the month of May.
+So, we have chart ready and this is responding
+to the table.
+For other lessons, please check my other videos.
+Please do not forget to like and subscribe.
+SYLEWO - Share Your Life Experience With Others
+!
+Please like and subscribe to our channel and
+press the bell button to get all of our notifications.
+Thank you.

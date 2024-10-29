@@ -1,0 +1,1 @@
+['filipino, accent, funny',, 'filipino, accent',, 'filipino, accent, in, english',, 'filipino, accent, challenge',, 'pinoy, planet, taglish',, 'taglish, language',, 'pinoy, planet, tagalog']

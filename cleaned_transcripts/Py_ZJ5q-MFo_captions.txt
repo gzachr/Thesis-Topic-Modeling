@@ -1,0 +1,277 @@
+-We've covered,
+in the last few years,
+the crisis that's enveloping
+the technology industry --
+Russian meddling, live suicides,
+incoming regulation,
+and basically how this industry
+that has grown to touch
+everyone's life,
+how it has run roughshod
+with our data.
+And now the consequences
+are becoming apparent,
+and it seems like it's this
+big moment of reckoning.
+The Post broke the story
+of the Russian ads on Facebook.
+This was the most critical story
+that's ever come to my beat.
+You could just see
+that things were turning --
+the conversation about
+smartphone addiction,
+the conversation
+about livestreaming suicides,
+are these products good
+for the world, censorship.
+And it just changed
+almost overnight.
+-Very small amount of the
+content influenced the election,
+in any way, I think,
+is a pretty crazy idea, right?
+And it's --
+-Right after the election,
+Mark Zuckerberg goes onstage
+and dismisses the idea
+that fake news had anything
+to do with the election.
+Even though on the outside,
+they're telling the world,
+"This could never have had
+an impact on the election,"
+they're actually starting
+to do a forensic
+analysis of what happened.
+The night before the hearings,
+Facebook announces,
+"Okay, we're going to hire
+10,000 moderators
+to moderate content,"
+and then they upped
+that to 20,000.
+-We're gonna have more
+than 20,000 people
+working on security and content
+review by the end of this year.
+So it's going to be coupling
+continuing to grow the people
+who are doing review in these
+places with building AI tools,
+which we're working
+as quickly as we can on that,
+but some of the stuff
+is just hard.
+-And, then, very shortly after,
+Google makes almost
+an identical announcement.
+I call them up after
+these announcements,
+and, again, I asked
+my same questions
+that I asked earlier
+that year --
+"So, where are you
+gonna get these people?
+Where are you gonna hire them?
+How are they trained?
+How much are they paid?
+Where do they work?"
+Like, nothing.
+You get no information.
+And yet, they're touting
+this workforce in Congress
+as the key to their strategy
+for saving democracy
+and protecting themselves.
+You know, if you're a reporter
+and someone doesn't
+give you information,
+that's always a red flag,
+and that always makes you
+hungry for more.
+I did find out that a lot
+of the workers
+were based
+in the Philippines,
+the hub
+of a call-center economy,
+and there's this whole new kind
+of job -- content moderator.
+The job boards are just
+filling up with openings.
+It's just exploded.
+It's this boom for content
+moderation for this kind of job.
+So at that point, I thought,
+"Okay, we should go
+to the Philippines,
+'cause, you know,
+it's a boom town
+for Silicon Valley's
+dirty work,
+and yet, we've never heard
+these people's voices.
+We don't know what the impact
+of the job is on them."
+Manila is an enormous
+megacity full of skyscrapers,
+but the skyscrapers
+all have American names.
+You know, there's JPMorgan.
+There's Citigroup.
+There's Accenture.
+They have more malls
+in the Philippines
+than any other place
+in the world.
+There's over 100 malls
+in Manila alone.
+Google, Twitter, and Facebook,
+and others are located in malls.
+So we spent a lot of time
+hanging out in the mall,
+near the Baskin-Robbins and
+the Uniqlos and European brands,
+hanging out
+in these smoking areas,
+and learning just what the
+rhythm of their life was like.
+When I first met Lester,
+I said,
+"You know,
+why do you want to talk to me"?
+And he said, "Well --"
+he says, "You know, I just --
+people shouldn't be
+doing this job."
+He was, like, really clear.
+He was like,
+"I would tell anybody
+who started this job that,
+'You think it's not
+going to affect you,
+but it starts to affect you,
+and it can affect you
+in really bad ways.
+'" If you have
+this routine exposure
+to watching people
+commit suicide,
+and you're somebody
+who struggled
+with depression or anxiety,
+you may start thinking
+about suicide yourself.
+It's so well-known
+to tech companies
+that this is a problem that
+it comes up in their training.
+It's called suicidal ideation.
+He had thought about suicide
+in his 20s.
+He's now in his 30s.
+He had thought about suicide.
+He had not attempted suicide.
+But it was something that he had
+thought about,
+but he really thought
+that he had gotten over it.
+And then he realized that as
+he started doing the job,
+and he said he saw beheadings,
+murders.
+But for him, it was like
+the suicides were a big trigger,
+because he had been
+depressed before.
+We talked to more than
+three dozen moderators
+around the world,
+and I can tell you
+that that's not
+an uncommon thing.
+And I wouldn't say for everyone,
+because there's plenty of people
+who told us
+they were not affected,
+but there seems to be
+a portion of people
+who are seriously
+affected by this job.
+He now says that, even all these
+months later, when he goes to,
+like, a tall building
+in the Philippines,
+he starts to think,
+"What if I jumped"?
+We talked to one person who
+actually did attempt suicide,
+and we talked to several people
+who had suicidal ideation.
+Even people who like the job
+say,
+"Yeah, nightmares
+are part of it."
+Like, I asked someone,
+"Have you ever had nightmares"?
+They said, "Well, obviously."
+And this is a person
+who likes the job.
+It's a job that's traumatic
+and that causes a form of PTSD.
+These workers over there in this
+foreign country,
+that aren't even
+full-time employees,
+that get paid
+significantly less,
+and yet they're doing
+in some ways
+the hardest jobs of the company.
+And they're protecting
+the world's free speech --
+you know, letting us see
+our friend's birthday pictures
+and not child porn.
+What are the responsibilities
+of the companies
+that employ people
+in this boom job?
+I mean, that's the other
+big takeaway from the story.
+This job isn't going away.
+All people ever talk about
+is automation
+and the day that technology
+is going to automate workers,
+and it's going to happen.
+No one in Silicon Valley
+believes these jobs
+are gonna disappear.
+I interviewed Mark Zuckerberg
+in April,
+and I asked him the question.
+I said, "Do you think that
+there will be a time
+when you'll have
+no humans doing this job"?
+And he said, "There are always
+going to be humans."
+And it's the same thing
+when I talk to Twitter
+and I talk to YouTube,
+that there's
+this acknowledgement
+in Silicon Valley
+that with the scale
+of their problems,
+the human part
+is not going away.
+And so if the human part
+isn't going away,
+what are our responsibilities
+to these humans?
+And that is something
+that society has not worked out.
