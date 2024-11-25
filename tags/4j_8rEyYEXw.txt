@@ -1,0 +1,1 @@
+['VXWf',, 'adobo',, 'american',, 'asian',, 'asian, food',, 'buzzfeed',, 'buzzfeed, food',, 'buzzfeed, video',, 'cooking',, 'culture',, 'culture, swap',, 'filipino',, 'filipino, adobo',, 'filipino, food',, 'filipino, swap',, 'food, swap',, 'pinoy',, 'swap']

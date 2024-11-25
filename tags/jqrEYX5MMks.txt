@@ -1,0 +1,1 @@
+['filipino',, 'fruit',, 'fruits',, 'tropical',, 'mango',, 'dragonfruit',, 'rambutan',, 'pineapple',, 'durian',, 'philippines',, 'korean',, 'try',, 'trying',, 'react',, 'reaction',, 'koreantry',, 'koreanreact',, 'pinoy',, 'yt:cc=on',, 'vlog',, 'comedy',, 'entertainment',, 'review',, 'mukbang',, 'eatingshow',, 'dessert']

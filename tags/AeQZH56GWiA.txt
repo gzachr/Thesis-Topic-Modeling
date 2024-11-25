@@ -1,0 +1,1 @@
+['Reaction',, 'Bollywood',, 'KPOP',, 'Turkish',, 'QPOP',, 'BTS',, 'BLACKPINK',, 'MAMAMOO',, 'AISHWARYA',, 'RAI',, 'KATRINA',, 'KAIF',, 'SHAHRUKH',, 'KHAN',, 'Ariana',, 'Grande',, 'Miley',, 'Cyrus',, 'Hindi',, 'Indian',, 'Thai, Pop',, 'Indonesia',, 'Reaksi']

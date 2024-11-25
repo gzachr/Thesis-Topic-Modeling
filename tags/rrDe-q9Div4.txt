@@ -1,0 +1,1 @@
+['john, smulo',, 'filipino, culture',, 'philippines',, 'cebu, city',, 'american, expat, in, the, philippines',, 'culture',, 'american, entrepreneur, in, the, philippines',, 'purple, cow, philippines',, 'purple, cow',, 'purple, cow, agency']
