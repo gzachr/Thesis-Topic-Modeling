@@ -1,0 +1,1 @@
+['Filipino', 'Culture', 'Americans', 'pinoy', 'filipinos']

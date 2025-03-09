@@ -1,0 +1,1 @@
+['Philippines', 'Manila', 'BGC', 'Travel', 'Adventure', 'Shawn and Gee', 'AirBnB', 'Places to stay', 'Venice', 'Gondola', 'Canal', 'Grand Canal']

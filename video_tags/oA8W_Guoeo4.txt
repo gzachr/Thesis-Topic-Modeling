@@ -1,0 +1,1 @@
+['foreigner', 'bisaya', 'visaya', 'tagalog', 'filam', 'filipino', 'philippines', 'cebu', 'bisdak']
