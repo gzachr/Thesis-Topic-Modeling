@@ -1,0 +1,1 @@
+['driving tour', 'walking tour', 'canyoneering', 'sardine run', 'carzy driving', 'travel', 'cebu city', 'expat', 'mindanao', 'mactan newtown', 'lapu-lapu', 'moalboal', 'south-east asia', 'se asia', 'retired', 'sea turtles', 'coral reef', 'snorkeling', 'filipino', 'filipina', 'life in the phillipines', 'lechon', 'kawasan falls', 'in the philippines']

@@ -1,0 +1,1 @@
+['travel', 'vlog', 'travelvlog', 'philippines', 'adventure', 'mindanao']

@@ -1,0 +1,1 @@
+['Filipino', 'Filipinofood', 'Philippines', 'Foreigner', 'American', 'Vlog', 'Travel', 'Explore', 'Fyp', 'Camping', 'Camper', 'Camplife', 'Tent', 'Tent Life']
