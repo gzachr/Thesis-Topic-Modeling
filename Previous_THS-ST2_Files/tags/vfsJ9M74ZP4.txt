@@ -1,1 +1,0 @@
-['tagalog, only',, 'tagalog',, 'international, couple',, 'japanese, filipino, couple',, 'japanese, pinoy, couple',, 'sinigang',, 'filipino, food',, 'pinoy, food',, 'ãƒ•ã‚£ãƒªãƒ”ãƒ³æ–™ç†',, 'å›½éš›ã‚«ãƒƒãƒ—ãƒ«',, 'ãƒ•ã‚£ãƒªãƒ”ãƒ³',, 'speakonlytagalog\u200b',, 'ã‚¿ã‚¬ãƒ­ã‚°',, 'å›½éš›æ‹æ„›',, 'yt:cc=on']

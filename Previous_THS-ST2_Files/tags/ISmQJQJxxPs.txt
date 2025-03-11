@@ -1,1 +1,0 @@
-['Sam, Smith',, 'too, good, at, goodbyes',, 'best',, 'covers',, 'who, sang, it, better',, 'sam, smith']

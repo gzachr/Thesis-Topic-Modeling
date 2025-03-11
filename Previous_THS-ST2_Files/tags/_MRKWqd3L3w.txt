@@ -1,1 +1,0 @@
-['CBS, 4, News, Weekends',, 'donald, trump',, 'rodrigo, duterte',, 'trump, duterte',, 'philippines',, 'trump, philippines',, 'duterte, drug, war',, 'duterte, trump']

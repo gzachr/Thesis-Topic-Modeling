@@ -1,1 +1,0 @@
-['KOREAN',, 'FILIPINO',, 'FOOD',, 'MR, BULBUL',, 'passport',, 'renewal',, 'embassy',, 'airport',, 'tourism',, 'visa',, 'ì—¬ê¶Œ',, 'ê°±ì‹, ',, 'ëŒ€ì‚¬ê´€',, 'ë¹„í–‰ê¸°',, 'ì—¬í–‰',, 'í•´ì™¸ì—¬í–‰',, 'ë¹„ìž',, 'yt:cc=on']

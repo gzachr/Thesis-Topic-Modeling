@@ -1,1 +1,0 @@
-['filipino',, 'philippines',, 'food',, 'garlic',, 'rice',, 'korean',, 'koreanguy',, 'react',, 'reaction',, 'review',, 'cook',, 'cooking',, 'howtomake',, 'mukbang',, 'eatingshow',, 'garlicrice',, 'samgyeopsal',, 'kimchi',, 'ssamjang',, 'porkbelly',, 'garlicfriedrice',, 'fried',, 'fry',, 'silog',, 'yt:cc=on']

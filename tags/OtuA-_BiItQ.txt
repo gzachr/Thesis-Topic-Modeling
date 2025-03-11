@@ -1,0 +1,1 @@
+['philippines, traffic',, 'commuting, in, manila',, 'metro, manilla, traffic',, 'traveling, in, manila',, 'philippines, travel',, 'manila, traffic',, 'philippines, traffic, problem',, 'philippines, traffic, sounds']

@@ -1,1 +1,0 @@
-['brad, newton',, 'brad, newton, vlogger',, 'fuente, cebu, city',, 'fuente, philippines',, 'cebu, city, philippines',, 'philippines, vlogs',, 'philippines, vlog',, 'philippines, travel, vlog',, 'fuente, osmena',, 'fuente, osmena, cebu, city']

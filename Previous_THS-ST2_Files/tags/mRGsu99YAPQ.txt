@@ -1,1 +1,0 @@
-['dutch, parents, try, pancit, canton',, 'dutch, try, pancit, canton',, 'pancit, canton',, 'filipino, food, reaction',, 'filipino, food',, 'pinoy, food, pancit, canton',, 'pinoy, planet',, 'foreigner, cooks, filipino, food',, 'foreigners, try, filipino, food',, 'pancit, canton, recipe',, 'filipino, food, netherlands',, 'dutch, pinoy',, 'PANCIT',, 'canton']

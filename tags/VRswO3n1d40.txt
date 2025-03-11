@@ -1,0 +1,1 @@
+['Adobo',, 'BuzzFeed',, 'BuzzFeed, UK',, 'Chicken',, 'Dish',, 'Filipino',, "Filipino, Women, Try, Each, Other's, Adobo",, 'Flavour',, 'Food',, 'National, Dish',, 'Philippines',, 'Pork',, 'Review',, 'Rice',, 'Soy, Sauce',, 'Staple',, 'Taste, Test',, 'Try',, 'Umami']

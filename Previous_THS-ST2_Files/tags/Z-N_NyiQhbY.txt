@@ -1,1 +1,0 @@
-['cebu, city',, 'cebu',, 'mango, square',, 'cebu, nightlife',, 'night, life',, 'philippines, (country)',, 'cebu, bars',, 'philippines, tourism',, 'tourism',, 'nightlife, cebu',, 'mango, ave',, 'dancing, cebu',, 'cebu, philippines',, 'travel, vlogger',, 'tourist, destination',, 'mango',, 'mango, street',, 'mactan, cebu',, 'cebu, city, views',, 'cebu, bridges']

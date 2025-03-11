@@ -1,1 +1,0 @@
-['food, from, the, philippines',, 'filipino, food',, 'philippines, memories, tagalog',, 'food, stories, philippines',, 'wish, philippines, was, here',, 'food, stories',, 'philippines, food',, 'pinoy, planet, sinigang',, 'sinigang, pinoy, planet',, 'filipino, food, pinoy, planet',, 'sinigang, na, isda',, 'sinigang',, 'philippines',, 'pinoy',, 'wish']

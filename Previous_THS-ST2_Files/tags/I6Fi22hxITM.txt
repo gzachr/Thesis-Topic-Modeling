@@ -1,1 +1,0 @@
-['jollibee',, 'opening',, 'milan',, 'italy',, 'europe',, 'first',, 'ever',, 'fast',, 'food',, 'philippines',, 'boracay',, 'palawan',, 'el, nido',, 'coron',, 'chickenjoy',, "cos'Ã¨",, 'mcdonald',, 'kfc',, 'piazza',, 'diaz',, 'filippine',, 'menu',, 'review',, 'yumburger',, 'hot, dog',, 'jolli',, 'spaghetti',, 'pollo',, 'fritto',, 'hamburger']

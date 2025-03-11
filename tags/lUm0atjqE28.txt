@@ -1,0 +1,1 @@
+['Dumagueter',, 'Dumaguete',, 'Dumagete',, 'Daro',, 'Darro',, 'Darrot',, 'Philippines',, 'Philipines',, 'Philipine',, 'MarchÃ©',, 'Marcher',, 'Negros',, 'Negro',, 'Siquiror',, 'Siquijor',, 'Apo',, 'Appo']

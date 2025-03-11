@@ -1,0 +1,1 @@
+['Korea',, 'Korean, War',, 'Battle, of, Yultong',, 'Battle, of, Yuldong',, 'Filipino',, 'Philippines',, 'Philippine, Expeditionary, Force',, 'PEFTOK',, '10th, BCT',, 'China',, 'Chinese, PVN',, 'Conrado, Yap',, 'Maximo, Young',, 'United, Nations',, 'UN',, 'UNC',, 'South, Korea',, 'North, Korea',, 'Fighting, Filipinos']

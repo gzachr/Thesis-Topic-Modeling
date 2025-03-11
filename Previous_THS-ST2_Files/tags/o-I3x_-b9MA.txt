@@ -1,1 +1,0 @@
-['south, korea',, 'north, korea',, 'korea',, 'philippines',, 'history',, 'documentary',, 'culture',, 'army',, 'grace, lee',, 'pnoy',, 'ninoy, aquino',, 'fidel, ramos',, 'ofw, in, korea',, 'koreanovela',, 'boys, over, flowers',, 'kim, jong-il',, 'america',, 'ninoy, aquino, jr.',, 'wwii',, 'japanese, occupation',, 'pilipino',, 'bayani',, 'museum',, 'sandara, park',, 'kimchi']

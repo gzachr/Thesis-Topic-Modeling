@@ -1,1 +1,0 @@
-['news',, 'video',, 'roanoke',, 'nrv',, 'virginia',, 'highlands',, 'bristol',, 'blacksburg',, 'lynchburg',, 'wsls',, 'channel, 10']

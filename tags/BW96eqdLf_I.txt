@@ -1,0 +1,1 @@
+['Kid',, 'Party',, 'Jollibee',, 'Fast, Food',, 'Manila',, 'Philippines',, 'Filipino',, 'Foreigner',, 'Dance',, 'Experience',, 'Bee',, 'Mascot',, 'First',, 'Time',, 'Short',, 'Shorts',, 'Shorts, with, Camilla']

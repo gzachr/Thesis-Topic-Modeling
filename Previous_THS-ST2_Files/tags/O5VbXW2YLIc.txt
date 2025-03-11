@@ -1,1 +1,0 @@
-['tech, travel, eat',, 'sujith, bhakthan',, 'malayalam, travel, videos',, 'malayalam, vlogger',, 'malayalam, travel, vlog',, 'Boracay, islands',, 'Boracay',, 'Boracay, night, life',, 'boracay, malayalam, vlog',, 'Philippines, malayalam, vlog',, 'tech, travel, eat, Philippines',, 'sujith, bhakthan, philippines',, 'boracay, vlog',, 'Philippines, travel, vlogs']

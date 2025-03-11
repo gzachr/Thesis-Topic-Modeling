@@ -1,1 +1,0 @@
-['adobo',, 'pork, adobo',, 'pork, belly, adobo',, 'adobo, recipe',, 'the, best, adobo, recipe',, 'the, best, pork, adobo',, 'chicken, adobo',, 'humba',, 'humba, recipe',, 'pork, humba, recipe',, 'adobong, baboy',, 'pork, adobo, recipe, filipino, style']

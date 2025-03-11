@@ -1,1 +1,0 @@
-['Pinoy, breakfast',, 'Filipino, breakfast',, 'Slovenian, food',, 'Slovenian, breakfast',, 'Breakfast',, 'Filipino, food']

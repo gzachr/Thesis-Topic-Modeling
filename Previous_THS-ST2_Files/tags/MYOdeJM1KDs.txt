@@ -1,1 +1,0 @@
-['manila, local, life',, 'manila, local, market',, 'manila, food, trip',, 'manila, food, market',, 'chinatown, manila',, 'chinatown, manila, philippines',, 'manila, philippines, nightlife',, 'manila, philippines, travel, guide',, 'manila, philippines, vlog',, 'flying, to, world']

@@ -1,1 +1,0 @@
-['manila, chinatown',, 'binondo, chinatown',, 'binondo, manila',, 'soup, #5',, 'soup, number, 5']

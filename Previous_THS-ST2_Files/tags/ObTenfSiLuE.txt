@@ -1,1 +1,0 @@
-['Couples',, 'Married',, 'Marriage',, 'Lie, detector, test',, 'Filipino',, 'Funny',, 'Game',, 'Quiz',, 'Kabayan',, 'Arab',, 'Foreigner',, 'Laughtrip',, 'Test',, 'Challenge']

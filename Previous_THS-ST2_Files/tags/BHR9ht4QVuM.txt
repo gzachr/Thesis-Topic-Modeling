@@ -1,1 +1,0 @@
-['Foreigner, cook, filipino, food',, 'Cook, filipino, food',, 'Filipino, food',, 'Daing, na, bangus',, 'Bangus',, 'Milk, fish',, 'Milkfish',, 'Pinoy, planet',, 'Filipino, food, vlogger',, 'foreigner, cooking, filipino, food',, 'cooking, filipino, food',, 'foreigner, try, to, cook, filipino, food',, 'Daing, na, bangus, sawsawan']

@@ -1,1 +1,0 @@
-['traveln2',, 'travel',, 'vlog',, 'travel, vlog',, 'travel, vlogger',, 'explore',, 'lifestyle',, 'lifestyle, travel',, 'lifestyle, traveling',, 'manila',, 'manila, philippines',, 'manila, makati',, 'makati, life',, 'manila, safety',, 'what, to, do, in, manila',, 'metro, manila',, 'a, day, in, manila',, 'one, day, in, manila',, 'green, belt, makati',, 'park, manila']

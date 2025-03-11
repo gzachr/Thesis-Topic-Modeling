@@ -1,1 +1,0 @@
-['Gawad, Kalinga',, 'Philipines',, 'charity',, 'Filipino, food',, 'Philippines, food',, 'village, food',, 'village, cooking',, 'travel',, 'travel, food',, 'food, travel',, 'eating, travel',, 'Mark, Wiens',, 'Gawad, Kalinga, village',, 'volunteer, Philippines',, 'Philippines, tourism',, 'Philippines, travel',, 'Philippines, food, guide',, 'Philippines, food, travel',, 'Manila']

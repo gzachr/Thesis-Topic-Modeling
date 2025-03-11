@@ -1,1 +1,0 @@
-['Bonifacio, Global, City',, 'global, city, philippines',, 'bonifacio, global, city, manila',, 'global, city, manila, philippines',, 'manila, city, philippines',, 'flying, to, world']

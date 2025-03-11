@@ -1,1 +1,0 @@
-['Mimic, Octopus',, 'Philippines',, 'scuba, diving',, 'Puerto, Galera',, 'Wunderpus']

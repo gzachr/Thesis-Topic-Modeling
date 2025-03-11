@@ -1,1 +1,0 @@
-['filipino, food, champorado',, 'Light, Travels',, 'Filipino, Food',, 'Asian, Food']

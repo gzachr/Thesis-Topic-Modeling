@@ -1,1 +1,0 @@
-['Philippines',, 'Adobo',, 'food',, 'pinoy, food',, 'filipino, food',, 'national, dish',, 'pinoy',, 'pagkain',, 'rice',, 'the, importance, of, rice',, 'kanin',, 'kain',, 'palay',, 'origin, of, palay',, 'origin, of, rice',, 'history, of, adobo',, 'origin, of, adobo',, 'bigkas',, 'datu, puti',, 'vinegar',, 'soy, sauce',, 'toyo',, 'silver, swan',, 'the, asian, theory']

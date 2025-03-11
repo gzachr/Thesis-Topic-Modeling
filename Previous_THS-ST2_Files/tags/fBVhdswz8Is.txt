@@ -1,1 +1,0 @@
-['snacks',, 'filipino, snack',, 'filipino, snacks',, 'american, snacks',, 'snack',, 'cute',, 'asian',, 'asian, girls',, 'almond, Joy',, 'Pop, Tarts',, 'poptarts',, 'wild, berry',, 'pinoy',, 'sexy',, 'funny',, 'food, show',, 'travel, show',, 'Philippines']

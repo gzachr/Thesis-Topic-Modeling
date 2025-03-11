@@ -1,0 +1,1 @@
+['filipino, food',, 'filipino, restaurant',, 'filipino, cuisine',, 'asian, food',, 'asian, cuisine',, 'nyc, food',, 'nyc',, 'east, village',, 'maharlika',, 'sisig',, 'comfort, food',, 'thrillist',, 'thrillist, video',, 'food',, 'drink',, 'travel',, 'fork, yeah',, 'food, groups']

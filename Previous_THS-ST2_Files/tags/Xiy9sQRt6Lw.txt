@@ -1,1 +1,0 @@
-['top, 10',, 'ftd, facts',, 'facts',, 'interesting, facts',, 'fact',, 'amazing, facts',, 'country',, 'countries',, 'The, Philippines',, 'Philippines',, 'filipina, woman',, 'Filipina',, 'travel',, '10, Biggest, Lies, About, The, Philippines',, 'asian']

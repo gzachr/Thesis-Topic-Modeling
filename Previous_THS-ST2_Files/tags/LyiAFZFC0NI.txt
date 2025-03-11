@@ -1,1 +1,0 @@
-['mexico, city',, 'mexico, transit',, 'mexico, transit, visa',, 'mexico, travel',, 'travel, vlog']

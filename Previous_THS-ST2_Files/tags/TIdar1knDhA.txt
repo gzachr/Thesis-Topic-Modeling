@@ -1,1 +1,0 @@
-['Filipino, food',, 'Pancit, bihon',, 'Dutch, frikandel',, 'Filipino, fusion, dishes',, 'Pinoy, planet']

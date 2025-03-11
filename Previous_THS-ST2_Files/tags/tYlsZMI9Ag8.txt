@@ -1,1 +1,0 @@
-['tech, travel, eat',, 'sujith, bhakthan',, 'malayalam, travel, videos',, 'malayalam, vlogger',, 'malayalam, travel, vlog',, 'tech, travel, eat, philippines',, 'sujith, bhakthan, philippines',, 'el, nido',, 'Palawan, tours',, 'island, hopping, Palawan',, 'Philippines, malayalan, vlogs']

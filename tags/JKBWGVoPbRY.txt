@@ -1,0 +1,1 @@
+['manila, vlog',, 'mount, pinatubo',, 'hiking, mount, pinatubo',, 'philippines, travel',, 'travel, philippines',, 'hiking, philippines',, 'mount, pinatubo, 2022',, 'el, nido',, 'philippines, vlog',, 'visit, philippines',, 'philippines, 2022',, 'luzon, travel, vlog',, 'luzon, manila',, 'trekking, luzon',, 'trekking, philippines',, 'tarlac',, 'capas, tourism']

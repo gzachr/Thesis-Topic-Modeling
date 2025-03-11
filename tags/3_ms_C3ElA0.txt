@@ -1,0 +1,1 @@
+['Pietro, Boselli',, 'fitness',, 'model',, 'athlete',, 'workout',, 'travel',, 'lifestyle',, 'adventure',, 'culture',, 'philippines',, 'beach',, 'photoshoot']

@@ -1,0 +1,1 @@
+['filipino',, 'food',, 'snack',, 'fruit',, 'canned',, 'mango',, 'tuna',, 'fudgeebarr',, 'fudgebar',, 'reaction',, 'react',, 'korean',, 'philippines',, 'try',, 'trying',, 'pinoy',, 'vlog',, 'comedy',, 'entertainment',, 'review',, 'mukbang',, 'eatingshow',, 'blind',, 'blindfolded',, 'eyepatches',, 'eyepatch']

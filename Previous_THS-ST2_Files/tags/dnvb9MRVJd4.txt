@@ -1,1 +1,0 @@
-['Filipino, food',, 'food, of, the, Philippines',, 'DINUGUAN',, 'halo, halo',, 'SISIG',, 'Perth',, 'Australia',, 'masarap',, 'delicious, food',, 'Pinoy, food',, 'Pinoy, life',, 'Philippines',, 'street, food',, 'Pinoy, restaurant',, 'Filipino, restaurant',, 'Pinay']

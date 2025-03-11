@@ -1,1 +1,0 @@
-['ginisang, munggo',, 'ginisang, monggo',, 'munggo, recipe',, 'monggo',, 'how, to, cook, mongo',, 'monggo, guisado',, 'monngo, panlasang, pinoy',, 'how, to, cook, mung, beans',, 'Philippines',, 'manila',, 'california',, 'Filipino',, 'Pinoy',, 'Canada',, 'Dubai',, 'Manila',, 'Quezon, City',, 'Davao',, 'Cebu',, 'Filipino, Recipes']

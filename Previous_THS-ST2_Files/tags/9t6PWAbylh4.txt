@@ -1,1 +1,0 @@
-['Japan',, 'Tokyo',, 'TokyoTech',, 'Indonesia',, 'Philippines',, 'Filipino',, 'Indonesian',, 'Pinoy']

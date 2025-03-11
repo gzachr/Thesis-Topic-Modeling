@@ -1,1 +1,0 @@
-['KOREAN',, 'FILIPINO',, 'FOOD',, 'MR, BULBUL',, 'TUBA',, 'coconut, wine',, 'Filipino, liquor',, 'drinks',, 'cocktail',, 'LAKAN',, 'lambanog',, 'apple, cider, vinegar',, 'coconut, juice',, 'makgeolli',, 'fanta',, 'Filipino, drinks',, 'í•„ë¦¬í•€, ìˆ, ',, 'íŠœë°”',, 'ëžŒë°”ë…¹',, 'ì¹µí…Œì¼',, 'ë¨¹ë°©',, 'í•„ë¦¬í•€, ìŒì‹',, 'ì½”ì½”ë„›ì™€ì¸',, 'ë§‰ê±¸ë¦¬',, 'ì‚¬ê³¼ì‹ì´ˆ']

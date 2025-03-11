@@ -1,1 +1,0 @@
-['outdoor, cooking, show',, 'backyard, cooking, pinoy',, 'pinoy, planet, outdoor',, 'filipino, cooking, show',, 'filipino, food',, 'cooking, pocherong, baboy',, 'Foreigner, cooks, pocherong, baboy',, 'Cooking, My, First, Pocherong, Baboy, In, The, Backyard',, 'pocherong, baboy',, 'Pinoy, planet']

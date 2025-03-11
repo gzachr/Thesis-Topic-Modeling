@@ -1,1 +1,0 @@
-['filipino, street, food, restaurant',, 'filipino, restaurant',, 'filipino, food, reaction',, 'filipino, street, food',, 'filipino, food',, 'street, food, restaurant',, 'pinoy, planet, vlog',, 'pinoy, planet, belgium',, 'pinoy, planet, filipino',, 'must, try, food, in, belgium',, 'must, try, pinoy, food',, 'pinoy, planet, mayon']
