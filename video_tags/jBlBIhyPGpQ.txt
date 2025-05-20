@@ -1,1 +1,1 @@
-['cebu city', 'metro cebu', 'cebu news', 'ecq news', 'cebu update', 'cebu back to ecq', 'is cebu city under ecq', 'finnsnow', 'lockdown', 'philippines', 'lockdown philippines']
+cebu city, metro cebu, cebu news, ecq news, cebu update, cebu back to ecq, is cebu city under ecq, finnsnow, lockdown, philippines, lockdown philippines

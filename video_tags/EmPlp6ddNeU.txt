@@ -1,1 +1,1 @@
-['#Philippines', '#howto', '#tgnomad', '#internationalstudents', '#universityofsancarlos', '#college']
+#Philippines, #howto, #tgnomad, #internationalstudents, #universityofsancarlos, #college

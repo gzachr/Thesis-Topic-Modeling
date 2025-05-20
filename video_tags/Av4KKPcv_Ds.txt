@@ -1,1 +1,1 @@
-['Philippines', 'manila', 'metromanila', 'cebu', 'dumaguete']
+Philippines, manila, metromanila, cebu, dumaguete

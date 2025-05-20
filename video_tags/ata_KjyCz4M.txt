@@ -1,1 +1,1 @@
-['boodle fight', 'Filipino food']
+boodle fight, Filipino food

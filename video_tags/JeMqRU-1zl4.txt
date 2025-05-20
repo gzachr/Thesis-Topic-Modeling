@@ -1,1 +1,1 @@
-['Philippines', 'Filipino', 'Filipino food', 'Street food', 'Bbq']
+Philippines, Filipino, Filipino food, Street food, Bbq

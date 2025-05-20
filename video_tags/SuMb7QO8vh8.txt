@@ -1,1 +1,1 @@
-['russian', 'pinoy', 'filipino', 'traveling', 'travel', 'manila', 'vlog', 'russian pinoy', 'klimgeran']
+russian, pinoy, filipino, traveling, travel, manila, vlog, russian pinoy, klimgeran

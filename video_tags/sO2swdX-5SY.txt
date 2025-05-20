@@ -1,1 +1,1 @@
-['Philippines', 'Filipino', 'Camping', 'Filipino food', 'Philippines life', 'Foreigner']
+Philippines, Filipino, Camping, Filipino food, Philippines life, Foreigner

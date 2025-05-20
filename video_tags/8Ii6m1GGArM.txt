@@ -1,1 +1,1 @@
-['philippines', 'philippinesreaction', 'philippinesvlogger']
+philippines, philippinesreaction, philippinesvlogger

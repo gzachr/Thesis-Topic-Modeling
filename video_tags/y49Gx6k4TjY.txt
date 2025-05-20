@@ -1,1 +1,1 @@
-['#FilipinoBeer', '#Philippines', '#123Japan', '#Reaction']
+#FilipinoBeer, #Philippines, #123Japan, #Reaction

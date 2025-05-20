@@ -1,1 +1,1 @@
-['#foreigner', '#costofliving', '#asia', '#philippines', '#travel']
+#foreigner, #costofliving, #asia, #philippines, #travel

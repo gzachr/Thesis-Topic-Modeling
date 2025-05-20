@@ -1,1 +1,1 @@
-['Philippines', 'travel', 'bohol', 'foreigner', 'explore', 'pinoy', 'pinay', 'sexy', 'guapo', 'body', 'filipino', 'halffilipino', 'filam', 'islandhopping', 'beach', 'sand', 'sea']
+Philippines, travel, bohol, foreigner, explore, pinoy, pinay, sexy, guapo, body, filipino, halffilipino, filam, islandhopping, beach, sand, sea

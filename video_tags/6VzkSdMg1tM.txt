@@ -1,1 +1,1 @@
-['filipino', 'filipino food', 'philippines', 'american', 'review', 'challenge']
+filipino, filipino food, philippines, american, review, challenge

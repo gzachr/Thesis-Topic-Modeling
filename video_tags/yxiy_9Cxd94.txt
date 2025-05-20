@@ -1,1 +1,1 @@
-['bgc', 'BGC', 'philippines', 'travel', 'manila', 'foreigner', 'juicyvlog', 'makingithappen', 'coupletravel']
+bgc, BGC, philippines, travel, manila, foreigner, juicyvlog, makingithappen, coupletravel

@@ -1,1 +1,1 @@
-['mgn', 'ovela', 'music game news', 'philippines', 'reaction']
+mgn, ovela, music game news, philippines, reaction

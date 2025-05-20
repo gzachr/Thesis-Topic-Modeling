@@ -1,1 +1,1 @@
-['philippines', 'province', 'foreigner', 'vlog', 'island', 'asia', 'first time']
+philippines, province, foreigner, vlog, island, asia, first time

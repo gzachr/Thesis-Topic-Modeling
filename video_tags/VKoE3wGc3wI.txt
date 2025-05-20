@@ -1,1 +1,1 @@
-['Marriage', 'Communication', 'Mixed Race', 'Multi Cultural', 'Filipino husband', 'American wife', 'Living abroad']
+Marriage, Communication, Mixed Race, Multi Cultural, Filipino husband, American wife, Living abroad

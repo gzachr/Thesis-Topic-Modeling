@@ -1,1 +1,1 @@
-['LoiNie', 'KathNeil', 'JakBie', 'Young Filipino couples']
+LoiNie, KathNeil, JakBie, Young Filipino couples

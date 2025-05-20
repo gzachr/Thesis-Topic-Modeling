@@ -1,1 +1,1 @@
-['Bret Maverick', 'Philippines', 'Canada', 'Fundador', 'Vlog', 'Travel']
+Bret Maverick, Philippines, Canada, Fundador, Vlog, Travel

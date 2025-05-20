@@ -1,1 +1,1 @@
-['manila', 'philippines', 'ocean park manila', 'ocean park']
+manila, philippines, ocean park manila, ocean park

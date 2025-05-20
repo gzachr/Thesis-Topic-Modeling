@@ -1,1 +1,1 @@
-['philippines', 'videoke', 'karaoke', 'foreignerinphilippines', 'firsttime', 'vloggerinphilippines', 'vlog', 'vlogging', 'exploringphilippines', 'pinoylife', 'pinoycountry', 'pinoy', 'lovephilippines', 'recommendation']
+philippines, videoke, karaoke, foreignerinphilippines, firsttime, vloggerinphilippines, vlog, vlogging, exploringphilippines, pinoylife, pinoycountry, pinoy, lovephilippines, recommendation

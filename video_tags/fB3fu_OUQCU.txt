@@ -1,1 +1,1 @@
-['Philippines', 'Filipino', 'Foreigner', 'Police', 'Travel', 'Vlog']
+Philippines, Filipino, Foreigner, Police, Travel, Vlog

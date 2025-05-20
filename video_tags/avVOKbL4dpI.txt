@@ -1,1 +1,1 @@
-['Mall of Asia', 'Manila', 'Philippines']
+Mall of Asia, Manila, Philippines

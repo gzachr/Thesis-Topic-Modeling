@@ -1,1 +1,1 @@
-['CNNLifestyle', 'CNNRealtalk', 'Filipino Food', 'Chris Urbano Interview', 'Rachel Alejandro', 'Christine Jacob-Sandejas', 'Chris Urbano', 'Cooking Show in the Philippines', 'Australian WIne in the Philippines', 'foriegner speaks tagalog', 'foreigner speaks filipino', 'foreignoy']
+CNNLifestyle, CNNRealtalk, Filipino Food, Chris Urbano Interview, Rachel Alejandro, Christine Jacob-Sandejas, Chris Urbano, Cooking Show in the Philippines, Australian WIne in the Philippines, foriegner speaks tagalog, foreigner speaks filipino, foreignoy

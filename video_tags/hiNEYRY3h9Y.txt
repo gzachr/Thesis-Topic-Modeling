@@ -1,1 +1,1 @@
-['Philippines', 'Life in the Philippines', 'Foreigner philippines', 'Province life philippines', 'Market philippines', 'Filipino food', 'Travel philippines', 'Daily vlog philippines', 'Daily life philippines', 'Daily vlog', 'Susie in the Philippines']
+Philippines, Life in the Philippines, Foreigner philippines, Province life philippines, Market philippines, Filipino food, Travel philippines, Daily vlog philippines, Daily life philippines, Daily vlog, Susie in the Philippines

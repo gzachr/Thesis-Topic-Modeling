@@ -1,1 +1,1 @@
-['americans', 'filipino', 'culture', 'america', 'pinoy', 'philippines', 'Signs you are a Filipino', 'Hey Joe Show']
+americans, filipino, culture, america, pinoy, philippines, Signs you are a Filipino, Hey Joe Show

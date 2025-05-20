@@ -1,1 +1,1 @@
-['Philippines', 'Filipinofood', 'Filipino', 'Foreigner']
+Philippines, Filipinofood, Filipino, Foreigner

@@ -1,1 +1,1 @@
-['philippines', 'jelenakopilec', 'latvianinphilippines', 'russianinphilippines', 'samalisland', 'davaocity']
+philippines, jelenakopilec, latvianinphilippines, russianinphilippines, samalisland, davaocity

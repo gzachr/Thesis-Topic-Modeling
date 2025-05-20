@@ -1,1 +1,1 @@
-['#Philippines', '#Filipino']
+#Philippines, #Filipino

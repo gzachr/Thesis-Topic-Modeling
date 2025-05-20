@@ -1,1 +1,1 @@
-['#tgnomad', '#philippines', '#foodvlog', '#budgettraveling', '#cebucity']
+#tgnomad, #philippines, #foodvlog, #budgettraveling, #cebucity

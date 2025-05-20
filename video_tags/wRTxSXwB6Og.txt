@@ -1,1 +1,1 @@
-['Philippines', 'Filipino', 'Filipino food', 'Camping', 'Camper', 'tent', 'Tent life', 'Travel', 'Explore', 'Low budget', 'Foreigner', 'Camp', 'Cooking', 'Expat', 'Expat life', 'Province', 'Province life', 'lifestyle', 'angeles city', 'life', 'cheap meal', 'filipinaforeigncouple']
+Philippines, Filipino, Filipino food, Camping, Camper, tent, Tent life, Travel, Explore, Low budget, Foreigner, Camp, Cooking, Expat, Expat life, Province, Province life, lifestyle, angeles city, life, cheap meal, filipinaforeigncouple

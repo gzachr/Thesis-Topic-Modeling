@@ -1,1 +1,1 @@
-['manila', 'vlog', 'FIBA', 'FIBA World Cup', 'SM Mall of Asia Arena']
+manila, vlog, FIBA, FIBA World Cup, SM Mall of Asia Arena

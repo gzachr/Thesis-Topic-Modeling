@@ -1,1 +1,1 @@
-['Philippines', 'Filipino', 'Foreigner', 'Foreigners', 'Expat', 'Expat life', 'Filipino food', 'Landers', 'Pizza', 'Passport bros', 'Travel']
+Philippines, Filipino, Foreigner, Foreigners, Expat, Expat life, Filipino food, Landers, Pizza, Passport bros, Travel

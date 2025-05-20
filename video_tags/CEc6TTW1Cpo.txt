@@ -1,1 +1,1 @@
-['#Philippines', '#FamousFilipinos', '#ForeignerInPhilippines']
+#Philippines, #FamousFilipinos, #ForeignerInPhilippines

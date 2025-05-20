@@ -1,1 +1,1 @@
-['Tagalog', 'Philippines', 'Filipino', 'Pinoy', 'Tongue twister', 'first time', 'americans', 'premiere pro']
+Tagalog, Philippines, Filipino, Pinoy, Tongue twister, first time, americans, premiere pro

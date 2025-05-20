@@ -1,1 +1,1 @@
-['Andrea Brillantes', 'Marian Rivera', 'Belle Mariano', 'Kathryn Bernardo']
+Andrea Brillantes, Marian Rivera, Belle Mariano, Kathryn Bernardo

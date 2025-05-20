@@ -1,1 +1,1 @@
-['korean filipino family', 'korean tried filipino food', 'korean tried embutido', 'embutido', 'filipino food']
+korean filipino family, korean tried filipino food, korean tried embutido, embutido, filipino food

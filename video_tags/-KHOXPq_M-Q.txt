@@ -1,1 +1,1 @@
-['philippines thailand', 'retire in asia', 'retire in thailand', 'retire in philippines']
+philippines thailand, retire in asia, retire in thailand, retire in philippines

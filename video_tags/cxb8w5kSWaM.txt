@@ -1,1 +1,1 @@
-['Arijit Singh', 'shreya ghoshal', 'south India', 'bollywood', 'srk', 'katrina kaif', 'anirudt', 'nikita ghandi', 'yo yo honey singh', 'neha kakkar', 'tony kakkar', 'shubh', 'dum masala', 'shilpa rao', 'aur']
+Arijit Singh, shreya ghoshal, south India, bollywood, srk, katrina kaif, anirudt, nikita ghandi, yo yo honey singh, neha kakkar, tony kakkar, shubh, dum masala, shilpa rao, aur

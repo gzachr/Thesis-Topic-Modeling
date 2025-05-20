@@ -1,1 +1,1 @@
-['Tagalog', 'Filipino', 'Philippines', 'Pinoy', 'Pinay', 'Filipino food', 'Filipino language', 'becoming Filipino', 'Wil Dasovich', 'Haley Dasovich', 'Daniel Marsh', 'Alodia', 'Wilodia', 'Jako De Leon', 'Vlog', 'Baninay', 'Lloyd Cadena']
+Tagalog, Filipino, Philippines, Pinoy, Pinay, Filipino food, Filipino language, becoming Filipino, Wil Dasovich, Haley Dasovich, Daniel Marsh, Alodia, Wilodia, Jako De Leon, Vlog, Baninay, Lloyd Cadena

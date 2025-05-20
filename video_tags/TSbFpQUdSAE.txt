@@ -1,1 +1,1 @@
-['finnsnow', 'alegria', 'diving', 'freediving', 'swimming', 'unique statues', 'statues', 'underwater statues', 'Instagram locaiton', 'most unique place in philippines', 'new attaction', 'new tourism spot', 'alegria dive resort', 'more fun in the philippines']
+finnsnow, alegria, diving, freediving, swimming, unique statues, statues, underwater statues, Instagram locaiton, most unique place in philippines, new attaction, new tourism spot, alegria dive resort, more fun in the philippines

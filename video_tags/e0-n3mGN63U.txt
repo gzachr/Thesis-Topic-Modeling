@@ -1,1 +1,1 @@
-['#ForeignerPhilippinesReaction']
+#ForeignerPhilippinesReaction

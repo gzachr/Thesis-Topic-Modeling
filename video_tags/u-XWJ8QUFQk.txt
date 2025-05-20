@@ -1,1 +1,1 @@
-['filipino', 'food', 'philippines', 'foods', 'coconut', 'curry', 'reaction', 'react', 'korean', 'try', 'trying', 'pinoy', 'vlog', 'comedy', 'entertainment', 'review', 'mukbang', 'eatingshow']
+filipino, food, philippines, foods, coconut, curry, reaction, react, korean, try, trying, pinoy, vlog, comedy, entertainment, review, mukbang, eatingshow

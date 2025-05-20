@@ -1,1 +1,1 @@
-['davao', 'philippines']
+davao, philippines

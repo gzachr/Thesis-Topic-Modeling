@@ -1,1 +1,1 @@
-['travel', 'vlog', 'travelvlog', 'philippines', 'adventure', 'mindanao']
+travel, vlog, travelvlog, philippines, adventure, mindanao

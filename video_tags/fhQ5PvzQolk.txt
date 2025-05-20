@@ -1,1 +1,1 @@
-['Japan', 'Japanese', 'culture', 'travel', '日本語', '三原', '日本', 'Mana', 'Philippines', 'Filipino', 'mr3', 'japanese girl', 'Korean', 'Japanese Korean', 'Canned food', 'Filipino food']
+Japan, Japanese, culture, travel, 日本語, 三原, 日本, Mana, Philippines, Filipino, mr3, japanese girl, Korean, Japanese Korean, Canned food, Filipino food

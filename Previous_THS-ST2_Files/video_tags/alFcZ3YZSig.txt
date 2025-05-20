@@ -1,0 +1,1 @@
+['House rent', 'Expenses', 'Living on the philippines', 'life vlog', 'familly vlog', 'cheap rent', 'rent', 'living costs']

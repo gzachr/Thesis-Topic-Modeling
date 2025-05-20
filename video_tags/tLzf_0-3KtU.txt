@@ -1,1 +1,1 @@
-['healthcare in the philippines', 'hospitals in the philippines', 'health insurance in the philippines', 'healthcare system in the philippines']
+healthcare in the philippines, hospitals in the philippines, health insurance in the philippines, healthcare system in the philippines

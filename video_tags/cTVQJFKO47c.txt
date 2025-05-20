@@ -1,1 +1,1 @@
-['philippines', 'manila', 'vlog', 'japanese', 'first day in philippines', 'first impression of philippines', 'shopping mall', 'street food']
+philippines, manila, vlog, japanese, first day in philippines, first impression of philippines, shopping mall, street food

@@ -1,1 +1,1 @@
-['filipina', 'expat', 'travel', 'living abroad', 'couple', 'american', 'philippines', 'province']
+filipina, expat, travel, living abroad, couple, american, philippines, province

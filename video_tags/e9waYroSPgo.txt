@@ -1,1 +1,1 @@
-['Philippines', 'Travel', 'Explore', 'Filipino', 'Haircut', 'Barber', 'Foreigner', 'Barbershop', 'livinginthephilippines', 'lifestyle', 'filipinaforeigncouple']
+Philippines, Travel, Explore, Filipino, Haircut, Barber, Foreigner, Barbershop, livinginthephilippines, lifestyle, filipinaforeigncouple

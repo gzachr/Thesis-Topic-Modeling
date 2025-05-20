@@ -1,1 +1,1 @@
-['Filipino food', 'Philippines food', 'halo halo']
+Filipino food, Philippines food, halo halo

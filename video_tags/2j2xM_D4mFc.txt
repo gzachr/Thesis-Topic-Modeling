@@ -1,1 +1,1 @@
-['dauin', 'dumaguete', 'daily life', 'retirement', 'retired', 'retirement life', 'happy life', 'being happy', 'marriage', 'marriage life', 'getting married', 'retiring overseas', 'retiring to a foreign country']
+dauin, dumaguete, daily life, retirement, retired, retirement life, happy life, being happy, marriage, marriage life, getting married, retiring overseas, retiring to a foreign country

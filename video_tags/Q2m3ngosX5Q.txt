@@ -1,1 +1,1 @@
-['Filipino', 'Culture', 'Americans', 'pinoy', 'filipinos']
+Filipino, Culture, Americans, pinoy, filipinos

@@ -1,1 +1,1 @@
-['#magellanscross', '#cebucity', '#traveling', '#tgnomad', '#philippineshistory', '#sanpedrofort']
+#magellanscross, #cebucity, #traveling, #tgnomad, #philippineshistory, #sanpedrofort

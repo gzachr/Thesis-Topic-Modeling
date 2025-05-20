@@ -1,1 +1,1 @@
-['shorts', 'philippines', 'truefacts', 'filipino bravery']
+shorts, philippines, truefacts, filipino bravery

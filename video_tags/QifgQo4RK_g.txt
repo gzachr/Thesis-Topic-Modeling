@@ -1,1 +1,1 @@
-['Philippines', 'Filipino Food']
+Philippines, Filipino Food

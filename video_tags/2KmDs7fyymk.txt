@@ -1,1 +1,1 @@
-['cebu city', 'living in philippines city', 'foreigner living in philippines', 'foreigner living in cebu', 'cebu', 'how to live in philippines', 'how to live in cebu', 'american expat', 'usa expat', 'expat living in cebu', 'cebuano']
+cebu city, living in philippines city, foreigner living in philippines, foreigner living in cebu, cebu, how to live in philippines, how to live in cebu, american expat, usa expat, expat living in cebu, cebuano

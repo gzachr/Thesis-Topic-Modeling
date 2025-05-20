@@ -1,1 +1,1 @@
-['lechonkawali', 'filipino', 'food', 'foods', 'react', 'reaction', 'cook', 'try', 'lechon', 'philippines', 'korean', 'pinoy', 'vlog', 'asmr', 'realsound', 'mukbang', 'eatingshow', 'porkbelly', 'review', 'kimnlee', 'kimandlee']
+lechonkawali, filipino, food, foods, react, reaction, cook, try, lechon, philippines, korean, pinoy, vlog, asmr, realsound, mukbang, eatingshow, porkbelly, review, kimnlee, kimandlee
