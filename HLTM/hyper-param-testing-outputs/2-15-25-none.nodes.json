@@ -1,0 +1,546 @@
+[{
+  "id": "Z35", "text": "mango fruit milk banana vegetable coconut bread", "data": {"name": "Z35", "level": 3, "percentage": 0.2475810635748934}, "children": [{
+      "id": "Z214", "text": "mango banana pineapple orange apple peach banana-banana", "data": {"name": "Z214", "level": 2, "percentage": 0.13599508857630607}, "children": [{
+          "id": "Z170", "text": "pineapple orange apple cut", "data": {"name": "Z170", "level": 1, "percentage": 0.21642542326979852}, "children": []
+        }, {
+          "id": "Z172", "text": "banana banana-banana", "data": {"name": "Z172", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z171", "text": "mango peach", "data": {"name": "Z171", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z213", "text": "fruit milk vegetable coconut bread bean dip", "data": {"name": "Z213", "level": 2, "percentage": 0.2090339903114461}, "children": [{
+          "id": "Z168", "text": "milk coconut", "data": {"name": "Z168", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z167", "text": "vegetable fruit", "data": {"name": "Z167", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z169", "text": "bread bean tea dip jelly", "data": {"name": "Z169", "level": 1, "percentage": 0.11803197681692804}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z315", "text": "game play basketball dance competition player kick", "data": {"name": "Z315", "level": 3, "percentage": 0.19831995873043262}, "children": [{
+      "id": "Z242", "text": "dance competition kick winner training dancing knee", "data": {"name": "Z242", "level": 2, "percentage": 0.11325135355625182}, "children": [{
+          "id": "Z1161", "text": "competition kick winner", "data": {"name": "Z1161", "level": 1, "percentage": 0.17224421291866232}, "children": []
+        }, {
+          "id": "Z1162", "text": "dance dancing", "data": {"name": "Z1162", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1160", "text": "training train knee enemy leg mission final", "data": {"name": "Z1160", "level": 1, "percentage": 0.05255728697206581}, "children": []
+        }]
+    }, {
+      "id": "Z244", "text": "brother mother father eye sister uncle blood", "data": {"name": "Z244", "level": 2, "percentage": 0.1748328899825393}, "children": [{
+          "id": "Z1170", "text": "eye pop poor fair decent nose perspective", "data": {"name": "Z1170", "level": 1, "percentage": 0.33131531754192367}, "children": []
+        }, {
+          "id": "Z1166", "text": "brother jay pipe", "data": {"name": "Z1166", "level": 1, "percentage": 0.21199181859089974}, "children": []
+        }, {
+          "id": "Z1169", "text": "girl-girl contact specific intense angry dress percent", "data": {"name": "Z1169", "level": 1, "percentage": 0.24730076564002448}, "children": []
+        }, {
+          "id": "Z1168", "text": "mother father", "data": {"name": "Z1168", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1167", "text": "sister uncle blood cousin speed afraid scared", "data": {"name": "Z1167", "level": 1, "percentage": 0.23794818512833402}, "children": []
+        }]
+    }, {
+      "id": "Z243", "text": "game play basketball player sport shoot shot", "data": {"name": "Z243", "level": 2, "percentage": 0.16280387452118789}, "children": [{
+          "id": "Z1163", "text": "game play", "data": {"name": "Z1163", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1164", "text": "basketball player sport gold gun", "data": {"name": "Z1164", "level": 1, "percentage": 0.09988376849473107}, "children": []
+        }, {
+          "id": "Z1165", "text": "shoot shot ball", "data": {"name": "Z1165", "level": 1, "percentage": 0.2397642755865466}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z37", "text": "singer song singing sing voice song-song fish", "data": {"name": "Z37", "level": 3, "percentage": 0.1489907144545696}, "children": [{
+      "id": "Z222", "text": "song singer singing sing voice song-song", "data": {"name": "Z222", "level": 2, "percentage": 0.15242215508833984}, "children": [{
+          "id": "Z196", "text": "song sing", "data": {"name": "Z196", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z197", "text": "singer singing voice song-song", "data": {"name": "Z197", "level": 1, "percentage": 0.12530435629147058}, "children": []
+        }]
+    }, {
+      "id": "Z221", "text": "fish shrimp seafood tomato rice-rice fish-fish pot", "data": {"name": "Z221", "level": 2, "percentage": 0.15674128082817723}, "children": [{
+          "id": "Z193", "text": "fish-fish fish", "data": {"name": "Z193", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z195", "text": "tomato rice-rice pot chef pasta kitchen mushroom", "data": {"name": "Z195", "level": 1, "percentage": 0.13996222584461743}, "children": []
+        }, {
+          "id": "Z194", "text": "seafood shrimp", "data": {"name": "Z194", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z312", "text": "island beach palawan nido boracay tourist beach-beach", "data": {"name": "Z312", "level": 3, "percentage": 0.15870531532520035}, "children": [{
+      "id": "Z235", "text": "palawan nido boracay paradise lagoon coron kayak", "data": {"name": "Z235", "level": 2, "percentage": 0.06012486180922217}, "children": [{
+          "id": "Z1144", "text": "nido boracay paradise kayak", "data": {"name": "Z1144", "level": 1, "percentage": 0.07181474728028579}, "children": []
+        }, {
+          "id": "Z1143", "text": "palawan lagoon coron coral", "data": {"name": "Z1143", "level": 1, "percentage": 0.03686522066437081}, "children": []
+        }]
+    }, {
+      "id": "Z234", "text": "island beach tourist beach-beach", "data": {"name": "Z234", "level": 2, "percentage": 0.16063671119513268}, "children": [{
+          "id": "Z1141", "text": "tourist island", "data": {"name": "Z1141", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1142", "text": "beach beach-beach", "data": {"name": "Z1142", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z31", "text": "vocal feature-feature latino podcast opm lyric artist", "data": {"name": "Z31", "level": 3, "percentage": 0.060942026813471245}, "children": [{
+      "id": "Z21", "text": "vocal opm lyric artist performance karaoke tiktok", "data": {"name": "Z21", "level": 2, "percentage": 0.07881949161173268}, "children": [{
+          "id": "Z11", "text": "performance band concert stage studio", "data": {"name": "Z11", "level": 1, "percentage": 0.1034944837518381}, "children": []
+        }, {
+          "id": "Z15", "text": "karaoke machine", "data": {"name": "Z15", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z13", "text": "vocal opm lyric tiktok", "data": {"name": "Z13", "level": 1, "percentage": 0.052634964623028684}, "children": []
+        }, {
+          "id": "Z17", "text": "technique control note", "data": {"name": "Z17", "level": 1, "percentage": 0.21595404507257523}, "children": []
+        }, {
+          "id": "Z14", "text": "listen mate sing-song range bloody ridiculous gentleman", "data": {"name": "Z14", "level": 1, "percentage": 0.10418727549087498}, "children": []
+        }, {
+          "id": "Z12", "text": "artist industry", "data": {"name": "Z12", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z16", "text": "sound clip imagine breath environment", "data": {"name": "Z16", "level": 1, "percentage": 0.15615949933895715}, "children": []
+        }]
+    }, {
+      "id": "Z22", "text": "latino feature-feature podcast viral coach feature freak", "data": {"name": "Z22", "level": 2, "percentage": 0.050625983385846014}, "children": [{
+          "id": "Z18", "text": "feature-feature podcast feature", "data": {"name": "Z18", "level": 1, "percentage": 0.04863386784818899}, "children": []
+        }, {
+          "id": "Z19", "text": "latino viral coach freak review", "data": {"name": "Z19", "level": 1, "percentage": 0.062823465778516}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z34", "text": "tour spot adventure cebu view explore boat", "data": {"name": "Z34", "level": 3, "percentage": 0.187382770905984}, "children": [{
+      "id": "Z212", "text": "tour spot view boat sunset guide", "data": {"name": "Z212", "level": 2, "percentage": 0.14597847730429306}, "children": [{
+          "id": "Z166", "text": "spot view sunset guide", "data": {"name": "Z166", "level": 1, "percentage": 0.15944014983229235}, "children": []
+        }, {
+          "id": "Z165", "text": "boat tour", "data": {"name": "Z165", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z211", "text": "adventure cebu explore hotel card ferry travel", "data": {"name": "Z211", "level": 2, "percentage": 0.17660994947432979}, "children": [{
+          "id": "Z160", "text": "travel offer meeting world hall queue tired", "data": {"name": "Z160", "level": 1, "percentage": 0.23492009603883487}, "children": []
+        }, {
+          "id": "Z163", "text": "cebu cebu-cebu", "data": {"name": "Z163", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z164", "text": "card cash internet cost fee gas", "data": {"name": "Z164", "level": 1, "percentage": 0.10476852619047677}, "children": []
+        }, {
+          "id": "Z161", "text": "adventure explore", "data": {"name": "Z161", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z162", "text": "hotel ferry seat wifus bohol terminal", "data": {"name": "Z162", "level": 1, "percentage": 0.09061736115325754}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z311", "text": "taxi airport flight ride plane passport visa", "data": {"name": "Z311", "level": 3, "percentage": 0.1416634794426325}, "children": [{
+      "id": "Z232", "text": "taxi airport flight ride plane", "data": {"name": "Z232", "level": 2, "percentage": 0.11161162510151405}, "children": [{
+          "id": "Z1137", "text": "taxi flight ride", "data": {"name": "Z1137", "level": 1, "percentage": 0.16975671802458897}, "children": []
+        }, {
+          "id": "Z1138", "text": "plane airport", "data": {"name": "Z1138", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z233", "text": "passport visa company office online immigration phone", "data": {"name": "Z233", "level": 2, "percentage": 0.07239847253546934}, "children": [{
+          "id": "Z1139", "text": "visa company online immigration phone tax", "data": {"name": "Z1139", "level": 1, "percentage": 0.08575451355305011}, "children": []
+        }, {
+          "id": "Z1140", "text": "passport office document shopping-mall", "data": {"name": "Z1140", "level": 1, "percentage": 0.15956959446341062}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z33", "text": "cheese dessert ice-cream snack meal restaurant menu", "data": {"name": "Z33", "level": 3, "percentage": 0.2267822393355079}, "children": [{
+      "id": "Z29", "text": "dessert ice-cream ube cream creamy caramel", "data": {"name": "Z29", "level": 2, "percentage": 0.12740219029184066}, "children": [{
+          "id": "Z153", "text": "dessert ice-cream ube", "data": {"name": "Z153", "level": 1, "percentage": 0.1102950988376456}, "children": []
+        }, {
+          "id": "Z152", "text": "cream creamy caramel", "data": {"name": "Z152", "level": 1, "percentage": 0.13853392098629774}, "children": []
+        }]
+    }, {
+      "id": "Z27", "text": "cheese snack chocolate cheese-cheese chip corn yum", "data": {"name": "Z27", "level": 2, "percentage": 0.10438177246925298}, "children": [{
+          "id": "Z136", "text": "chip snack-snack cracker brand", "data": {"name": "Z136", "level": 1, "percentage": 0.047801913832805853}, "children": []
+        }, {
+          "id": "Z133", "text": "cheese cheese-cheese", "data": {"name": "Z133", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z135", "text": "snack chocolate corn", "data": {"name": "Z135", "level": 1, "percentage": 0.15823732491101122}, "children": []
+        }, {
+          "id": "Z134", "text": "yum peanut cheesy bun classic fan juicy", "data": {"name": "Z134", "level": 1, "percentage": 0.0874845360948564}, "children": []
+        }]
+    }, {
+      "id": "Z28", "text": "ice spoon cold red butter mukbang sausage", "data": {"name": "Z28", "level": 2, "percentage": 0.16503385709558774}, "children": [{
+          "id": "Z150", "text": "sausage sandwich ketchup bacon steak italian french", "data": {"name": "Z150", "level": 1, "percentage": 0.06812980718057947}, "children": []
+        }, {
+          "id": "Z140", "text": "ice grab bowl excited halo-halo flan", "data": {"name": "Z140", "level": 1, "percentage": 0.14539110615215836}, "children": []
+        }, {
+          "id": "Z149", "text": "red purple stomach fine strawberry oreo baguio", "data": {"name": "Z149", "level": 1, "percentage": 0.16877287397902627}, "children": []
+        }, {
+          "id": "Z141", "text": "spoon fork plate", "data": {"name": "Z141", "level": 1, "percentage": 0.08080755967651437}, "children": []
+        }, {
+          "id": "Z151", "text": "pizza curry bubble", "data": {"name": "Z151", "level": 1, "percentage": 0.24715340852641088}, "children": []
+        }, {
+          "id": "Z145", "text": "mixed mexican lie dead", "data": {"name": "Z145", "level": 1, "percentage": 0.22147688879880342}, "children": []
+        }, {
+          "id": "Z146", "text": "mukbang candy lee", "data": {"name": "Z146", "level": 1, "percentage": 0.21624937632640684}, "children": []
+        }, {
+          "id": "Z147", "text": "color green brown white", "data": {"name": "Z147", "level": 1, "percentage": 0.30518853754874115}, "children": []
+        }, {
+          "id": "Z148", "text": "butter heat dough pan package bet summer", "data": {"name": "Z148", "level": 1, "percentage": 0.16404954609607655}, "children": []
+        }, {
+          "id": "Z142", "text": "spring regular tooth exotic today tofu energy", "data": {"name": "Z142", "level": 1, "percentage": 0.18156276351575046}, "children": []
+        }, {
+          "id": "Z144", "text": "fat bone tender pig lechon", "data": {"name": "Z144", "level": 1, "percentage": 0.11029824884505053}, "children": []
+        }, {
+          "id": "Z137", "text": "dry wet season", "data": {"name": "Z137", "level": 1, "percentage": 0.26404238033148647}, "children": []
+        }, {
+          "id": "Z138", "text": "combination item steam dinner total salamat rainy", "data": {"name": "Z138", "level": 1, "percentage": 0.21085500006814817}, "children": []
+        }, {
+          "id": "Z143", "text": "leaf portion liver plain feed tongue complete", "data": {"name": "Z143", "level": 1, "percentage": 0.18509603745579717}, "children": []
+        }, {
+          "id": "Z139", "text": "warm cold", "data": {"name": "Z139", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z210", "text": "meal restaurant menu spaghetti jollibee burger gravy", "data": {"name": "Z210", "level": 2, "percentage": 0.15760455744438445}, "children": [{
+          "id": "Z154", "text": "gravy pie jolly jolly-bee jollybee", "data": {"name": "Z154", "level": 1, "percentage": 0.040137229970653346}, "children": []
+        }, {
+          "id": "Z157", "text": "meal restaurant menu", "data": {"name": "Z157", "level": 1, "percentage": 0.18430245068598333}, "children": []
+        }, {
+          "id": "Z159", "text": "chicken-chicken hungry table finish", "data": {"name": "Z159", "level": 1, "percentage": 0.2593072280724906}, "children": []
+        }, {
+          "id": "Z156", "text": "burger mcdonald kfc", "data": {"name": "Z156", "level": 1, "percentage": 0.08643311174954069}, "children": []
+        }, {
+          "id": "Z158", "text": "jollibee-jollibee jollibee", "data": {"name": "Z158", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z155", "text": "spaghetti hot-dog", "data": {"name": "Z155", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z314", "text": "school language english student speak study language-language", "data": {"name": "Z314", "level": 3, "percentage": 0.1546653240558719}, "children": [{
+      "id": "Z238", "text": "doctor hospital medical nurse health patient safety", "data": {"name": "Z238", "level": 2, "percentage": 0.05684452829716714}, "children": [{
+          "id": "Z1151", "text": "hospital medical patient", "data": {"name": "Z1151", "level": 1, "percentage": 0.1738111250810907}, "children": []
+        }, {
+          "id": "Z1150", "text": "doctor nurse health safety", "data": {"name": "Z1150", "level": 1, "percentage": 0.12953528843486242}, "children": []
+        }]
+    }, {
+      "id": "Z239", "text": "school student study university college teacher art", "data": {"name": "Z239", "level": 2, "percentage": 0.11648305288723737}, "children": [{
+          "id": "Z1154", "text": "university art senior campus", "data": {"name": "Z1154", "level": 1, "percentage": 0.12337547086084723}, "children": []
+        }, {
+          "id": "Z1152", "text": "school college teacher", "data": {"name": "Z1152", "level": 1, "percentage": 0.22749419843503058}, "children": []
+        }, {
+          "id": "Z1153", "text": "study student", "data": {"name": "Z1153", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z240", "text": "english language speak tagalog language-language learn", "data": {"name": "Z240", "level": 2, "percentage": 0.12709476503454128}, "children": [{
+          "id": "Z1155", "text": "learn english", "data": {"name": "Z1155", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1156", "text": "language speak tagalog language-language", "data": {"name": "Z1156", "level": 1, "percentage": 0.10846464952046592}, "children": []
+        }]
+    }, {
+      "id": "Z241", "text": "relationship filipina girlfriend marry boyfriend marriage husband", "data": {"name": "Z241", "level": 2, "percentage": 0.12625603691476617}, "children": [{
+          "id": "Z1159", "text": "marry marriage husband", "data": {"name": "Z1159", "level": 1, "percentage": 0.07827057837243243}, "children": []
+        }, {
+          "id": "Z1158", "text": "filipina relationship", "data": {"name": "Z1158", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1157", "text": "girlfriend boyfriend", "data": {"name": "Z1157", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z317", "text": "history spanish asian woman south true war", "data": {"name": "Z317", "level": 3, "percentage": 0.15756492668791808}, "children": [{
+      "id": "Z248", "text": "history spanish war population government american influence", "data": {"name": "Z248", "level": 2, "percentage": 0.13239132203855125}, "children": [{
+          "id": "Z1201", "text": "american influence north magellan base california", "data": {"name": "Z1201", "level": 1, "percentage": 0.06082086045172029}, "children": []
+        }, {
+          "id": "Z1205", "text": "government economy law territory", "data": {"name": "Z1205", "level": 1, "percentage": 0.03581831350047321}, "children": []
+        }, {
+          "id": "Z1203", "text": "battle history", "data": {"name": "Z1203", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1204", "text": "war nation military soldier president army fight", "data": {"name": "Z1204", "level": 1, "percentage": 0.06673843934844673}, "children": []
+        }, {
+          "id": "Z1202", "text": "spain spanish", "data": {"name": "Z1202", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1206", "text": "city major capital religion muslim", "data": {"name": "Z1206", "level": 1, "percentage": 0.05569290148437005}, "children": []
+        }, {
+          "id": "Z1207", "text": "population national largest", "data": {"name": "Z1207", "level": 1, "percentage": 0.09665285572515177}, "children": []
+        }]
+    }, {
+      "id": "Z247", "text": "asian woman south true story western business", "data": {"name": "Z247", "level": 2, "percentage": 0.21127358471656899}, "children": [{
+          "id": "Z1194", "text": "asian southeast european", "data": {"name": "Z1194", "level": 1, "percentage": 0.22567698107875966}, "children": []
+        }, {
+          "id": "Z1191", "text": "true story sense heart instagram", "data": {"name": "Z1191", "level": 1, "percentage": 0.3693074102519648}, "children": []
+        }, {
+          "id": "Z1190", "text": "woman single difference opinion", "data": {"name": "Z1190", "level": 1, "percentage": 0.24569027188120857}, "children": []
+        }, {
+          "id": "Z1188", "text": "personal difficult medium account term write bank", "data": {"name": "Z1188", "level": 1, "percentage": 0.2011183804186469}, "children": []
+        }, {
+          "id": "Z1198", "text": "job opportunity position professional jersey pacquiao manny", "data": {"name": "Z1198", "level": 1, "percentage": 0.15078923982278175}, "children": []
+        }, {
+          "id": "Z1192", "text": "western west common average", "data": {"name": "Z1192", "level": 1, "percentage": 0.1865439618808555}, "children": []
+        }, {
+          "id": "Z1189", "text": "social smart race win black pandemic impressive", "data": {"name": "Z1189", "level": 1, "percentage": 0.17259078258965332}, "children": []
+        }, {
+          "id": "Z1196", "text": "diverse product field earlier native late exciting", "data": {"name": "Z1196", "level": 1, "percentage": 0.27384476987050244}, "children": []
+        }, {
+          "id": "Z1197", "text": "business issue", "data": {"name": "Z1197", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1193", "text": "conversation comfortable english-english accent phrase", "data": {"name": "Z1193", "level": 1, "percentage": 0.18281069038561798}, "children": []
+        }, {
+          "id": "Z1200", "text": "plan planning", "data": {"name": "Z1200", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1195", "text": "east south", "data": {"name": "Z1195", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1199", "text": "vacation expat cultural simple strong basic money-money", "data": {"name": "Z1199", "level": 1, "percentage": 0.23537983512079214}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z36", "text": "swim bed pool ocean swimming drink bathroom", "data": {"name": "Z36", "level": 3, "percentage": 0.12211595861219943}, "children": [{
+      "id": "Z220", "text": "wall retire build house-house property province concrete", "data": {"name": "Z220", "level": 2, "percentage": 0.10901519866979925}, "children": [{
+          "id": "Z189", "text": "wall concrete block hollow", "data": {"name": "Z189", "level": 1, "percentage": 0.1199630087665968}, "children": []
+        }, {
+          "id": "Z191", "text": "retire jane", "data": {"name": "Z191", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z192", "text": "province update culture-shock", "data": {"name": "Z192", "level": 1, "percentage": 0.2527104041656584}, "children": []
+        }, {
+          "id": "Z190", "text": "build house-house property project", "data": {"name": "Z190", "level": 1, "percentage": 0.10692738119862386}, "children": []
+        }]
+    }, {
+      "id": "Z219", "text": "christmas holiday christmas-christmas birthday gift party celebration", "data": {"name": "Z219", "level": 2, "percentage": 0.13334655820139496}, "children": [{
+          "id": "Z186", "text": "holiday birthday gift special december santa", "data": {"name": "Z186", "level": 1, "percentage": 0.1570113413011353}, "children": []
+        }, {
+          "id": "Z187", "text": "christmas christmas-christmas merry-christmas september", "data": {"name": "Z187", "level": 1, "percentage": 0.049994452239957854}, "children": []
+        }, {
+          "id": "Z188", "text": "party celebration spirit tradition king rule happy-birthday", "data": {"name": "Z188", "level": 1, "percentage": 0.13578089113650116}, "children": []
+        }]
+    }, {
+      "id": "Z217", "text": "swim ocean swimming sea hop diving shark", "data": {"name": "Z217", "level": 2, "percentage": 0.11426702537517791}, "children": [{
+          "id": "Z181", "text": "swimming swim", "data": {"name": "Z181", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z180", "text": "ocean sea diving", "data": {"name": "Z180", "level": 1, "percentage": 0.15030957192503744}, "children": []
+        }, {
+          "id": "Z182", "text": "hop shark whale-shark tropical gorgeous secret peace", "data": {"name": "Z182", "level": 1, "percentage": 0.10011241973959695}, "children": []
+        }]
+    }, {
+      "id": "Z218", "text": "drink beer drinking alcohol bottle juice drunk", "data": {"name": "Z218", "level": 2, "percentage": 0.17353109350496151}, "children": [{
+          "id": "Z185", "text": "alcohol bottle drunk", "data": {"name": "Z185", "level": 1, "percentage": 0.1645481944102553}, "children": []
+        }, {
+          "id": "Z184", "text": "juice drink", "data": {"name": "Z184", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z183", "text": "beer drinking san-miguel", "data": {"name": "Z183", "level": 1, "percentage": 0.19001128084508465}, "children": []
+        }]
+    }, {
+      "id": "Z216", "text": "bed pool bathroom shower sleep roof bedroom", "data": {"name": "Z216", "level": 2, "percentage": 0.09555156083387015}, "children": [{
+          "id": "Z177", "text": "bed bathroom sleep", "data": {"name": "Z177", "level": 1, "percentage": 0.1587092670250904}, "children": []
+        }, {
+          "id": "Z179", "text": "roof bedroom door ground pressure", "data": {"name": "Z179", "level": 1, "percentage": 0.11920657568436446}, "children": []
+        }, {
+          "id": "Z178", "text": "pool shower toilet private bar", "data": {"name": "Z178", "level": 1, "percentage": 0.12840694657195256}, "children": []
+        }]
+    }, {
+      "id": "Z215", "text": "hole rock typhoon foot wind port pack", "data": {"name": "Z215", "level": 2, "percentage": 0.22386819964672877}, "children": [{
+          "id": "Z176", "text": "foot mark baby deep daniel", "data": {"name": "Z176", "level": 1, "percentage": 0.2701337631048091}, "children": []
+        }, {
+          "id": "Z173", "text": "typhoon wind port activity ship mindanao cave", "data": {"name": "Z173", "level": 1, "percentage": 0.12443700092429798}, "children": []
+        }, {
+          "id": "Z174", "text": "hole rock pack belly", "data": {"name": "Z174", "level": 1, "percentage": 0.28839978469522026}, "children": []
+        }, {
+          "id": "Z175", "text": "wild sick van track careful vehicle paper", "data": {"name": "Z175", "level": 1, "percentage": 0.26819695198935956}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z39", "text": "impression bgc manila-manila friendly hand building camera", "data": {"name": "Z39", "level": 3, "percentage": 0.19497650194011198}, "children": [{
+      "id": "Z226", "text": "impression friendly street-street hill fort church san", "data": {"name": "Z226", "level": 2, "percentage": 0.13751014545389587}, "children": [{
+          "id": "Z1114", "text": "tip daily luke blog", "data": {"name": "Z1114", "level": 1, "percentage": 0.2812238895843387}, "children": []
+        }, {
+          "id": "Z1116", "text": "street-street chinatown barbecue squid", "data": {"name": "Z1116", "level": 1, "percentage": 0.14843952901017415}, "children": []
+        }, {
+          "id": "Z1121", "text": "chocolate-hill hill", "data": {"name": "Z1121", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1118", "text": "slow glass horse bay", "data": {"name": "Z1118", "level": 1, "percentage": 0.3025963931443549}, "children": []
+        }, {
+          "id": "Z1110", "text": "impression friendly", "data": {"name": "Z1110", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1111", "text": "vanilla chain tag alive queen avocado flip", "data": {"name": "Z1111", "level": 1, "percentage": 0.28062302801485095}, "children": []
+        }, {
+          "id": "Z1117", "text": "hot-hot club farm guest red-horse treat sardine", "data": {"name": "Z1117", "level": 1, "percentage": 0.3300327956538789}, "children": []
+        }, {
+          "id": "Z1120", "text": "pinoy pinay mom", "data": {"name": "Z1120", "level": 1, "percentage": 0.23993036892028413}, "children": []
+        }, {
+          "id": "Z1119", "text": "tank daddy mommy water-water truck timber", "data": {"name": "Z1119", "level": 1, "percentage": 0.06673048246477493}, "children": []
+        }, {
+          "id": "Z1112", "text": "church san fort jazz babe", "data": {"name": "Z1112", "level": 1, "percentage": 0.09069388397698055}, "children": []
+        }, {
+          "id": "Z1113", "text": "poverty lifestyle usa", "data": {"name": "Z1113", "level": 1, "percentage": 0.2430084000456465}, "children": []
+        }, {
+          "id": "Z1115", "text": "haircut barber shave hang", "data": {"name": "Z1115", "level": 1, "percentage": 0.07170707938308994}, "children": []
+        }, {
+          "id": "Z1122", "text": "quiet stair rodrigo davao reserve corporation", "data": {"name": "Z1122", "level": 1, "percentage": 0.33722107694956577}, "children": []
+        }]
+    }, {
+      "id": "Z225", "text": "hand camera picture dangerous shoe safe clothes", "data": {"name": "Z225", "level": 2, "percentage": 0.325034519556185}, "children": [{
+          "id": "Z1105", "text": "hand short wave finger shirt", "data": {"name": "Z1105", "level": 1, "percentage": 0.2955522163429051}, "children": []
+        }, {
+          "id": "Z1109", "text": "picture photo funny", "data": {"name": "Z1109", "level": 1, "percentage": 0.33257859257999983}, "children": []
+        }, {
+          "id": "Z1107", "text": "dangerous safe scary", "data": {"name": "Z1107", "level": 1, "percentage": 0.2581073851206601}, "children": []
+        }, {
+          "id": "Z1108", "text": "camera film", "data": {"name": "Z1108", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1106", "text": "shoe clothes pair monkey crocodile", "data": {"name": "Z1106", "level": 1, "percentage": 0.19824872995029486}, "children": []
+        }]
+    }, {
+      "id": "Z227", "text": "bgc manila-manila building metro-manila makati makatus modern", "data": {"name": "Z227", "level": 2, "percentage": 0.09564907913660078}, "children": [{
+          "id": "Z1125", "text": "building global museum grand", "data": {"name": "Z1125", "level": 1, "percentage": 0.10526740581168531}, "children": []
+        }, {
+          "id": "Z1124", "text": "manila-manila metro-manila makati", "data": {"name": "Z1124", "level": 1, "percentage": 0.11958150525616859}, "children": []
+        }, {
+          "id": "Z1123", "text": "bgc makatus modern mall-mall venice", "data": {"name": "Z1123", "level": 1, "percentage": 0.05166172820359206}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z316", "text": "popular beauty incredible star movie actual power", "data": {"name": "Z316", "level": 3, "percentage": 0.33109691173867284}, "children": [{
+      "id": "Z245", "text": "beauty incredible star movie actual power jesus", "data": {"name": "Z245", "level": 2, "percentage": 0.3403148068336354}, "children": [{
+          "id": "Z1171", "text": "star jesus model flag lord gym", "data": {"name": "Z1171", "level": 1, "percentage": 0.19166241462374464}, "children": []
+        }, {
+          "id": "Z1176", "text": "beauty natural universe", "data": {"name": "Z1176", "level": 1, "percentage": 0.2252408441225087}, "children": []
+        }, {
+          "id": "Z1184", "text": "heavy weight typical pound", "data": {"name": "Z1184", "level": 1, "percentage": 0.28262326059892123}, "children": []
+        }, {
+          "id": "Z1180", "text": "book brain read singapore access comfort", "data": {"name": "Z1180", "level": 1, "percentage": 0.2276755272373109}, "children": []
+        }, {
+          "id": "Z1178", "text": "incredible unbelievable", "data": {"name": "Z1178", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1182", "text": "meter square giant", "data": {"name": "Z1182", "level": 1, "percentage": 0.2264822034781624}, "children": []
+        }, {
+          "id": "Z1172", "text": "movie scene actor attention actress match disney", "data": {"name": "Z1172", "level": 1, "percentage": 0.0958639696507222}, "children": []
+        }, {
+          "id": "Z1175", "text": "power attack arm solar", "data": {"name": "Z1175", "level": 1, "percentage": 0.21345649402299366}, "children": []
+        }, {
+          "id": "Z1179", "text": "actual key holy", "data": {"name": "Z1179", "level": 1, "percentage": 0.2985783991727133}, "children": []
+        }, {
+          "id": "Z1173", "text": "skill talent", "data": {"name": "Z1173", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1185", "text": "healthy positive curious episode easier stay", "data": {"name": "Z1185", "level": 1, "percentage": 0.11881000941881772}, "children": []
+        }, {
+          "id": "Z1181", "text": "magic tshirt excite yellow stupid shake rap", "data": {"name": "Z1181", "level": 1, "percentage": 0.24855823597681231}, "children": []
+        }, {
+          "id": "Z1177", "text": "earth lake human volcano", "data": {"name": "Z1177", "level": 1, "percentage": 0.13283927395981868}, "children": []
+        }, {
+          "id": "Z1183", "text": "plant garden flower", "data": {"name": "Z1183", "level": 1, "percentage": 0.24850178192818906}, "children": []
+        }, {
+          "id": "Z1174", "text": "tough emotional", "data": {"name": "Z1174", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z246", "text": "popular famous original correct commercial festival standard", "data": {"name": "Z246", "level": 2, "percentage": 0.3226009080556965}, "children": [{
+          "id": "Z1187", "text": "original correct commercial festival standard tone judge", "data": {"name": "Z1187", "level": 1, "percentage": 0.29957021724238514}, "children": []
+        }, {
+          "id": "Z1186", "text": "famous popular", "data": {"name": "Z1186", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z38", "text": "peso shop coffee dollar store cheap expensive", "data": {"name": "Z38", "level": 3, "percentage": 0.31095690437998624}, "children": [{
+      "id": "Z224", "text": "peso dollar cheap expensive price peso-peso pay", "data": {"name": "Z224", "level": 2, "percentage": 0.24216222792692038}, "children": [{
+          "id": "Z1102", "text": "peso-peso peso", "data": {"name": "Z1102", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1101", "text": "dollar price buck buddy", "data": {"name": "Z1101", "level": 1, "percentage": 0.16001268916801095}, "children": []
+        }, {
+          "id": "Z1104", "text": "pay rent budget load close", "data": {"name": "Z1104", "level": 1, "percentage": 0.19413905098712642}, "children": []
+        }, {
+          "id": "Z1103", "text": "cheap expensive cheaper kilometer", "data": {"name": "Z1103", "level": 1, "percentage": 0.15529385130955609}, "children": []
+        }]
+    }, {
+      "id": "Z223", "text": "shop coffee store mall market fresh shopping", "data": {"name": "Z223", "level": 2, "percentage": 0.25045053057972577}, "children": [{
+          "id": "Z199", "text": "shopping mall", "data": {"name": "Z199", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z198", "text": "shop store market fresh", "data": {"name": "Z198", "level": 1, "percentage": 0.2429036360688576}, "children": []
+        }, {
+          "id": "Z1100", "text": "coffee coffee-coffee", "data": {"name": "Z1100", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z310", "text": "sauce delicious spicy dish pork meat crispy", "data": {"name": "Z310", "level": 3, "percentage": 0.23346197182539002}, "children": [{
+      "id": "Z230", "text": "pork meat beef sour soup crunchy flavor", "data": {"name": "Z230", "level": 2, "percentage": 0.20133185743755758}, "children": [{
+          "id": "Z1133", "text": "crunchy flavor mix cake skin version layer", "data": {"name": "Z1133", "level": 1, "percentage": 0.1084802435243293}, "children": []
+        }, {
+          "id": "Z1131", "text": "pork meat beef", "data": {"name": "Z1131", "level": 1, "percentage": 0.16947511162231113}, "children": []
+        }, {
+          "id": "Z1130", "text": "sour soup cuisine lumpia", "data": {"name": "Z1130", "level": 1, "percentage": 0.12742444067750497}, "children": []
+        }, {
+          "id": "Z1132", "text": "lemon adobo lime sisig grill authentic intestine", "data": {"name": "Z1132", "level": 1, "percentage": 0.11401888505717983}, "children": []
+        }]
+    }, {
+      "id": "Z231", "text": "egg noodle breakfast duck pancit balut", "data": {"name": "Z231", "level": 2, "percentage": 0.21303292125430293}, "children": [{
+          "id": "Z1134", "text": "duck balut", "data": {"name": "Z1134", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1136", "text": "noodle pancit", "data": {"name": "Z1136", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1135", "text": "egg breakfast", "data": {"name": "Z1135", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z228", "text": "delicious dish crispy smell fry tasty sugar", "data": {"name": "Z228", "level": 2, "percentage": 0.26101739954226766}, "children": [{
+          "id": "Z1127", "text": "delicious dish smell fry", "data": {"name": "Z1127", "level": 1, "percentage": 0.264735724927527}, "children": []
+        }, {
+          "id": "Z1126", "text": "crispy tasty sugar piece soft spice sweet-sweet", "data": {"name": "Z1126", "level": 1, "percentage": 0.19159737156146667}, "children": []
+        }]
+    }, {
+      "id": "Z229", "text": "sauce spicy vinegar bite spicy-spicy", "data": {"name": "Z229", "level": 2, "percentage": 0.15876419767777833}, "children": [{
+          "id": "Z1128", "text": "sauce vinegar bite", "data": {"name": "Z1128", "level": 1, "percentage": 0.17980941718973872}, "children": []
+        }, {
+          "id": "Z1129", "text": "spicy-spicy spicy", "data": {"name": "Z1129", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z32", "text": "road walk local car trip main busy", "data": {"name": "Z32", "level": 3, "percentage": 0.30401436328918185}, "children": [{
+      "id": "Z23", "text": "local main tricycle bus driver service bigger", "data": {"name": "Z23", "level": 2, "percentage": 0.19110339636116355}, "children": [{
+          "id": "Z120", "text": "mind deal negative", "data": {"name": "Z120", "level": 1, "percentage": 0.31486082680363126}, "children": []
+        }, {
+          "id": "Z119", "text": "construction tall wood chair pas tower fake", "data": {"name": "Z119", "level": 1, "percentage": 0.20831638056317336}, "children": []
+        }, {
+          "id": "Z117", "text": "sell owner plastic cafe motorcycle neighbor bakery", "data": {"name": "Z117", "level": 1, "percentage": 0.14570715367578876}, "children": []
+        }, {
+          "id": "Z116", "text": "bus direction map jeepney station resort", "data": {"name": "Z116", "level": 1, "percentage": 0.13356741253394067}, "children": []
+        }, {
+          "id": "Z110", "text": "local community", "data": {"name": "Z110", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z114", "text": "service security apartment bag figure condo fit", "data": {"name": "Z114", "level": 1, "percentage": 0.2158348088376072}, "children": []
+        }, {
+          "id": "Z118", "text": "public transportation", "data": {"name": "Z118", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z111", "text": "main unique", "data": {"name": "Z111", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z113", "text": "extra light clean drop dog charge screen", "data": {"name": "Z113", "level": 1, "percentage": 0.19035694873644401}, "children": []
+        }, {
+          "id": "Z112", "text": "tricycle driver option alina", "data": {"name": "Z112", "level": 1, "percentage": 0.13694333510631657}, "children": []
+        }, {
+          "id": "Z115", "text": "size bigger", "data": {"name": "Z115", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z25", "text": "road walk car trip busy massive proper", "data": {"name": "Z25", "level": 2, "percentage": 0.3029610231328105}, "children": [{
+          "id": "Z123", "text": "walk car busy", "data": {"name": "Z123", "level": 1, "percentage": 0.3059942906853741}, "children": []
+        }, {
+          "id": "Z125", "text": "massive proper straight lovely tiny previous vegan", "data": {"name": "Z125", "level": 1, "percentage": 0.22553412335185308}, "children": []
+        }, {
+          "id": "Z124", "text": "trip road", "data": {"name": "Z124", "level": 1, "percentage": 0.0}, "children": []
+        }]
+    }, {
+      "id": "Z26", "text": "mountain bike river motorbike scooter blue sky", "data": {"name": "Z26", "level": 2, "percentage": 0.1666852026424708}, "children": [{
+          "id": "Z127", "text": "scooter lunch village catch ticket drone distance", "data": {"name": "Z127", "level": 1, "percentage": 0.17568170959512308}, "children": []
+        }, {
+          "id": "Z132", "text": "animal forest snake grass specie cow eagle", "data": {"name": "Z132", "level": 1, "percentage": 0.060842781242903404}, "children": []
+        }, {
+          "id": "Z131", "text": "blue sky cloud", "data": {"name": "Z131", "level": 1, "percentage": 0.1522979759013257}, "children": []
+        }, {
+          "id": "Z126", "text": "bike motorbike", "data": {"name": "Z126", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z129", "text": "palm tree sand bamboo", "data": {"name": "Z129", "level": 1, "percentage": 0.1715944015690065}, "children": []
+        }, {
+          "id": "Z128", "text": "mountain nature destination waterfall", "data": {"name": "Z128", "level": 1, "percentage": 0.13811378462560306}, "children": []
+        }, {
+          "id": "Z130", "text": "river bridge jungle cross", "data": {"name": "Z130", "level": 1, "percentage": 0.1789881332058837}, "children": []
+        }]
+    }, {
+      "id": "Z24", "text": "huge quick journey honest leave meet space", "data": {"name": "Z24", "level": 2, "percentage": 0.2534879515163725}, "children": [{
+          "id": "Z122", "text": "huge entire ton touch international", "data": {"name": "Z122", "level": 1, "percentage": 0.25947426864951884}, "children": []
+        }, {
+          "id": "Z121", "text": "quick journey honest leave meet space level", "data": {"name": "Z121", "level": 1, "percentage": 0.2294072738069515}, "children": []
+        }]
+    }]
+}, {
+  "id": "Z313", "text": "garlic onion pepper chili ingredient cook salty", "data": {"name": "Z313", "level": 3, "percentage": 0.1452186319391442}, "children": [{
+      "id": "Z237", "text": "ingredient recipe cooking pinoy-planet baboy", "data": {"name": "Z237", "level": 2, "percentage": 0.07809836866638717}, "children": [{
+          "id": "Z1149", "text": "baboy pinoy-planet", "data": {"name": "Z1149", "level": 1, "percentage": 0.0}, "children": []
+        }, {
+          "id": "Z1148", "text": "ingredient recipe cooking", "data": {"name": "Z1148", "level": 1, "percentage": 0.08321885777814375}, "children": []
+        }]
+    }, {
+      "id": "Z236", "text": "garlic onion pepper chili cook salty salt", "data": {"name": "Z236", "level": 2, "percentage": 0.14923916456806224}, "children": [{
+          "id": "Z1145", "text": "garlic onion cook", "data": {"name": "Z1145", "level": 1, "percentage": 0.09790157348950787}, "children": []
+        }, {
+          "id": "Z1146", "text": "pepper chili salty salt", "data": {"name": "Z1146", "level": 1, "percentage": 0.12780726329524578}, "children": []
+        }, {
+          "id": "Z1147", "text": "oil soy-sauce chop", "data": {"name": "Z1147", "level": 1, "percentage": 0.16126419455567736}, "children": []
+        }]
+    }]
+}
+]
