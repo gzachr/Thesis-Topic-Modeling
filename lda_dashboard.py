@@ -58,13 +58,6 @@ elif tab == "Topics Summary":
     st.subheader(f"Topic {selected_topic}")
     st.write(f"**Top words:** {', '.join(topic_info['top_words'])}")
     
-    # Show subtopics this topic belongs to
-    if "topic_to_subtopics" in data and selected_topic in data["topic_to_subtopics"]:
-        st.write("**Related Subtopics:**")
-        for subtopic in data["topic_to_subtopics"][selected_topic]:
-            category = data["subtopic_categories"].get(subtopic, "Unknown")
-            st.write(f"- {subtopic} ({category})")
-    
     # Tab layout for videos and subtopics
     tab1, tab2 = st.tabs(["🎥 Videos", "🏷️ Subtopics"])
     
@@ -146,43 +139,33 @@ elif tab == "Video Summary":
 
     video_data = data["videos"][selected_video]
 
-    col1, col2 = st.columns([1, 3])
-    with col1:
-        st.subheader("Video Details")
-        st.write(f"**Title:** {video_data['title']}")
-        st.write("**Assigned Topics:**", ", ".join(map(str, video_data["topics"])) if video_data["topics"] else "No topics assigned")
-        
-        # Add subtopics information
-        if "video_to_subtopics" in data and selected_video in data["video_to_subtopics"]:
-            st.write("**Assigned Subtopics:**")
-            for subtopic in data["video_to_subtopics"][selected_video]:
-                category = data["subtopic_categories"].get(subtopic, "Unknown")
-                st.write(f"- {subtopic} ({category})")
-        
-    with col2:
-        st.subheader("Topic Distribution")
-        # Sort topics by probability in descending order
-        sorted_topics = sorted(
+    st.subheader("Video Details")
+    st.write("**Assigned Topics:**", ", ".join(map(str, video_data["topics"])) if video_data["topics"] else "No topics assigned")
+    
+    # Add subtopics information
+    if "video_to_subtopics" in data and selected_video in data["video_to_subtopics"]:
+        st.write("**Assigned Subtopics:**")
+        for subtopic in data["video_to_subtopics"][selected_video]:
+            category = data["subtopic_categories"].get(subtopic, "Unknown")
+            st.write(f"- {subtopic} ({category})")
+
+    sorted_topics = sorted(
             video_data["topic_probabilities"].items(),
             key=lambda x: x[1],
             reverse=True
-        )
-        
-        # Create a bar chart of top topics
-        top_n = 10  # Show top 10 topics
-        top_topics = sorted_topics[:top_n]
-        chart_data = {
-            "Topic": [f"Topic {t[0]}" for t in top_topics],
-            "Probability": [t[1] for t in top_topics]
-        }
-        st.bar_chart(chart_data, x="Topic", y="Probability", use_container_width=True)
+        )    
 
-    prob_tab1, prob_tab2 = st.tabs(["All Topics", "Assigned Topics"])
+    top_n = 10  # Show top 10 topics
+    top_topics = sorted_topics[:top_n]
+
+    prob_tab1, prob_tab2, prob_tab3 = st.tabs(["All Topics", "Assigned Topics", "Assigned Subtopics"])
 
     with prob_tab1:
         st.subheader("All Topics")
         # Show all topics in a table sorted by probability
         all_topics = []
+        top_n = 10  # Show top 10 topics
+        top_topics = sorted_topics[:top_n]
         for topic_id, prob in sorted_topics:
             topic_words = ", ".join(data["topics"].get(topic_id, {}).get("top_words", ["N/A"]))
             all_topics.append({
@@ -239,10 +222,62 @@ elif tab == "Video Summary":
                 hide_index=True,
                 use_container_width=True
             )
+    with prob_tab3:
+        st.subheader("Assigned Subtopics")
+        # Show assigned subtopics with their categories and matched keywords
+        if "video_to_subtopics" in data and selected_video in data["video_to_subtopics"]:
+            assigned_subtopics = []
+            for subtopic in data["video_to_subtopics"][selected_video]:
+                category = data["subtopic_categories"].get(subtopic, "Unknown")
+                matched_keywords = set()
 
-    # Preprocessed text and ngrams sections remain the same
+                # Get topics for this subtopic
+                topic_ids = data["subtopic_to_topics"].get(subtopic, [])
+
+                for topic_id in topic_ids:
+                    topic_str = str(topic_id)
+
+                    # Get subtopic keywords for this topic
+                    subtopic_kw_set = set(data["subtopic_keywords"].get(subtopic, {}).get(topic_str, []))
+
+                    # Get matching words from the video's topic-word mapping
+                    topic_match_info = data["videos"][selected_video].get("topic_words_mapping", {}).get(topic_str, {})
+                    matched_words = set(topic_match_info.get("words", []))
+
+                    # Find intersection
+                    matched_keywords.update(subtopic_kw_set & matched_words)
+
+                assigned_subtopics.append({
+                    "Subtopic": subtopic,
+                    "Category": category,
+                    "Matched Keywords": ", ".join(sorted(matched_keywords)) if matched_keywords else "None"
+                })
+
+            st.dataframe(
+                assigned_subtopics,
+                hide_index=True,
+                use_container_width=True
+            )
+        else:
+            st.write("No subtopics assigned to this video")
+
+
+    st.subheader("Original Text")
+    st.text_area(
+        label="",
+        value=video_data["original_text"],
+        height=300,
+        key="original_text_display"
+    )
+
     st.subheader("Preprocessed Text")
-    st.text(video_data["preprocessed_text"])
+    st.text_area(
+        label="",
+        value=video_data["preprocessed_text"],
+        height=300,
+        key="preprocessed_text_display"
+    )
+
 
     st.subheader("N-grams")
     st.text(video_data["ngrams"])
