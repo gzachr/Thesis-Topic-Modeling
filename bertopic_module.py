@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import streamlit.components.v1 as components
 
 def show_bertopic_section():
     st.header("BERTopic")
@@ -35,6 +36,20 @@ def show_bertopic_section():
                 st.metric("Coherence (u_mass)", f"{data['model_metrics'].get('u_mass', 'N/A'):.2f}")
             with col2:
                 st.metric("Coherence (c_npmi)", f"{data['model_metrics'].get('c_npmi', 'N/A'):.2f}")
+
+            st.markdown("---")
+            st.subheader("📊 Topic Frequency Bar Chart")
+
+            # Path to your previously saved HTML barchart
+            html_file_path = "topic_barchart.html"
+
+            if os.path.exists(html_file_path):
+                with open(html_file_path, "r", encoding="utf-8") as f:
+                    html_data = f.read()
+                # Embed the full html content with height
+                components.html(html_data, height=700, scrolling=True)
+            else:
+                st.error(f"HTML file not found at: {os.path.abspath(html_file_path)}")
 
         elif tab == "Topics Summary":
             st.session_state.bertopic_active_tab = "topics"
