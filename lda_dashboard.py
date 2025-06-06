@@ -15,10 +15,10 @@ if "selected_video" not in st.session_state:
 if "active_tab" not in st.session_state:
     st.session_state.active_tab = "metrics"
 
-# Navigation radio buttons instead of tabs
+# Navigation radio buttons
 tab = st.radio("Navigate", 
-              ["Model Metrics", "Topics Summary", "Subtopics Summary", "Video Summary"],
-              index=["metrics", "topics", "subtopics", "videos"].index(st.session_state.active_tab))
+              ["Model Metrics", "Topics Summary", "Topic Group Summary", "Channel Summary", "Video Summary"],
+              index=["metrics", "topics", "topic_groups", "channel", "videos"].index(st.session_state.active_tab))
 
 # ---------------------------------
 #  Model Metrics
@@ -140,6 +140,12 @@ elif tab == "Video Summary":
     video_data = data["videos"][selected_video]
 
     st.subheader("Video Details")
+    # Extract YouTube video ID (remove .txt)
+    video_id = selected_video.replace(".txt", "")
+    youtube_url = f"https://www.youtube.com/watch?v={video_id}"
+    st.markdown(f"[Watch on YouTube]({youtube_url})", unsafe_allow_html=True)
+
+
     st.write("**Assigned Topics:**", ", ".join(map(str, video_data["topics"])) if video_data["topics"] else "No topics assigned")
     
     # Add subtopics information
@@ -224,42 +230,55 @@ elif tab == "Video Summary":
             )
     with prob_tab3:
         st.subheader("Assigned Subtopics")
-        # Show assigned subtopics with their categories and matched keywords
-        if "video_to_subtopics" in data and selected_video in data["video_to_subtopics"]:
+        
+        # Check if subtopic assignments exist
+        if "subtopic_assignments" in data:
             assigned_subtopics = []
-            for subtopic in data["video_to_subtopics"][selected_video]:
-                category = data["subtopic_categories"].get(subtopic, "Unknown")
-                matched_keywords = set()
-
-                # Get topics for this subtopic
-                topic_ids = data["subtopic_to_topics"].get(subtopic, [])
-
-                for topic_id in topic_ids:
-                    topic_str = str(topic_id)
-
-                    # Get subtopic keywords for this topic
-                    subtopic_kw_set = set(data["subtopic_keywords"].get(subtopic, {}).get(topic_str, []))
-
-                    # Get matching words from the video's topic-word mapping
-                    topic_match_info = data["videos"][selected_video].get("topic_words_mapping", {}).get(topic_str, {})
-                    matched_words = set(topic_match_info.get("words", []))
-
-                    # Find intersection
-                    matched_keywords.update(subtopic_kw_set & matched_words)
-
-                assigned_subtopics.append({
-                    "Subtopic": subtopic,
-                    "Category": category,
-                    "Matched Keywords": ", ".join(sorted(matched_keywords)) if matched_keywords else "None"
-                })
-
-            st.dataframe(
-                assigned_subtopics,
-                hide_index=True,
-                use_container_width=True
-            )
+            
+            # Iterate through all topic groups
+            for group_str, group_data in data["subtopic_assignments"].items():
+                # Skip unassigned videos section
+                if group_str == "unassigned_videos_by_group":
+                    continue
+                    
+                # Check if this group has categories
+                if not isinstance(group_data, dict):
+                    continue
+                    
+                for category, subtopics in group_data.items():
+                    for subtopic, subtopic_data in subtopics.items():
+                        # Check if current video is in this subtopic
+                        video_ids = [v["video_id"] for v in subtopic_data["videos"]]
+                        if selected_video in video_ids:
+                            # Find the video details to get matched words
+                            video_details = next(
+                                (v for v in subtopic_data["videos"] if v["video_id"] == selected_video), 
+                                None
+                            )
+                            
+                            if video_details:
+                                # Collect all matched words across topics
+                                matched_words = set()
+                                for topic_match in video_details.get("topics", []):
+                                    matched_words.update(topic_match.get("matched_words", []))
+                                
+                                assigned_subtopics.append({
+                                    "Group": group_str,
+                                    "Category": category,
+                                    "Subtopic": subtopic,
+                                    "Matched Keywords": ", ".join(sorted(matched_words)) if matched_words else "None"
+                                })
+            
+            if assigned_subtopics:
+                st.dataframe(
+                    assigned_subtopics,
+                    hide_index=True,
+                    use_container_width=True
+                )
+            else:
+                st.write("No subtopics assigned to this video")
         else:
-            st.write("No subtopics assigned to this video")
+            st.write("No subtopic assignments available")
 
 
     st.subheader("Original Text")
@@ -283,79 +302,196 @@ elif tab == "Video Summary":
     st.text(video_data["ngrams"])
 
 # ---------------------------------
-#  Subtopics Summary
+#  Topic Group Summary
 # ---------------------------------
-elif tab == "Subtopics Summary":
-    st.session_state.active_tab = "subtopics"
-    st.header("Subtopics Summary")
+elif tab == "Topic Group Summary":
+    st.session_state.active_tab = "topic_groups"
+    st.header("Topic Group Summary")
     
-    st.subheader("Subtopic and Category Metrics")
-
-    category_stats = data["subtopic_metrics"]["category_stats"]
-    subtopic_stats = data["subtopic_metrics"]["subtopic_stats"]
-
-    # Display per category
-    for category, stats in category_stats.items():
-        with st.expander(f" {category} — {stats['subtopic_count']} subtopics"):
-            st.markdown(f"- **Unique Videos :** {stats['unique_video_count']}")
-            st.markdown(f"- **Total Video Matches:** {stats['video_count']}")
-            st.markdown(f"- **Avg. Videos per Subtopic:** {stats['avg_videos_per_subtopic']:.2f}")
-
-            # Subtopics under this category
-            st.markdown("#### Subtopics:")
-            for subtopic, sub_stats in subtopic_stats.items():
-                if sub_stats["category"] == category:
-                    st.markdown(
-                        f"- **{subtopic}** — {sub_stats['video_count']} videos, "
-                        f"{sub_stats['matched_keywords']} matched keywords"
-                    )
-
-    if "category_to_subtopics" not in data:
-        st.warning("Subtopics data not available")
+    # Get available topic groups
+    if "merged_topic_groups" not in data:
+        st.warning("Topic group data not available")
         st.stop()
     
-    # Category selection
-    selected_category = st.selectbox("Select Category", options=list(data["category_to_subtopics"].keys()))
+    topic_groups = list(data["merged_topic_groups"].keys())
+    selected_group = st.selectbox("Select Topic Group", options=sorted(topic_groups, key=int))
+    group_data = data["merged_topic_groups"][selected_group]
     
-    # Display subtopics in this category
-    subtopics = data["category_to_subtopics"][selected_category]
-    selected_subtopic = st.selectbox("Select Subtopic", options=subtopics)
+   # Display group overview
+    st.subheader(f"Group {selected_group} Overview")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric("Topics in Group", ", ".join(map(str, group_data["topics"])))
+        st.metric("Total Videos", len(group_data["videos"]))
+    with col2:
+        st.empty()  # Leave this empty for visual balance
+
+    # Top keywords section in a container below
+    with st.container():
+        st.markdown("### Top Keywords")
+        top_keywords = group_data["keywords"][:50] 
+
+        keyword_text = ", ".join(kw["word"] for kw in top_keywords)
+        st.markdown(f"<div style='flex-wrap:wrap; line-height:1.6em'>{keyword_text}</div>", unsafe_allow_html=True)
+
     
-    # Subtopic details
-    st.subheader(f"Subtopic: {selected_subtopic}")
-    
-    # Keywords for this subtopic
-    if "subtopic_keywords" in data and selected_subtopic in data["subtopic_keywords"]:
-        st.write("**Keywords by Topic:**")
-        for topic_id, keywords in data["subtopic_keywords"][selected_subtopic].items():
-            st.write(f"- Topic {topic_id}: {', '.join(keywords)}")
-    
-    if "video_to_subtopics" in data:
-        # Get all videos assigned to this subtopic
-        videos_in_subtopic = [
-            vid for vid, subtopics in data["video_to_subtopics"].items() 
-            if selected_subtopic in subtopics
-        ]
-        
-        st.subheader(f"Videos in this Subtopic ({len(videos_in_subtopic)})")
-        
-        if videos_in_subtopic:
-            # Pagination
-            page_size = 10
-            total_pages = (len(videos_in_subtopic) - 1) // page_size + 1
-            page = st.number_input("Page", min_value=1, max_value=total_pages, value=1, step=1, key="subtopic_page")
+    # Display subtopic assignments for this group
+    st.subheader("Subtopic Assignments")
+
+    # Check if subtopic assignments exist for this group
+    if "subtopic_assignments" not in data or selected_group not in data["subtopic_assignments"]:
+        st.warning("No subtopic assignments for this group")
+    else:
+        group_assignments = data["subtopic_assignments"][selected_group]
+
+        # Create tabs for each category
+        category_tabs = st.tabs(list(group_assignments.keys()))
+
+        for idx, category in enumerate(group_assignments.keys()):
+            with category_tabs[idx]:
+                st.subheader(f"{category} Subtopics")
+
+                for subtopic, subtopic_data in group_assignments[category].items():
+                    with st.expander(f"{subtopic} ({subtopic_data['video_count']} videos)"):
+                        # Display subtopic details
+                        st.write(f"**Keywords:** {', '.join(subtopic_data['keywords'])}")
+                        st.write(f"**Video Coverage:** {subtopic_data['video_ratio']:.1%} of group videos")
+
+                        st.write("**Videos in this subtopic:**")
+
+                        videos = subtopic_data["videos"]
+
+                        # Sort videos by total matched keywords (across all topics)
+                        videos_sorted = sorted(
+                            videos,
+                            key=lambda v: sum(len(topic.get("matched_words", [])) for topic in v.get("topics", [])),
+                            reverse=True
+                        )
+
+
+                        videos_per_page = 5
+                        total_pages = (len(videos_sorted) - 1) // videos_per_page + 1
+
+                        page = st.number_input(
+                            label="Page",
+                            min_value=1,
+                            max_value=total_pages,
+                            value=1,
+                            step=1,
+                            key=f"page_selector_{subtopic}"
+                        )
+
+                        start_idx = (page - 1) * videos_per_page
+                        end_idx = start_idx + videos_per_page
+                        paged_videos = videos_sorted[start_idx:end_idx]
+
+                        for video in paged_videos:
+                            if st.button(f"📽️ {video['title']}", key=f"subtopic_{subtopic}_{video['video_id']}"):
+                                st.session_state.selected_video = video["video_id"]
+                                st.session_state.active_tab = "videos"
+                                st.rerun()
+
+
+    # Show unassigned videos if available
+    if "unassigned_videos_by_group" in data and selected_group in data["unassigned_videos_by_group"]:
+        unassigned = data["unassigned_videos_by_group"][selected_group]
+        with st.expander(f"Unassigned Videos ({unassigned['count']})"):
+            st.write(f"**Ratio:** {unassigned['ratio']:.1%} of group videos")
             
-            start_idx = (page - 1) * page_size
-            end_idx = start_idx + page_size
-            paged_videos = videos_in_subtopic[start_idx:end_idx]
-            
-            for vid in paged_videos:
-                title = data["videos"][vid]["title"]
-                if st.button(f"📽️ {title}", key=f"sub_vid_button_{vid}"):
-                    st.session_state.selected_video = vid
+            # Show sample of unassigned videos
+            for video in unassigned["videos"]:
+                if st.button(f"📽️ {video['title']}", key=f"unassigned_{video['video_id']}"):
+                    st.session_state.selected_video = video["video_id"]
                     st.session_state.active_tab = "videos"
                     st.rerun()
-        else:
-            st.write("No videos assigned to this subtopic")
-    else:
-        st.write("No video-to-subtopic mapping available")
+
+elif tab == "Channel Summary":
+    st.session_state.active_tab = "channel"
+    st.header("Channel Summary Across Topic Groups")
+
+    if "channel_summary" not in data or not data["channel_summary"]:
+        st.warning("No channel summary data found.")
+        st.stop()
+
+    channel_summary = data["channel_summary"]
+    all_video_ids = list(data["videos"].keys())
+
+    # Create a dict for quick title lookup
+    video_titles = {vid: data["videos"][vid]["title"] for vid in all_video_ids}
+
+    sorted_channels = sorted(
+        channel_summary.items(),
+        key=lambda x: len(x[1]["video_ids"]),
+        reverse=True
+    )
+
+    ## Pagination for channels ##
+    channels_per_page = 10
+    total_channel_pages = (len(sorted_channels) - 1) // channels_per_page + 1
+    current_channel_page = st.session_state.get("channel_page", 0)
+
+    st.markdown("### 📺 Channels")
+    col1, col2 = st.columns([1, 6])
+    with col1:
+        if st.button("⬅️ Prev", disabled=current_channel_page == 0):
+            st.session_state.channel_page = max(0, current_channel_page - 1)
+            st.rerun()
+    with col2:
+        if st.button("➡️ Next", disabled=current_channel_page >= total_channel_pages - 1):
+            st.session_state.channel_page = min(total_channel_pages - 1, current_channel_page + 1)
+            st.rerun()
+
+    start_idx = current_channel_page * channels_per_page
+    end_idx = start_idx + channels_per_page
+    paginated_channels = sorted_channels[start_idx:end_idx]
+
+    for channel_id, info in paginated_channels:
+        channel_title = info["channel_title"]
+        video_ids = info["video_ids"]
+        group_map = info["group_category_map"]
+
+        with st.expander(f"📺 {channel_title} ({len(video_ids)} videos)"):
+            channel_url = f"https://www.youtube.com/channel/{channel_id}"
+            st.markdown(f"[🌐 Visit Channel]({channel_url})", unsafe_allow_html=True)
+            group_tabs = st.tabs([f"🔹 Topic Group {group_index}" for group_index in sorted(group_map, key=int)])
+
+            for tab, group_index in zip(group_tabs, sorted(group_map, key=int)):
+                with tab:
+                    for category in sorted(group_map[group_index]):
+                        st.markdown(f"**📂 {category}**")
+                        for subtopic in sorted(group_map[group_index][category]):
+                            vids = group_map[group_index][category][subtopic]
+                            st.markdown(f"- **{subtopic}** ({len(vids)} video{'s' if len(vids) > 1 else ''})")
+
+                            # Pagination state
+                            video_page_key = f"video_page_{channel_id}_{group_index}_{category}_{subtopic}"
+                            if video_page_key not in st.session_state:
+                                st.session_state[video_page_key] = 0
+
+                            videos_per_page = 10
+                            total_video_pages = (len(vids) - 1) // videos_per_page + 1
+                            current_video_page = st.session_state[video_page_key]
+                            video_start = current_video_page * videos_per_page
+                            video_end = video_start + videos_per_page
+
+                            paginated_vids = vids[video_start:video_end]
+
+                            for i, vid in enumerate(paginated_vids):
+                                title = data["videos"].get(vid, {}).get("title", "Unknown Title")
+                                unique_key = f"channel_summary_vid_{channel_id}_{group_index}_{category}_{subtopic}_{i}_{vid}"
+                                if st.button(f"▶ {title}", key=unique_key):
+                                    st.session_state.selected_video = vid
+                                    st.session_state.active_tab = "videos"
+                                    st.rerun()
+
+                            # Pagination controls
+                            vcol1, vcol2 = st.columns([1, 1])
+                            with vcol1:
+                                if st.button("⬅️ Prev Videos", key=f"{video_page_key}_prev", disabled=current_video_page == 0):
+                                    st.session_state[video_page_key] = max(0, current_video_page - 1)
+                                    st.rerun()
+                            with vcol2:
+                                if st.button("➡️ Next Videos", key=f"{video_page_key}_next", disabled=current_video_page >= total_video_pages - 1):
+                                    st.session_state[video_page_key] = min(total_video_pages - 1, current_video_page + 1)
+                                    st.rerun()
