@@ -13,37 +13,91 @@ data = load_json("lda_results.json")
 if "selected_video" not in st.session_state:
     st.session_state.selected_video = list(data["videos"].keys())[0]
 if "active_tab" not in st.session_state:
-    st.session_state.active_tab = "metrics"
+    st.session_state.active_tab = "Summary"
 
 # Navigation radio buttons
 tab = st.radio("Navigate", 
-              ["Model Metrics", "Topics Summary", "Topic Group Summary", "Channel Summary", "Video Summary"],
-              index=["metrics", "topics", "topic_groups", "channel", "videos"].index(st.session_state.active_tab))
+              ["Model Summary", "Topics Summary", "Topic Group Summary", "Channel Summary", "Video Summary"],
+              index=["Summary", "topics", "topic_groups", "channel", "videos"].index(st.session_state.active_tab))
 
 # ---------------------------------
-#  Model Metrics
+#  Model Summary
 # ---------------------------------
-if tab == "Model Metrics":
-    st.session_state.active_tab = "metrics"
-    st.header("Model Metrics")
+if tab == "Model Summary":
+    st.session_state.active_tab = "Summary"
+    st.header("Model Summary")
 
     # Display model coherence and diversity metrics
     col1, col2 = st.columns(2)
     with col1:
         st.metric("Coherence (c_v)", f"{data['model_metrics']['coherence_c_v']:.3f}")
         st.metric("Coherence (u_mass)", f"{data['model_metrics']['coherence_u_mass']:.3f}")
+        st.metric("Jaccard Similarity", f"{data['model_metrics']['jaccard_similarity']:.3f}")
     with col2:
         st.metric("Coherence (npmi)", f"{data['model_metrics']['coherence_npmi']:.3f}")
         st.metric("Topic Diversity", f"{data['model_metrics']['topic_diversity']:.3f}")
 
     # -------------------------------
-    #  All Topics and Top Words
+    #  All Topics and Top Words (Paginated)
     # -------------------------------
-    st.subheader(" All Topics and Top Words")
+    st.subheader("All Topics and Top Words")
 
-    for topic_id, topic_info in sorted(data["topics"].items(), key=lambda x: int(x[0])):
+    all_topics = sorted(data["topics"].items(), key=lambda x: int(x[0]))
+    topics_per_page = 10
+    total_topic_pages = (len(all_topics) - 1) // topics_per_page + 1
+
+    topic_page = st.number_input(
+        label="Topic Page",
+        min_value=1,
+        max_value=total_topic_pages,
+        value=1,
+        step=1,
+        key="topic_page_selector"
+    )
+
+    start = (topic_page - 1) * topics_per_page
+    end = start + topics_per_page
+    paged_topics = all_topics[start:end]
+
+    for topic_id, topic_info in paged_topics:
         with st.expander(f"Topic {topic_id}"):
             st.markdown(", ".join(topic_info["top_words"]))
+
+    # -------------------------------
+    #  Videos Without Assigned Topics
+    # -------------------------------
+    st.subheader("Videos Without Assigned Topics")
+
+    if "videos_without_topics" in data and data["videos_without_topics"]:
+        unassigned_videos = data["videos_without_topics"]
+        st.write(f"{len(unassigned_videos)} video(s) have no assigned topics.")
+
+        videos_per_page = 10
+        total_pages = (len(unassigned_videos) - 1) // videos_per_page + 1
+
+        page = st.number_input(
+            label="Unassigned Videos",
+            min_value=1,
+            max_value=total_pages,
+            value=1,
+            step=1,
+            key="unassigned_video_page"
+        )
+
+        start_idx = (page - 1) * videos_per_page
+        end_idx = start_idx + videos_per_page
+        paged_video_ids = unassigned_videos[start_idx:end_idx]
+
+    
+        for video_id in paged_video_ids:
+            title = data["videos"].get(video_id, {}).get("title", "Unknown Title")
+            if st.button(f"📽️ {title}", key=f"no_topic_{video_id}"):
+                st.session_state.selected_video = video_id
+                st.session_state.active_tab = "videos"
+                st.rerun()
+    else:
+        st.success("All videos have at least one topic assignment.")
+
 
 # ---------------------------------
 #  Topics Summary
@@ -140,10 +194,27 @@ elif tab == "Video Summary":
     video_data = data["videos"][selected_video]
 
     st.subheader("Video Details")
-    # Extract YouTube video ID (remove .txt)
     video_id = selected_video.replace(".txt", "")
     youtube_url = f"https://www.youtube.com/watch?v={video_id}"
+
+    # Reverse lookup: find channel containing this video
+    channel_id = None
+    channel_title = "Unknown Channel"
+
+    for ch_id, ch_info in data.get("channel_summary", {}).items():
+        if selected_video in ch_info.get("video_ids", []):
+            channel_id = ch_id
+            channel_title = ch_info.get("channel_title", "Unknown Channel")
+            break
+
+    channel_url = f"https://www.youtube.com/channel/{channel_id}" if channel_id else None
+
+    # Display video and channel info
     st.markdown(f"[Watch on YouTube]({youtube_url})", unsafe_allow_html=True)
+    if channel_url:
+        st.markdown(f"**Channel:** [{channel_title}]({channel_url})", unsafe_allow_html=True)
+    else:
+        st.markdown(f"**Channel:** {channel_title}")
 
 
     st.write("**Assigned Topics:**", ", ".join(map(str, video_data["topics"])) if video_data["topics"] else "No topics assigned")
@@ -283,7 +354,7 @@ elif tab == "Video Summary":
 
     st.subheader("Original Text")
     st.text_area(
-        label="",
+        label="Original Text",
         value=video_data["original_text"],
         height=300,
         key="original_text_display"
@@ -291,7 +362,7 @@ elif tab == "Video Summary":
 
     st.subheader("Preprocessed Text")
     st.text_area(
-        label="",
+        label="Preprocessed Text",
         value=video_data["preprocessed_text"],
         height=300,
         key="preprocessed_text_display"
@@ -325,7 +396,7 @@ elif tab == "Topic Group Summary":
         st.metric("Topics in Group", ", ".join(map(str, group_data["topics"])))
         st.metric("Total Videos", len(group_data["videos"]))
     with col2:
-        st.empty()  # Leave this empty for visual balance
+        st.empty() 
 
     # Top keywords section in a container below
     with st.container():
@@ -392,14 +463,17 @@ elif tab == "Topic Group Summary":
                                 st.session_state.active_tab = "videos"
                                 st.rerun()
 
-
+    st.subheader("Unassigned Videos")
     # Show unassigned videos if available
-    if "unassigned_videos_by_group" in data and selected_group in data["unassigned_videos_by_group"]:
-        unassigned = data["unassigned_videos_by_group"][selected_group]
+    if (
+        "subtopic_assignments" in data
+        and "unassigned_videos_by_group" in data["subtopic_assignments"]
+        and str(selected_group) in data["subtopic_assignments"]["unassigned_videos_by_group"]
+    ):
+        unassigned = data["subtopic_assignments"]["unassigned_videos_by_group"][str(selected_group)]
+
+
         with st.expander(f"Unassigned Videos ({unassigned['count']})"):
-            st.write(f"**Ratio:** {unassigned['ratio']:.1%} of group videos")
-            
-            # Show sample of unassigned videos
             for video in unassigned["videos"]:
                 if st.button(f"📽️ {video['title']}", key=f"unassigned_{video['video_id']}"):
                     st.session_state.selected_video = video["video_id"]
@@ -426,12 +500,11 @@ elif tab == "Channel Summary":
         reverse=True
     )
 
-    ## Pagination for channels ##
-    channels_per_page = 10
+    channels_per_page = 5
     total_channel_pages = (len(sorted_channels) - 1) // channels_per_page + 1
     current_channel_page = st.session_state.get("channel_page", 0)
 
-    st.markdown("### 📺 Channels")
+    st.markdown("### Channels")
     col1, col2 = st.columns([1, 6])
     with col1:
         if st.button("⬅️ Prev", disabled=current_channel_page == 0):
@@ -451,47 +524,54 @@ elif tab == "Channel Summary":
         video_ids = info["video_ids"]
         group_map = info["group_category_map"]
 
-        with st.expander(f"📺 {channel_title} ({len(video_ids)} videos)"):
+        with st.expander(f"{channel_title} ({len(video_ids)} videos)"):
             channel_url = f"https://www.youtube.com/channel/{channel_id}"
-            st.markdown(f"[🌐 Visit Channel]({channel_url})", unsafe_allow_html=True)
+            st.markdown(f"[Visit Channel]({channel_url})", unsafe_allow_html=True)
             group_tabs = st.tabs([f"🔹 Topic Group {group_index}" for group_index in sorted(group_map, key=int)])
 
             for tab, group_index in zip(group_tabs, sorted(group_map, key=int)):
                 with tab:
                     for category in sorted(group_map[group_index]):
-                        st.markdown(f"**📂 {category}**")
+                        st.markdown(f"**{category}**")
                         for subtopic in sorted(group_map[group_index][category]):
                             vids = group_map[group_index][category][subtopic]
-                            st.markdown(f"- **{subtopic}** ({len(vids)} video{'s' if len(vids) > 1 else ''})")
+                            subtopic_key = f"show_subtopic_{channel_id}_{group_index}_{category}_{subtopic}"
 
-                            # Pagination state
-                            video_page_key = f"video_page_{channel_id}_{group_index}_{category}_{subtopic}"
-                            if video_page_key not in st.session_state:
-                                st.session_state[video_page_key] = 0
+                            # Toggle visibility on click
+                            if st.button(f" {subtopic} ({len(vids)} video{'s' if len(vids) > 1 else ''})", key=subtopic_key + "_btn"):
+                                st.session_state[subtopic_key] = not st.session_state.get(subtopic_key, False)
 
-                            videos_per_page = 10
-                            total_video_pages = (len(vids) - 1) // videos_per_page + 1
-                            current_video_page = st.session_state[video_page_key]
-                            video_start = current_video_page * videos_per_page
-                            video_end = video_start + videos_per_page
+                            # Show videos if toggled open
+                            if st.session_state.get(subtopic_key, False):
+                                # Pagination state
+                                video_page_key = f"video_page_{channel_id}_{group_index}_{category}_{subtopic}"
+                                if video_page_key not in st.session_state:
+                                    st.session_state[video_page_key] = 0
 
-                            paginated_vids = vids[video_start:video_end]
+                                videos_per_page = 10
+                                total_video_pages = (len(vids) - 1) // videos_per_page + 1
+                                current_video_page = st.session_state[video_page_key]
+                                video_start = current_video_page * videos_per_page
+                                video_end = video_start + videos_per_page
 
-                            for i, vid in enumerate(paginated_vids):
-                                title = data["videos"].get(vid, {}).get("title", "Unknown Title")
-                                unique_key = f"channel_summary_vid_{channel_id}_{group_index}_{category}_{subtopic}_{i}_{vid}"
-                                if st.button(f"▶ {title}", key=unique_key):
-                                    st.session_state.selected_video = vid
-                                    st.session_state.active_tab = "videos"
-                                    st.rerun()
+                                paginated_vids = vids[video_start:video_end]
 
-                            # Pagination controls
-                            vcol1, vcol2 = st.columns([1, 1])
-                            with vcol1:
-                                if st.button("⬅️ Prev Videos", key=f"{video_page_key}_prev", disabled=current_video_page == 0):
-                                    st.session_state[video_page_key] = max(0, current_video_page - 1)
-                                    st.rerun()
-                            with vcol2:
-                                if st.button("➡️ Next Videos", key=f"{video_page_key}_next", disabled=current_video_page >= total_video_pages - 1):
-                                    st.session_state[video_page_key] = min(total_video_pages - 1, current_video_page + 1)
-                                    st.rerun()
+                                for i, vid in enumerate(paginated_vids):
+                                    title = data["videos"].get(vid, {}).get("title", "Unknown Title")
+                                    unique_key = f"channel_summary_vid_{channel_id}_{group_index}_{category}_{subtopic}_{i}_{vid}"
+                                    if st.button(f"{title}", key=unique_key):
+                                        st.session_state.selected_video = vid
+                                        st.session_state.active_tab = "videos"
+                                        st.rerun()
+
+                                vcol1, vcol2 = st.columns([1, 1])
+                                with vcol1:
+                                    if st.button("⬅️ Prev Videos", key=f"{video_page_key}_prev", disabled=current_video_page == 0):
+                                        st.session_state[video_page_key] = max(0, current_video_page - 1)
+                                        st.rerun()
+                                with vcol2:
+                                    if st.button("➡️ Next Videos", key=f"{video_page_key}_next", disabled=current_video_page >= total_video_pages - 1):
+                                        st.session_state[video_page_key] = min(total_video_pages - 1, current_video_page + 1)
+                                        st.rerun()
+
+
