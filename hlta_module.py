@@ -15,7 +15,7 @@ def show_hlta_section():
 
     @st.cache_data
     def process_data(topics_df, videos_df):
-        topics_df["Id"] = topics_df["Id"].astype(str)
+        topics_df["Id"] = topics_df["Id"].astype(str).str.strip()
         id_to_category = topics_df.set_index("Id")[["General Category", "Specific Category"]].to_dict("index")
 
         def extract_topics(row):
@@ -49,11 +49,17 @@ def show_hlta_section():
 
             for level_idx, level in enumerate(row['Topics'], 1):
                 for topic, topic_id, score in level:
-                    # Mapping topic to videos
-                    topic_to_videos.setdefault(topic, []).append((video_title, link, score, topic_id))
-
-                    # Mapping video to topics
                     cat_info = id_to_category.get(topic_id, {"General Category": "Unknown", "Specific Category": "Unknown"})
+
+                    if topic not in topic_to_videos:
+                        topic_to_videos[topic] = {
+                            'videos': [],
+                            'general_category': cat_info["General Category"],
+                            'specific_category': cat_info["Specific Category"]
+                        }
+
+                    topic_to_videos[topic]['videos'].append((video_title, link, score, topic_id))
+
                     video_topics.append({
                         'topic': topic,
                         'topic_id': topic_id,
@@ -110,17 +116,16 @@ def show_hlta_section():
             st.session_state.hlta_selected_topic = selected_topic
 
             st.markdown(f"### {selected_topic}")
-            topic_match = selected_topic.split(',')[0].strip()
-            topic_details = topics_df[topics_df['Texts'].str.contains(topic_match, na=False)]
 
-            if not topic_details.empty:
-                col1, col2 = st.columns(2)
-                with col1:
-                    st.markdown(f"**General Category:** {topic_details.iloc[0]['General Category']}")
-                with col2:
-                    st.markdown(f"**Specific Category:** {topic_details.iloc[0]['Specific Category']}")
+            topic_info = topic_to_videos[selected_topic]
 
-            videos = topic_to_videos[selected_topic]
+            col1, col2 = st.columns(2)
+            with col1:
+                st.markdown(f"**General Category:** {topic_info['general_category']}")
+            with col2:
+                st.markdown(f"**Specific Category:** {topic_info['specific_category']}")
+
+            videos = topic_info['videos']
             st.markdown(f"**Videos containing this topic ({len(videos)} total):**")
 
             videos_per_page = 10
