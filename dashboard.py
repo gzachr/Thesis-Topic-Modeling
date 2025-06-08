@@ -7,6 +7,7 @@ st.set_page_config(page_title="Pinoybaiting Dashboard", layout="wide")
 
 import bertopic_module  
 import lda_module
+import hlta_module
 
 
 # Sidebar navigation
@@ -40,4 +41,4 @@ elif selection == "BERTopic":
 elif selection == "HLTM":
     st.header("HLTM (Hierarchical Latent Tree Model)")
     st.write("This section is for visualizing HLTM results.")
-    # Add
+    hlta_module.show_hlta_section()
