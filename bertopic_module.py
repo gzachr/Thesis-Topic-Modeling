@@ -9,27 +9,27 @@ import re
 
 @st.cache_data
 def load_topic_segment_df():
-    return pd.read_csv("[T3 UPDATED] BERTopic-topics per segment w channels.csv")
+    return pd.read_csv("T3 BERTopic files/[T3 UPDATED] BERTopic-topics per segment w channels.csv")
 
 @st.cache_data
 def load_topic_category_df():
-    return pd.read_csv("BERTopic w categories.csv")
+    return pd.read_csv("T3 BERTopic files/BERTopic w categories.csv")
 
 @st.cache_data
 def load_topics_per_video_df():
-    return pd.read_csv("topics_per_video_with_channels.csv")
+    return pd.read_csv("T3 BERTopic files/topics_per_video_with_channels.csv")
 
 
 @st.cache_data
-def load_coherence_scores(csv_path="BERTopic-coherence_scores.csv"):
+def load_coherence_scores(csv_path="T3 BERTopic files/BERTopic-coherence_scores.csv"):
     return pd.read_csv(csv_path)
 
 @st.cache_data
-def load_topics_with_labels(topics_path="[T3 UPDATED] BERTopic-topics w labels.csv"):
+def load_topics_with_labels(topics_path="T3 BERTopic files/[T3 UPDATED] BERTopic-topics w labels.csv"):
     return pd.read_csv(topics_path)
 
 @st.cache_data
-def load_html_barchart(html_file_path="topic_barchart.html"):
+def load_html_barchart(html_file_path="T3 BERTopic files/topic_barchart.html"):
     try:
         with open(html_file_path, "r", encoding="utf-8") as f:
             return f.read()
@@ -38,7 +38,7 @@ def load_html_barchart(html_file_path="topic_barchart.html"):
     
 @st.cache_data
 def load_video_stats_df():
-    return pd.read_csv("[T3 UPDATED] BERTopic - videos per topic statistics.csv")
+    return pd.read_csv("T3 BERTopic files/[T3 UPDATED] BERTopic - videos per topic statistics.csv")
 
 
 VIDEOS_PER_PAGE = 10
