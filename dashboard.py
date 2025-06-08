@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 import os
 
+# Set page configuration
+st.set_page_config(page_title="Pinoybaiting Dashboard", layout="wide")
+
 import bertopic_module  
 import lda_module
 
-# Set page configuration
-st.set_page_config(page_title="Pinoybaiting Dashboard", layout="wide")
 
 # Sidebar navigation
 st.sidebar.title("Pinoybaiting Dashboard")

@@ -7,34 +7,55 @@ import html
 from urllib.parse import quote
 import re
 
+@st.cache_data
+def load_topic_segment_df():
+    return pd.read_csv("[T3 UPDATED] BERTopic-topics per segment w channels.csv")
+
+@st.cache_data
+def load_topic_category_df():
+    return pd.read_csv("BERTopic w categories.csv")
+
+@st.cache_data
+def load_topics_per_video_df():
+    return pd.read_csv("topics_per_video_with_channels.csv")
+
+
+@st.cache_data
+def load_coherence_scores(csv_path="BERTopic-coherence_scores.csv"):
+    return pd.read_csv(csv_path)
+
+@st.cache_data
+def load_topics_with_labels(topics_path="[T3 UPDATED] BERTopic-topics w labels.csv"):
+    return pd.read_csv(topics_path)
+
+@st.cache_data
+def load_html_barchart(html_file_path="topic_barchart.html"):
+    try:
+        with open(html_file_path, "r", encoding="utf-8") as f:
+            return f.read()
+    except FileNotFoundError:
+        return None
+    
+@st.cache_data
+def load_video_stats_df():
+    return pd.read_csv("[T3 UPDATED] BERTopic - videos per topic statistics.csv")
+
+
 VIDEOS_PER_PAGE = 10
 VIDEOS_PER_PAGE2 = 10  
 
-# Load data
-topic_segment_df = pd.read_csv("[T3 UPDATED] BERTopic-topics per segment w channels.csv")
-topic_category_df = pd.read_csv("BERTopic w categories.csv")
-
 def show_bertopic_section():
     st.header("BERTopic")
-
-    # File paths
-    csv_path = "BERTopic-coherence_scores.csv"
-    topics_path = "[T3 UPDATED] BERTopic-topics w labels.csv"
-    html_file_path = "topic_barchart.html"
-
     try:
-        # Load coherence scores
-        scores_df = pd.read_csv(csv_path)
+        
+        scores_df = load_coherence_scores()
         scores_df["Score"] = scores_df["Score"].round(3)
         data = {
             "model_metrics": {
                 metric: float(score) for metric, score in zip(scores_df["Metric"], scores_df["Score"])
             }
         }
-
-        # Load topics
-        topics_df = pd.read_csv(topics_path)
-        # Fill missing values with empty string
+        topics_df = load_topics_with_labels()
         topics_df = topics_df.fillna("")
 
         if "bertopic_active_tab" not in st.session_state:
@@ -47,10 +68,11 @@ def show_bertopic_section():
         )
         st.markdown("---")
 
+        ### Model Summary section
+
         if tab == "Model Summary":
             st.session_state.bertopic_active_tab = "metrics"
 
-            # Display all topics with default & custom label + expandable representation
             st.subheader("Topics Overview")
             for _, row in topics_df.iterrows():
                 topic_num = int(row["Topic"])
@@ -75,55 +97,46 @@ def show_bertopic_section():
 
             st.markdown("---")
             st.subheader("📊 Topic Frequency Bar Chart")
-            if os.path.exists(html_file_path):
-                with open(html_file_path, "r", encoding="utf-8") as f:
-                    html_data = f.read()
+
+            html_data = load_html_barchart()
+
+            if html_data:
                 components.html(html_data, height=700, scrolling=True)
             else:
-                st.error(f"HTML file not found at: {os.path.abspath(html_file_path)}")
+                st.error(f"HTML file not found")
+
+        ### Topic Summary section
 
         elif tab == "Topics Summary":
             st.session_state.bertopic_active_tab = "topics"
 
             st.markdown("## 📊 Video Distribution per Topic")
 
-            topic_segment_df = pd.read_csv("[T3 UPDATED] BERTopic-topics per segment w channels.csv")
-            topic_category_df = pd.read_csv("BERTopic w categories.csv")
-
-            video_stats_path = "[T3 UPDATED] BERTopic - videos per topic statistics.csv"
+            topic_segment_df = load_topic_segment_df()
+            topic_category_df = load_topic_category_df()
 
             try:
-                video_stats_df = pd.read_csv(video_stats_path)
+                video_stats_df = load_video_stats_df()
                 video_stats_df = video_stats_df.sort_values("Video Count", ascending=False)
 
-                # Drop the "Label" column
                 video_stats_df = video_stats_df.drop(columns=["Label"])
 
-                # Optional: Format large numbers (e.g., 2,594)
                 video_stats_df["Video Count"] = video_stats_df["Video Count"].apply(lambda x: f"{x:,}")
 
-                st.dataframe(video_stats_df, use_container_width=True)
+                st.dataframe(video_stats_df, use_container_width=True, hide_index=True)
 
             except FileNotFoundError:
-                st.error(f"Could not find video statistics file at: {video_stats_path}")
-
-
-            
-
+                st.error(f"Could not find video statistics file at: {load_video_stats_df()}")
 
             st.header("Topics Summary")
             st.subheader("Categories")
 
-            # Prepare category to topic mapping
             category_to_topics = topic_category_df.groupby("Category")["Topic #"].unique().to_dict()
             all_categories = sorted(category_to_topics.keys())
 
             categories = ["Food", "Culture", "Lifestyle", "Travel", "Politics", "Entertainment", "Others"]
 
-            # Category Tabs
             tabs = st.tabs(all_categories)
-
-
             for tab, category in zip(tabs, all_categories):
                 with tab:
                     topics_in_cat = category_to_topics[category]
@@ -152,7 +165,6 @@ def show_bertopic_section():
                     st.markdown(f"### Topic {selected_topic_id}: {subtopics} ({label})")
                     st.markdown(f"**Total Videos:** {total_videos} | **Total Segments:** {total_segments}")
 
-                    # Summarize channels for the selected topic
                     channel_summary = topic_data.groupby(["Channel Title", "Channel Id"]).agg(
                         Video_Count=("Video Id", pd.Series.nunique),
                         Segment_Count=("Segment", "count")
@@ -160,29 +172,21 @@ def show_bertopic_section():
 
                     st.markdown("#### Top Channels Contributing to This Topic:")
 
-                    # Format channel name as markdown link
                     channel_summary["Channel"] = channel_summary.apply(
                         lambda row: f"[{html.escape(row['Channel Title'])}](https://www.youtube.com/channel/{row['Channel Id']})", axis=1
                     )
 
-                    # Select columns for display
                     channel_summary_display = channel_summary[["Channel", "Video_Count", "Segment_Count"]]
                     channel_summary_display.columns = ["Channel", "Video Count", "Segment Count"]
 
-                    # Sort by Video Count and show top 10
                     top_n = 10
                     top_channels = channel_summary_display.sort_values("Video Count", ascending=False).head(top_n)
-
-                    # Display top 10 summary
                     st.markdown("#### Top 10 Channels for this Topic")
                     st.markdown(top_channels.to_markdown(index=False), unsafe_allow_html=True)
 
-                    # Full table inside an expander
                     with st.expander("Show Full Channel Summary Table"):
                         full_sorted = channel_summary_display.sort_values("Video Count", ascending=False)
                         st.markdown(full_sorted.to_markdown(index=False), unsafe_allow_html=True)
-
-
 
 
                     total_pages = (len(grouped_videos) - 1) // VIDEOS_PER_PAGE + 1
@@ -213,20 +217,17 @@ def show_bertopic_section():
                             for segment in segments:
                                 st.markdown(f"- {segment}")
 
-
-
-
+        ### Video Summary section
 
         elif tab == "Video Summary":
             st.session_state.bertopic_active_tab = "videos"
             st.header("🎬 Video Summary")
 
             try:
-                topics_per_video_df = pd.read_csv("topics_per_video_with_channels.csv")
-                segments_df = pd.read_csv("[T3 UPDATED] BERTopic-topics per segment w channels.csv")
-                topic_category_df = pd.read_csv("BERTopic w categories.csv")
+                topics_per_video_df = load_topics_per_video_df()
+                segments_df = load_topic_segment_df()
+                topic_category_df = load_topic_category_df()
 
-                # Create display names for dropdown
                 topics_per_video_df["Display Title"] = topics_per_video_df["Video Title"] + " (" + topics_per_video_df["Video Id"] + ")"
 
                 selected_video = st.selectbox(
@@ -235,7 +236,6 @@ def show_bertopic_section():
                     index=0
                 )
 
-                # Get the selected video row
                 selected_video_id = selected_video.split("(")[-1].strip(")")
                 video_row = topics_per_video_df[topics_per_video_df["Video Id"] == selected_video_id].iloc[0]
 
@@ -246,7 +246,7 @@ def show_bertopic_section():
                 link = video_row["Link"]
                 topic_str = video_row["BERTopic Topics"]
 
-                # Parse topics
+                # Parse the topics and percentage 
                 topic_lines = topic_str.strip().split("\n")
                 topic_data = []
                 for line in topic_lines:
@@ -266,7 +266,7 @@ def show_bertopic_section():
                 topic_df = pd.DataFrame(topic_data)
                 topic_df = topic_df.sort_values("Percentage", ascending=False)
 
-                # Segments grouped by topic
+                # Segments grouped per topic
                 video_segments = segments_df[segments_df["Video Id"] == video_id]
                 segments_grouped = video_segments.groupby("Topic")["Segment"].apply(list).reset_index()
                 segments_grouped = segments_grouped.merge(
@@ -274,7 +274,6 @@ def show_bertopic_section():
                     left_on="Topic", right_on="Topic #", how="left"
                 )
 
-                # Display section
                 st.markdown(f"### 🎥 {video_title} ({video_id})")
                 st.markdown(f"[▶️ Watch on YouTube](https://www.youtube.com/watch?v={video_id})")
                 st.markdown(f"[📺 {channel_title}](https://www.youtube.com/channel/{channel_id})")
@@ -301,16 +300,15 @@ def show_bertopic_section():
             except FileNotFoundError as e:
                 st.error(f"Missing file: {e.filename}")
 
-
+        ### Channel Summary section
 
         elif tab == "Channel Summary":
             st.session_state.bertopic_active_tab = "channels"
             st.header("Channel Summary")
 
-            # Load data
-            topics_per_video_df = pd.read_csv("topics_per_video_with_channels.csv")
-            segments_df = pd.read_csv("[T3 UPDATED] BERTopic-topics per segment w channels.csv")
-            topic_category_df = pd.read_csv("BERTopic w categories.csv")
+            topics_per_video_df = load_topics_per_video_df()
+            segments_df = load_topic_segment_df()
+            topic_category_df = load_topic_category_df()
 
             # Calculate overall channel stats
             total_channels = topics_per_video_df['Channel Title'].nunique()
@@ -321,7 +319,6 @@ def show_bertopic_section():
             st.markdown("### Top Channels by Video Count")
             st.dataframe(top_channels[['Channel Title', 'Video Count']].reset_index(drop=True), use_container_width=True)
 
-            # Dropdown to select a channel
             channel_options = channel_video_counts.sort_values(by="Channel Title")["Channel Title"].tolist()
             selected_channel = st.selectbox("Select a channel", options=channel_options)
 
@@ -336,11 +333,9 @@ def show_bertopic_section():
                 st.markdown(f"[🔗 Visit Channel]({channel_link})")
                 st.markdown(f"**🎬 Total Videos:** {len(channel_videos_df)}")
                 st.markdown(f"**Topics:** {channel_segments_df['Topic'].nunique()} | **Total Segments:** {len(channel_segments_df)}")
-
-                # Map topic numbers to labels and categories
+                
                 topic_category_map = topic_category_df.drop_duplicates(subset="Topic #").set_index("Topic #").to_dict("index")
 
-                # Group segments by category -> topic -> video
                 category_group = {}
                 for _, row in channel_segments_df.iterrows():
                     topic_id = row['Topic']
@@ -364,7 +359,6 @@ def show_bertopic_section():
                         }
                     category_group[cat][topic_key][video_title]["segments"].append(row['Segment'])
 
-                # Display in collapsible sections per category
                 for cat, topics in category_group.items():
                     st.markdown("---")
                     with st.expander(f"📂 Category: {cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})"):
@@ -374,10 +368,6 @@ def show_bertopic_section():
                             for title, data in videos.items():
                                 link = f"https://www.youtube.com/watch?v={data['video_id']}"
                                 st.markdown(f"- [{title}]({link}) — {len(data['segments'])} segment(s)")
-
-
-
-
 
     except FileNotFoundError:
         st.error(f"Required file not found. Check paths:\n• {csv_path}\n• {topics_path}")
