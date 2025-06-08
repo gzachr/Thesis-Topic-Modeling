@@ -7,6 +7,9 @@ import html
 from urllib.parse import quote
 import re
 
+csv_path="T3 BERTopic files/BERTopic-coherence_scores.csv"
+topics_path="T3 BERTopic files/[T3 UPDATED] BERTopic-topics w labels.csv"
+
 @st.cache_data
 def load_topic_segment_df():
     return pd.read_csv("T3 BERTopic files/[T3 UPDATED] BERTopic-topics per segment w channels.csv")
