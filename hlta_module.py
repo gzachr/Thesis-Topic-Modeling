@@ -93,7 +93,7 @@ def show_hlta_section():
 
         if tab == "Model Metrics":
             st.session_state.hlta_active_tab = "metrics"
-            csv_path = "HLTA-coherence_scores.csv"
+            csv_path = "hlta-coherence.csv"
             if os.path.exists(csv_path):
                 scores_df = pd.read_csv(csv_path)
                 scores_df["Score"] = scores_df["Score"].round(3)

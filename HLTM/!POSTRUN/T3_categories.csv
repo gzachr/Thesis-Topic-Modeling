@@ -15,8 +15,8 @@ Z1162,3,dance dancing,Lifestyle,Dancing
 Z1160,3,training train knee enemy leg mission final,Lifestyle,Physical Training
 Z244,2,brother mother father eye sister uncle blood,Lifestyle,Family Relations
 Z1170,3,eye pop poor fair decent nose perspective,Others,Facial Features
-Z1166,3,brother jay pipe,Others,For Scrapping
-Z1169,3,girl-girl contact specific intense angry dress percent,Others,For Scrapping
+Z1166,3,brother jay pipe,Others,Hard to Categorize / Seems Useless
+Z1169,3,girl-girl contact specific intense angry dress percent,Others,Hard to Categorize / Seems Useless
 Z1168,3,mother father,Lifestyle,Parents
 Z1167,3,sister uncle blood cousin speed afraid scared,Lifestyle,Family Relations
 Z243,2,game play basketball player sport shoot shot,Lifestyle,Basketball
@@ -44,7 +44,7 @@ Z11,3,performance band concert stage studio,Entertainment,Concert and Studio Mus
 Z15,3,karaoke machine,Entertainment,Karaoke machine
 Z13,3,vocal opm lyric tiktok,Entertainment,OPM and TikTok Trends
 Z17,3,technique control note,Entertainment,Music Performance Techniques
-Z14,3,listen mate sing-song range bloody ridiculous gentleman,Others,For Scrapping
+Z14,3,listen mate sing-song range bloody ridiculous gentleman,Others,Hard to Categorize / Seems Useless
 Z12,3,artist industry,Entertainment,Artist Industry
 Z16,3,sound clip imagine breath environment,Entertainment,Environmental Sound Clips
 Z22,2,latino feature-feature podcast viral coach feature freak,Entertainment,Viral Latino Coach and Podcast Features
@@ -86,10 +86,10 @@ Z145,3,mixed mexican lie dead,Others,Mexican Narratives
 Z146,3,mukbang candy lee,Food,Candy Mukbang
 Z147,3,color green brown white,Others,Colors
 Z148,3,butter heat dough pan package bet summer,Food,Baking Ingredients and Process
-Z142,3,spring regular tooth exotic today tofu energy,Food,For Scrapping
+Z142,3,spring regular tooth exotic today tofu energy,Food,Hard to Categorize / Seems Useless
 Z144,3,fat bone tender pig lechon,Food,Lechon
 Z137,3,dry wet season,Others,Philippine Weather
-Z138,3,combination item steam dinner total salamat rainy,Others,For Scrapping
+Z138,3,combination item steam dinner total salamat rainy,Others,Hard to Categorize / Seems Useless
 Z143,3,leaf portion liver plain feed tongue complete,Food,Meat and Animal Feed
 Z139,3,warm cold,Others,Temperature
 Z210,2,meal restaurant menu spaghetti jollibee burger gravy,Food,Jollibee Menu Items
@@ -140,7 +140,7 @@ Z1199,3,vacation expat cultural simple strong basic money-money,Travel,"Expat Cu
 Z36,1,swim bed pool ocean swimming drink bathroom,Lifestyle,"Residential Features: Pool, Bedrooms, and Bathrooms"
 Z220,2,wall retire build house-house property province concrete,Lifestyle,Provincial House Construction
 Z189,3,wall concrete block hollow,Lifestyle,Masonry and Wall Building
-Z191,3,retire jane,Others,For Scrapping
+Z191,3,retire jane,Others,Hard to Categorize / Seems Useless
 Z192,3,province update culture-shock,Culture,Province Life Culture Shock
 Z190,3,build house-house property project,Lifestyle,House Construction
 Z219,2,christmas holiday christmas-christmas birthday gift party celebration,Lifestyle,Holiday and Birthday Celebrations
@@ -160,21 +160,21 @@ Z177,3,bed bathroom sleep,Lifestyle,Household Amenities
 Z179,3,roof bedroom door ground pressure,Lifestyle,Household Amenities
 Z178,3,pool shower toilet private bar,Lifestyle,Household Amenities
 Z215,2,hole rock typhoon foot wind port pack,Others,Natural Disasters
-Z176,3,foot mark baby deep daniel,Others,For Scrapping
+Z176,3,foot mark baby deep daniel,Others,Hard to Categorize / Seems Useless
 Z173,3,typhoon wind port activity ship mindanao cave,Travel,Storm Impact and Activities in Mindanao
-Z174,3,hole rock pack belly,Others,For Scrapping
+Z174,3,hole rock pack belly,Others,Hard to Categorize / Seems Useless
 Z175,3,wild sick van track careful vehicle paper,Others,Travel Safety
 Z39,1,impression bgc manila-manila friendly hand building camera,Travel,BGC Impressions
 Z226,2,impression friendly street-street hill fort church san,Travel,"Forts, Hills, and Churches"
 Z1114,3,tip daily luke blog,Lifestyle,Luke's Daily Blog
 Z1116,3,street-street chinatown barbecue squid,Travel,Chinatown Street Food
 Z1121,3,chocolate-hill hill,Travel,Chocolate Hills
-Z1118,3,slow glass horse bay,Others,For Scrapping
+Z1118,3,slow glass horse bay,Others,Hard to Categorize / Seems Useless
 Z1110,3,impression friendly,Others,Friendly Impressions
-Z1111,3,vanilla chain tag alive queen avocado flip,Others,For Scrapping
+Z1111,3,vanilla chain tag alive queen avocado flip,Others,Hard to Categorize / Seems Useless
 Z1117,3,hot-hot club farm guest red-horse treat sardine,Lifestyle,Clubbing and Gathering Culture
 Z1120,3,pinoy pinay mom,Lifestyle,Pinay Moms
-Z1119,3,tank daddy mommy water-water truck timber,Others,For Scrapping
+Z1119,3,tank daddy mommy water-water truck timber,Others,Hard to Categorize / Seems Useless
 Z1112,3,church san fort jazz babe,Travel,Historic Landmarks
 Z1113,3,poverty lifestyle usa,Lifestyle,US Poverty
 Z1115,3,haircut barber shave hang,Lifestyle,Barber Services
@@ -195,11 +195,11 @@ Z1171,3,star jesus model flag lord gym,Others,Symbols and Icons Across Contexts
 Z1176,3,beauty natural universe,Entertainment,Miss Universe and Natural Beauty
 Z1184,3,heavy weight typical pound,Others,Weight and Measurement
 Z1180,3,book brain read singapore access comfort,Others,Reading Singapore Books
-Z1178,3,incredible unbelievable,Others,For Scrapping
+Z1178,3,incredible unbelievable,Others,Hard to Categorize / Seems Useless
 Z1182,3,meter square giant,Others,Giant Land Area
 Z1172,3,movie scene actor attention actress match disney,Entertainment,Disney Movie and Actors
-Z1175,3,power attack arm solar,Others,For Scrapping
-Z1179,3,actual key holy,Others,For Scrapping
+Z1175,3,power attack arm solar,Others,Hard to Categorize / Seems Useless
+Z1179,3,actual key holy,Others,Hard to Categorize / Seems Useless
 Z1173,3,skill talent,Others,Skills and Talent
 Z1185,3,healthy positive curious episode easier stay,Others,Wellness and Personal Growth
 Z1181,3,magic tshirt excite yellow stupid shake rap,Culture,Pop Culture & Expression
@@ -244,13 +244,13 @@ Z116,3,bus direction map jeepney station resort,Travel,Transit Routes near Resor
 Z110,3,local community,Lifestyle,Local Community
 Z114,3,service security apartment bag figure condo fit,Lifestyle,Condo Security and Services
 Z118,3,public transportation,Travel,Public Transportation
-Z111,3,main unique,Others,For Scrapping
-Z113,3,extra light clean drop dog charge screen,Others,For Scrapping
+Z111,3,main unique,Others,Hard to Categorize / Seems Useless
+Z113,3,extra light clean drop dog charge screen,Others,Hard to Categorize / Seems Useless
 Z112,3,tricycle driver option alina,Travel,Tricycle Driver
-Z115,3,size bigger,Others,For Scrapping
+Z115,3,size bigger,Others,Hard to Categorize / Seems Useless
 Z25,2,road walk car trip busy massive proper,Travel,Busy Road Trips and Urban Traffic
 Z123,3,walk car busy,Travel,Walking and Traffic
-Z125,3,massive proper straight lovely tiny previous vegan,Others,For Scrapping
+Z125,3,massive proper straight lovely tiny previous vegan,Others,Hard to Categorize / Seems Useless
 Z124,3,trip road,Travel,Road Trip
 Z26,2,mountain bike river motorbike scooter blue sky,Travel,Mountain River Transportation
 Z127,3,scooter lunch village catch ticket drone distance,Travel,Village Travel and Exploration Logistics
@@ -260,9 +260,9 @@ Z126,3,bike motorbike,Travel,Bikes and Motorbikes
 Z129,3,palm tree sand bamboo,Travel,Tropical Beach Elements
 Z128,3,mountain nature destination waterfall,Travel,Mountain and Waterfall Destinations
 Z130,3,river bridge jungle cross,Travel,Jungle River Crossing
-Z24,2,huge quick journey honest leave meet space,Others,For Scrapping
-Z122,3,huge entire ton touch international,Others,For Scrapping
-Z121,3,quick journey honest leave meet space level,Others,For Scrapping
+Z24,2,huge quick journey honest leave meet space,Others,Hard to Categorize / Seems Useless
+Z122,3,huge entire ton touch international,Others,Hard to Categorize / Seems Useless
+Z121,3,quick journey honest leave meet space level,Others,Hard to Categorize / Seems Useless
 Z313,1,garlic onion pepper chili ingredient cook salty,Food,Spices and Seasonings
 Z237,2,ingredient recipe cooking pinoy-planet baboy,Food,Pinoy-Planet: Pork Specialities
 Z1149,3,baboy pinoy-planet,Food,Pinoy-Planet: Pork Specialities
