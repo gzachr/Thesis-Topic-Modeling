@@ -77,17 +77,25 @@ def show_bertopic_section():
             st.session_state.bertopic_active_tab = "metrics"
 
             st.subheader("Topics Overview")
-            for _, row in topics_df.iterrows():
-                topic_num = int(row["Topic"])
-                default_name = row["Name"]
-                custom_label = row["Custom Label"]
-                representation = eval(row["Representation"]) if isinstance(row["Representation"], str) else []
 
-                with st.expander(f"**Topic {topic_num}** — {custom_label}"):
-                    st.markdown(f"**Default Name:** {default_name}")
-                    st.markdown(f"**Custom Label:** {custom_label}")
-                    st.markdown("**Top Keywords:**")
-                    st.write(", ".join(representation[:10]))
+            topic_options = [
+                f"Topic {int(row['Topic'])}: {row['Custom Label']}" for _, row in topics_df.iterrows()
+            ]
+            selected_topic_option = st.selectbox("Select a Topic", topic_options)
+
+            selected_topic_num = int(selected_topic_option.split(":")[0].replace("Topic", "").strip())
+            selected_row = topics_df[topics_df["Topic"] == selected_topic_num].iloc[0]
+
+            default_name = selected_row["Name"]
+            custom_label = selected_row["Custom Label"]
+            representation = eval(selected_row["Representation"]) if isinstance(selected_row["Representation"], str) else []
+
+            st.markdown(f"### Topic {selected_topic_num}: {custom_label}")
+            st.markdown(f"**Default Name:** {default_name}")
+            st.markdown(f"**Custom Label:** {custom_label}")
+            st.markdown("**Top Keywords:**")
+            st.write(", ".join(representation[:10]))
+
 
             st.markdown("---")
             st.subheader("📊 Model Coherence Metrics")
