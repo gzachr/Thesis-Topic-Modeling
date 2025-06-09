@@ -9,8 +9,8 @@ def show_hlta_section():
     @st.cache_data
     def load_data():
         path = './HLTM/!POSTRUN/'
-        topics_df = pd.read_csv(path + 'T3_categories.csv')
-        videos_df = pd.read_csv(path + 'T3-topics-per-vid.csv')
+        topics_df = pd.read_csv(path + 'T3_categories.csv', encoding='utf-8')
+        videos_df = pd.read_csv(path + 'T3-topics-per-vid-with-channels.csv', encoding='latin1')
         return topics_df, videos_df
 
     @st.cache_data
@@ -96,7 +96,7 @@ def show_hlta_section():
         tab = st.radio(
             "Navigate HLTA Section",
             ["Model Summary", "Topics Summary", "Video Summary", "Channel Summary"],
-            index=["metrics", "topics", "videos"].index(st.session_state.hlta_active_tab)
+            index=["metrics", "topics", "videos", "channels"].index(st.session_state.hlta_active_tab)
         )
         st.markdown("---")
 
@@ -230,6 +230,64 @@ def show_hlta_section():
         elif tab == "Channel Summary":
             st.session_state.hlta_active_tab = "channels"
             st.header("Channel Summary")
+
+            # Filter out missing channels
+            if "Channel Title" not in videos_df.columns:
+                st.warning("Channel data is not available in the current dataset.")
+            else:
+                total_channels = videos_df["Channel Title"].nunique()
+                channel_video_counts = (
+                    videos_df.groupby("Channel Title")
+                    .agg(Video_Count=("Video Title", "count"))
+                    .reset_index()
+                    .sort_values(by="Video_Count", ascending=False)
+                )
+
+                st.markdown(f"### 📊 Total Channels: {total_channels}")
+                st.markdown("### Top Channels by Video Count")
+                st.dataframe(channel_video_counts.head(10).reset_index(drop=True), use_container_width=True)
+
+                channel_options = sorted(channel_video_counts["Channel Title"].tolist())
+                selected_channel = st.selectbox("Select a channel", options=channel_options, key="hlta_selected_channel")
+
+                if selected_channel:
+                    st.markdown("---")
+                    st.subheader(f"📺 {selected_channel}")
+
+                    channel_videos = videos_df[videos_df["Channel Title"] == selected_channel]
+                    st.markdown(f"**🎬 Total Videos:** {len(channel_videos)}")
+
+                    # Group by general category and topics
+                    general_group = {}
+                    for _, row in channel_videos.iterrows():
+                        video_title = row["Video Title"]
+                        link = row["Channel Link"]
+                        if video_title not in video_to_topics:
+                            continue
+                        for topic in video_to_topics[video_title]["topics"]:
+                            cat = topic["general_category"]
+                            topic_label = f"{topic['topic']} (Level {topic['level']}, {topic['probability']:.2f})"
+
+                            if cat not in general_group:
+                                general_group[cat] = {}
+                            if topic_label not in general_group[cat]:
+                                general_group[cat][topic_label] = {}
+                            if video_title not in general_group[cat][topic_label]:
+                                general_group[cat][topic_label][video_title] = {
+                                    "link": link,
+                                    "count": 0
+                                }
+                            general_group[cat][topic_label][video_title]["count"] += 1
+
+                    for cat, topics in general_group.items():
+                        st.markdown("---")
+                        with st.expander(f"📂 Category: {cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})"):
+                            for topic_label, videos in topics.items():
+                                st.markdown(f"#### 🔹 {topic_label}")
+                                st.markdown(f"**Videos in this topic:** {len(videos)}")
+                                for title, data in videos.items():
+                                    st.markdown(f"- [{title}]({data['link']}) — {data['count']} mention(s)")
+
 
 
     except FileNotFoundError as e:
