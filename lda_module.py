@@ -442,7 +442,6 @@ def show_lda_section():
                                 reverse=True
                             )
 
-
                             videos_per_page = 5
                             total_pages = (len(videos_sorted) - 1) // videos_per_page + 1
 
@@ -484,7 +483,7 @@ def show_lda_section():
 
     elif tab == "Channel Summary":
         st.session_state.active_tab = "channel"
-        st.header("Channel Summary Across Topic Groups")
+        st.header("Channel Summary")
 
         if "channel_summary" not in data or not data["channel_summary"]:
             st.warning("No channel summary data found.")
@@ -520,9 +519,6 @@ def show_lda_section():
                     vids_with_subtopic.update(
                         vid for vid in group_map[group_index][category][subtopic] if vid in channel_video_ids
                     )
-
-        # Flatten unassigned videos with topic but no subtopic for this channel,
-        # but exclude videos that already have subtopic assignments
         unassigned_subtopic_vids = []
         for group_str, group_data in unassigned_videos_dict.items():
             group_index = int(group_str)
@@ -535,7 +531,6 @@ def show_lda_section():
         st.markdown(f"## {channel_title} ({len(channel_video_ids)} videos)")
         st.markdown(f"[Visit Channel](https://www.youtube.com/channel/{selected_channel_id})", unsafe_allow_html=True)
 
-        # Build tab labels
         topic_group_indices = sorted(group_map, key=int)
         tab_labels = [f"🔹 Topic Group {group_index}" for group_index in topic_group_indices]
         tab_labels.append("⚠️ Videos With Topic But Without Subtopic")
