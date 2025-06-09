@@ -128,8 +128,8 @@ def show_bertopic_section():
 
             try:
                 video_stats_df = load_video_stats_df()
-                video_stats_df = video_stats_df.sort_values("Video Count", ascending=False)
 
+                video_stats_df = video_stats_df.sort_values("Video Count", ascending=False)
                 video_stats_df = video_stats_df.drop(columns=["Label"])
 
                 video_stats_df["Video Count"] = video_stats_df["Video Count"].apply(lambda x: f"{x:,}")
@@ -321,7 +321,6 @@ def show_bertopic_section():
             segments_df = load_topic_segment_df()
             topic_category_df = load_topic_category_df()
 
-            # Calculate overall channel stats
             total_channels = topics_per_video_df['Channel Title'].nunique()
             channel_video_counts = topics_per_video_df.groupby(['Channel Title', 'Channel Id']).size().reset_index(name='Video Count')
             top_channels = channel_video_counts.sort_values(by='Video Count', ascending=False).head(10)
@@ -347,6 +346,7 @@ def show_bertopic_section():
                 
                 topic_category_map = topic_category_df.drop_duplicates(subset="Topic #").set_index("Topic #").to_dict("index")
 
+                
                 category_group = {}
                 for _, row in channel_segments_df.iterrows():
                     topic_id = row['Topic']
@@ -370,15 +370,31 @@ def show_bertopic_section():
                         }
                     category_group[cat][topic_key][video_title]["segments"].append(row['Segment'])
 
+                category_video_counts = {}
                 for cat, topics in category_group.items():
+                    unique_videos_in_cat = set()
+                    for topic_key, videos in topics.items():
+                        unique_videos_in_cat.update(videos.keys())
+                    category_video_counts[cat] = len(unique_videos_in_cat)
+
+                # Sort categories by total videos (descending)
+                sorted_categories = sorted(category_group.items(), key=lambda x: category_video_counts[x[0]], reverse=True)
+
+                for cat, topics in sorted_categories:
                     st.markdown("---")
                     with st.expander(f"📂 Category: {cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})"):
-                        for topic_key, videos in topics.items():
+                        # Sort topics by number of unique videos (descending)
+                        sorted_topics = sorted(topics.items(), key=lambda x: len(x[1]), reverse=True)
+                        for topic_key, videos in sorted_topics:
                             st.markdown(f"#### 🔹 {topic_key}")
                             st.markdown(f"**Videos in this topic:** {len(videos)}")
-                            for title, data in videos.items():
+
+                            # Sort videos by number of segments (descending)
+                            sorted_videos = sorted(videos.items(), key=lambda x: len(x[1]['segments']), reverse=True)
+                            for title, data in sorted_videos:
                                 link = f"https://www.youtube.com/watch?v={data['video_id']}"
                                 st.markdown(f"- [{title}]({link}) — {len(data['segments'])} segment(s)")
+
 
     except FileNotFoundError:
         st.error(f"Required file not found. Check paths:\n• {csv_path}\n• {topics_path}")
