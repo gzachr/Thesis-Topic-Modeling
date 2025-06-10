@@ -130,7 +130,7 @@ def show_bertopic_section():
                 video_stats_df = load_video_stats_df()
 
                 video_stats_df = video_stats_df.sort_values("Video Count", ascending=False)
-                video_stats_df = video_stats_df.drop(columns=["Label"])
+                video_stats_df = video_stats_df.drop(columns=["Topic Name", "Topic"])
 
                 video_stats_df["Video Count"] = video_stats_df["Video Count"].apply(lambda x: f"{x:,}")
 
@@ -151,8 +151,9 @@ def show_bertopic_section():
             for tab, category in zip(tabs, all_categories):
                 with tab:
                     topics_in_cat = category_to_topics[category]
+                    
                     topic_options = {
-                        f"Topic {tid}: {topic_category_df[topic_category_df['Topic #'] == tid].iloc[0]['Subtopics']} ({topic_category_df[topic_category_df['Topic #'] == tid].iloc[0]['Label']})": tid
+                        f"Topic {tid}: {topic_category_df[topic_category_df['Topic #'] == tid].iloc[0]['Label']}": tid
                         for tid in sorted(topics_in_cat)
                     }
 
@@ -173,9 +174,39 @@ def show_bertopic_section():
                     total_videos = len(grouped_videos)
                     total_segments = len(topic_data)
 
-                    st.markdown(f"### Topic {selected_topic_id}: {subtopics} ({label})")
+                    st.markdown(f"### **Topic {selected_topic_id}: {label}**  \n({subtopics})")
                     st.markdown(f"**Total Videos:** {total_videos} | **Total Segments:** {total_segments}")
 
+
+                    total_pages = (len(grouped_videos) - 1) // VIDEOS_PER_PAGE + 1
+                    page_number = st.number_input(
+                        f"Page for Topic {selected_topic_id}",
+                        min_value=1,
+                        max_value=total_pages,
+                        value=1,
+                        key=f"page_topic_{selected_topic_id}"
+                    )
+
+                    start_idx = (page_number - 1) * VIDEOS_PER_PAGE
+                    end_idx = start_idx + VIDEOS_PER_PAGE
+
+                    for _, row in grouped_videos.iloc[start_idx:end_idx].iterrows():
+                        video_id = row['Video Id']
+                        title = html.escape(row['Video Title'])
+                        channel = html.escape(row['Channel Title'])
+                        channel_id = row['Channel Id']
+                        segments = row['Segment']
+                        num_segments = len(segments)
+
+                        display_title = f"{title} - {num_segments} segment{'s' if num_segments != 1 else ''}"
+                        with st.expander(display_title):
+                            st.markdown(f"[▶️ Watch on YouTube](https://www.youtube.com/watch?v={video_id})")
+                            st.markdown(f"[📺 {channel}](https://www.youtube.com/channel/{channel_id})")
+                            st.markdown("---")
+                            for segment in segments:
+                                st.markdown(f"- {segment}")
+
+                    st.markdown("---")
                     channel_summary = topic_data.groupby(["Channel Title", "Channel Id"]).agg(
                         Video_Count=("Video Id", pd.Series.nunique),
                         Segment_Count=("Segment", "count")
@@ -199,35 +230,6 @@ def show_bertopic_section():
                         full_sorted = channel_summary_display.sort_values("Video Count", ascending=False)
                         st.markdown(full_sorted.to_markdown(index=False), unsafe_allow_html=True)
 
-
-                    total_pages = (len(grouped_videos) - 1) // VIDEOS_PER_PAGE + 1
-                    page_number = st.number_input(
-                        f"Page for Topic {selected_topic_id}",
-                        min_value=1,
-                        max_value=total_pages,
-                        value=1,
-                        key=f"page_topic_{selected_topic_id}"
-                    )
-
-                    start_idx = (page_number - 1) * VIDEOS_PER_PAGE
-                    end_idx = start_idx + VIDEOS_PER_PAGE
-
-                    for _, row in grouped_videos.iloc[start_idx:end_idx].iterrows():
-                        video_id = row['Video Id']
-                        title = html.escape(row['Video Title'])
-                        channel = html.escape(row['Channel Title'])
-                        channel_id = row['Channel Id']
-                        segments = row['Segment']
-                        num_segments = len(segments)
-
-                        display_title = f"{title} ({video_id}) - {num_segments} segment{'s' if num_segments != 1 else ''}"
-                        with st.expander(display_title):
-                            st.markdown(f"[▶️ Watch on YouTube](https://www.youtube.com/watch?v={video_id})")
-                            st.markdown(f"[📺 {channel}](https://www.youtube.com/channel/{channel_id})")
-                            st.markdown("---")
-                            for segment in segments:
-                                st.markdown(f"- {segment}")
-
         ### Video Summary section
 
         elif tab == "Video Summary":
@@ -244,7 +246,8 @@ def show_bertopic_section():
                 selected_video = st.selectbox(
                     "Select a video to view summary:",
                     options=topics_per_video_df["Display Title"].tolist(),
-                    index=0
+                    index=0,
+                    format_func=lambda x: x.rsplit(" (", 1)[0]  
                 )
 
                 selected_video_id = selected_video.split("(")[-1].strip(")")
@@ -293,16 +296,18 @@ def show_bertopic_section():
                 st.markdown("**Category & Topics (with percentage):**")
 
                 for _, row in topic_df.iterrows():
-                    st.markdown(f"- **Topic {row['Topic ID']}**: {row['Subtopics']} (**{row['Label']}**) — {row['Percentage']}%")
+                    st.markdown(f"- **Topic {row['Topic ID']}**: (**{row['Label']}**) — {row['Percentage']}%")
 
                 st.markdown("**📑 Segments Grouped by Topic:**")
+                segments_grouped["Num Segments"] = segments_grouped["Segment"].apply(len)
+                segments_grouped = segments_grouped.sort_values("Num Segments", ascending=False)
                 for _, row in segments_grouped.iterrows():
                     topic_id = row["Topic"]
                     subtopics = row["Subtopics"]
                     label = row["Label"]
                     seg_list = row["Segment"]
 
-                    with st.expander(f"Topic {topic_id}: {subtopics} ({label}) - {len(seg_list)} segment{'s' if len(seg_list)!=1 else ''}"):
+                    with st.expander(f"Topic {topic_id}: {label} ({subtopics}) - {len(seg_list)} segment{'s' if len(seg_list)!=1 else ''}"):
                         for seg in seg_list:
                             st.markdown(f"- {seg}")
 
@@ -327,7 +332,7 @@ def show_bertopic_section():
 
             st.markdown(f"### 📊 Total Channels: {total_channels}")
             st.markdown("### Top Channels by Video Count")
-            st.dataframe(top_channels[['Channel Title', 'Video Count']].reset_index(drop=True), use_container_width=True)
+            st.dataframe(top_channels[['Channel Title', 'Video Count']].reset_index(drop=True), use_container_width=True, hide_index=True)
 
             channel_options = channel_video_counts.sort_values(by="Channel Title")["Channel Title"].tolist()
             selected_channel = st.selectbox("Select a channel", options=channel_options)
@@ -346,7 +351,7 @@ def show_bertopic_section():
                 
                 topic_category_map = topic_category_df.drop_duplicates(subset="Topic #").set_index("Topic #").to_dict("index")
 
-                
+                # Organize topics and segments by category
                 category_group = {}
                 for _, row in channel_segments_df.iterrows():
                     topic_id = row['Topic']
@@ -370,6 +375,7 @@ def show_bertopic_section():
                         }
                     category_group[cat][topic_key][video_title]["segments"].append(row['Segment'])
 
+                # Count videos per category
                 category_video_counts = {}
                 for cat, topics in category_group.items():
                     unique_videos_in_cat = set()
@@ -377,24 +383,36 @@ def show_bertopic_section():
                         unique_videos_in_cat.update(videos.keys())
                     category_video_counts[cat] = len(unique_videos_in_cat)
 
-                # Sort categories by total videos (descending)
+                # Sort categories
                 sorted_categories = sorted(category_group.items(), key=lambda x: category_video_counts[x[0]], reverse=True)
 
-                for cat, topics in sorted_categories:
-                    st.markdown("---")
-                    with st.expander(f"📂 Category: {cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})"):
-                        # Sort topics by number of unique videos (descending)
-                        sorted_topics = sorted(topics.items(), key=lambda x: len(x[1]), reverse=True)
-                        for topic_key, videos in sorted_topics:
-                            st.markdown(f"#### 🔹 {topic_key}")
-                            st.markdown(f"**Videos in this topic:** {len(videos)}")
+                st.markdown("### Topics present in this channel (Grouped by category)")
+                category_options = [f"{cat} ({category_video_counts[cat]} videos)" for cat, _ in sorted_categories]
+                category_lookup = {opt: cat for opt, (cat, _) in zip(category_options, sorted_categories)}
+                selected_cat_display = st.selectbox("Select a category to explore", category_options)
+                selected_cat = category_lookup[selected_cat_display]
+                topics = category_group[selected_cat]
 
-                            # Sort videos by number of segments (descending)
-                            sorted_videos = sorted(videos.items(), key=lambda x: len(x[1]['segments']), reverse=True)
-                            for title, data in sorted_videos:
-                                link = f"https://www.youtube.com/watch?v={data['video_id']}"
-                                st.markdown(f"- [{title}]({link}) — {len(data['segments'])} segment(s)")
+                st.markdown(f"### Category: {selected_cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})")
 
+                # Sort topics by number of videos
+                sorted_topics = sorted(topics.items(), key=lambda x: len(x[1]), reverse=True)
+
+                for topic_key, videos in sorted_topics:
+                    match = re.match(r"Topic (\d+): (.+?) \((.+?)\)", topic_key)
+                    if match:
+                        topic_id = match.group(1)
+                        subtopics = match.group(2)
+                        label = match.group(3)
+                        display_topic = f"**Topic {topic_id}: {label}** (_{subtopics}_)"
+                    else:
+                        display_topic = topic_key 
+
+                    with st.expander(f"{display_topic} — {len(videos)} video{'s' if len(videos) != 1 else ''}"):
+                        sorted_videos = sorted(videos.items(), key=lambda x: len(x[1]['segments']), reverse=True)
+                        for title, data in sorted_videos:
+                            link = f"https://www.youtube.com/watch?v={data['video_id']}"
+                            st.markdown(f"- [{html.escape(title)}]({link}) — {len(data['segments'])} segment{'s' if len(data['segments']) != 1 else ''}")
 
     except FileNotFoundError:
         st.error(f"Required file not found. Check paths:\n• {csv_path}\n• {topics_path}")
