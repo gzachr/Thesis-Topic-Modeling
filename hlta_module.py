@@ -149,54 +149,89 @@ def show_hlta_section():
             general_categories = ["All", "Food", "Culture", "Lifestyle", "Travel", "Politics", "Entertainment", "Others"]
             selected_category = st.selectbox("Filter by General Category", options=general_categories, index=0)
 
-            # Filter topics based on selected general category
+            # Create a mapping of specific categories to their topics
+            specific_category_to_topics = {}
+            for topic, data in topic_to_videos.items():
+                specific_cat = data['specific_category']
+                if specific_cat not in specific_category_to_topics:
+                    specific_category_to_topics[specific_cat] = []
+                specific_category_to_topics[specific_cat].append((topic, data['general_category']))
+
+            # Filter specific categories based on selected general category
             if selected_category == "All":
-                filtered_topics = sorted(topic_to_videos.keys())
+                filtered_specific_categories = sorted(specific_category_to_topics.keys())
             else:
-                filtered_topics = sorted([
-                    topic for topic, data in topic_to_videos.items()
-                    if data['general_category'] == selected_category
+                filtered_specific_categories = sorted([
+                    specific_cat for specific_cat, topics in specific_category_to_topics.items()
+                    if any(general_cat == selected_category for _, general_cat in topics)
                 ])
 
-            if not filtered_topics:
+            if not filtered_specific_categories:
                 st.warning("No topics found under the selected category.")
             else:
-                selected_topic = st.selectbox("Select Topic", options=filtered_topics, index=None, key="hlta_selected_topic")
+                # Show dropdown with specific categories instead of topic words
+                selected_specific_category = st.selectbox(
+                    "Select Specific Category", 
+                    options=filtered_specific_categories, 
+                    index=None, 
+                    key="hlta_selected_specific_category"
+                )
 
-                if selected_topic:
-                    st.markdown(f"### {selected_topic}")
+                if selected_specific_category:
+                    # Get all topics under this specific category
+                    topics_in_category = [t for t, g in specific_category_to_topics[selected_specific_category]]
+                    
+                    # Show the specific category and general category
+                    st.markdown(f"### {selected_specific_category}")
+                    if topics_in_category:
+                        general_category = topic_to_videos[topics_in_category[0]]['general_category']
+                        st.markdown(f"**General Category:** {general_category}")
 
-                    topic_info = topic_to_videos[selected_topic]
+                    # Create tabs for each topic in this specific category
+                    if len(topics_in_category) > 1:
+                        topic_tabs = st.tabs([f"Topic {i+1}" for i in range(len(topics_in_category))])
+                    else:
+                        topic_tabs = [st.container()]  # Single container if only one topic
 
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.markdown(f"**General Category:** {topic_info['general_category']}")
-                    with col2:
-                        st.markdown(f"**Specific Category:** {topic_info['specific_category']}")
+                    for i, topic_tab in enumerate(topic_tabs):
+                        with topic_tab:
+                            if i < len(topics_in_category):
+                                topic = topics_in_category[i]
+                                topic_info = topic_to_videos[topic]
 
-                    videos = topic_info['videos']
-                    st.markdown(f"**Videos containing this topic ({len(videos)} total):**")
+                                if len(topics_in_category) > 1:
+                                    st.markdown(f"**Topic Words:** {topic}")
 
-                    videos_per_page = 10
-                    total_pages = (len(videos) - 1) // videos_per_page + 1
-                    page = st.number_input("Page", min_value=1, max_value=total_pages, value=1, step=1)
+                                videos = topic_info['videos']
+                                st.markdown(f"**Videos containing this topic ({len(videos)} total):**")
 
-                    start_idx = (page - 1) * videos_per_page
-                    end_idx = start_idx + videos_per_page
-                    paged_videos = videos[start_idx:end_idx]
+                                videos_per_page = 10
+                                total_pages = (len(videos) - 1) // videos_per_page + 1
+                                page = st.number_input(
+                                    "Page", 
+                                    min_value=1, 
+                                    max_value=total_pages, 
+                                    value=1, 
+                                    step=1,
+                                    key=f"page_{topic}"
+                                )
 
-                    for idx, (video_title, link, score, _) in enumerate(paged_videos):
-                        with st.container():
-                            cols = st.columns([4, 1, 1])
-                            with cols[0]:
-                                st.markdown(f"[{video_title}]({link})")
-                            with cols[1]:
-                                st.progress(score, text=f"{score:.2f}")
-                            with cols[2]:
-                                if st.button("View", key=f"view_{idx}_{video_title}"):
-                                    st.session_state.hlta_selected_video = video_title
-                                    st.session_state.hlta_active_tab = "videos"
-                                    st.rerun()
+                                start_idx = (page - 1) * videos_per_page
+                                end_idx = start_idx + videos_per_page
+                                paged_videos = videos[start_idx:end_idx]
+
+                                for idx, (video_title, link, score, _) in enumerate(paged_videos):
+                                    with st.container():
+                                        cols = st.columns([4, 1, 1])
+                                        with cols[0]:
+                                            st.markdown(f"[{video_title}]({link})")
+                                        with cols[1]:
+                                            st.progress(score, text=f"{score:.2f}")
+                                        with cols[2]:
+                                            if st.button("View", key=f"view_{idx}_{video_title}_{topic}"):
+                                                st.session_state.hlta_selected_video = video_title
+                                                st.session_state.hlta_active_tab = "videos"
+                                                st.rerun()
 
         elif tab == "Video Summary":
             st.session_state.hlta_active_tab = "videos"
@@ -216,7 +251,26 @@ def show_hlta_section():
             for level in sorted(levels.keys()):
                 st.markdown(f"#### Level {level} Topics")
                 level_data = sorted(levels[level], key=lambda x: x['probability'], reverse=True)
+                
+                # Reorder columns to show Specific Category first, then Topic Words
                 df = pd.DataFrame(level_data).drop(columns=["level"])
+                df = df.rename(columns={
+                    "specific_category": "Topic Label",
+                    "topic": "Topic Words",
+                    "probability": "Probability",
+                    "general_category": "General Category",
+                    "topic_id": "Topic ID"
+                })
+                
+                # Reorder columns (Specific Category first)
+                column_order = [
+                    "Topic Label",
+                    "Topic Words",
+                    "General Category",
+                    "Probability",
+                    "Topic ID"
+                ]
+                df = df[column_order]
 
                 st.dataframe(
                     df,
