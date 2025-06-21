@@ -311,34 +311,49 @@ def show_hlta_section():
                     channel_videos = videos_df[videos_df["Channel Title"] == selected_channel]
                     st.markdown(f"**🎬 Total Videos:** {len(channel_videos)}")
 
-                    # Group by general category and topics
                     general_group = {}
                     for _, row in channel_videos.iterrows():
                         video_title = row["Video Title"]
                         link = row["Channel Link"]
                         if video_title not in video_to_topics:
                             continue
+                        
                         for topic in video_to_topics[video_title]["topics"]:
-                            cat = topic["general_category"]
-                            topic_label = f"{topic['topic']} (Level {topic['level']}, {topic['probability']:.2f})"
+                            general_cat = topic["general_category"]
+                            specific_cat = topic["specific_category"]
+                            
+                            topic_label = (
+                                f"{specific_cat}\n"
+                                f"Topic: {topic['topic']} | "
+                                f"Level: {topic['level']} | "
+                                f"Probability: {topic['probability']:.2f}"
+                            )
 
-                            if cat not in general_group:
-                                general_group[cat] = {}
-                            if topic_label not in general_group[cat]:
-                                general_group[cat][topic_label] = {}
-                            if video_title not in general_group[cat][topic_label]:
-                                general_group[cat][topic_label][video_title] = {
+                            if general_cat not in general_group:
+                                general_group[general_cat] = {}
+                            if topic_label not in general_group[general_cat]:
+                                general_group[general_cat][topic_label] = {}
+                            if video_title not in general_group[general_cat][topic_label]:
+                                general_group[general_cat][topic_label][video_title] = {
                                     "link": link,
                                     "count": 0
                                 }
-                            general_group[cat][topic_label][video_title]["count"] += 1
+                            general_group[general_cat][topic_label][video_title]["count"] += 1
 
+                    # Display by general category
                     for cat, topics in general_group.items():
                         st.markdown("---")
-                        with st.expander(f"📂 Category: {cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})"):
+                        with st.expander(f"📂 General Category: {cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})"):
                             for topic_label, videos in topics.items():
-                                st.markdown(f"#### 🔹 {topic_label}")
+                                # Split the label into parts for better formatting
+                                label_parts = topic_label.split('\n')
+                                specific_cat = label_parts[0]
+                                topic_details = label_parts[1] if len(label_parts) > 1 else ""
+                                
+                                st.markdown(f"### 🔹 {specific_cat}")
+                                st.markdown(f"_{topic_details}_")
                                 st.markdown(f"**Videos in this topic:** {len(videos)}")
+                                
                                 for title, data in videos.items():
                                     st.markdown(f"- [{title}]({data['link']}) — {data['count']} mention(s)")
 
