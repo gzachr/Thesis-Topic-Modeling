@@ -1,273 +1,273 @@
-Id,Level,Texts,General Category,Specific Category
-Z35,1,mango fruit milk banana vegetable coconut bread,Food,Fruits & Dietary Items
-Z214,2,mango banana pineapple orange apple peach banana-banana,Food,Fruits 
-Z170,3,pineapple orange apple cut,Food,Fruits
-Z172,3,banana banana-banana,Food,Bananas
-Z171,3,mango peach,Food,Peach Mangoes
-Z213,2,fruit milk vegetable coconut bread bean dip,Food,Fruits & Dietary Items
-Z168,3,milk coconut,Food,Coconut Milk
-Z167,3,vegetable fruit,Food,Fruits & Vegetables
-Z169,3,bread bean tea dip jelly,Food,Snacks and Light Meals
-Z315,1,game play basketball dance competition player kick,Lifestyle,Basketball Competition
-Z242,2,dance competition kick winner training dancing knee,Lifestyle,Dance Competition
-Z1161,3,competition kick winner,Lifestyle,Competition
-Z1162,3,dance dancing,Lifestyle,Dancing
-Z1160,3,training train knee enemy leg mission final,Lifestyle,Physical Training
-Z244,2,brother mother father eye sister uncle blood,Lifestyle,Family Relations
-Z1170,3,eye pop poor fair decent nose perspective,Others,Facial Features
-Z1166,3,brother jay pipe,Others,Hard to Categorize / Seems Useless
-Z1169,3,girl-girl contact specific intense angry dress percent,Others,Hard to Categorize / Seems Useless
-Z1168,3,mother father,Lifestyle,Parents
-Z1167,3,sister uncle blood cousin speed afraid scared,Lifestyle,Family Relations
-Z243,2,game play basketball player sport shoot shot,Lifestyle,Basketball
-Z1163,3,game play,Lifestyle,Gaming
-Z1164,3,basketball player sport gold gun,Lifestyle,Basketball 
-Z1165,3,shoot shot ball,Lifestyle,Ball Sports
-Z37,1,singer song singing sing voice song-song fish,Entertainment,Music and Singing
-Z222,2,song singer singing sing voice song-song,Entertainment,Music and Singing
-Z196,3,song sing,Entertainment,Music and Singing
-Z197,3,singer singing voice song-song,Entertainment,Music and Singing
-Z221,2,fish shrimp seafood tomato rice-rice fish-fish pot,Food,Seafood Rice Dish
-Z193,3,fish-fish fish,Food,Fish
-Z195,3,tomato rice-rice pot chef pasta kitchen mushroom,Food,Tomato Pasta and Rice Dishes
-Z194,3,seafood shrimp,Food,Shrimp and Seafoods
-Z312,1,island beach palawan nido boracay tourist beach-beach,Travel,Philippine Beach Tourism
-Z235,2,palawan nido boracay paradise lagoon coron kayak,Travel,Tourism and Kayaking in Palawan and Boracay
-Z1144,3,nido boracay paradise kayak,Travel,Tourism and Kayaking in Palawan and Boracay
-Z1143,3,palawan lagoon coron coral,Travel,Coron Palawan Tourism
-Z234,2,island beach tourist beach-beach,Travel,Tourist Islands and Beaches
-Z1141,3,tourist island,Travel,Tourist Islands
-Z1142,3,beach beach-beach,Travel,Beaches
-Z31,1,vocal feature-feature latino podcast opm lyric artist,Entertainment,Vocal Features and Lyrics in Latino & OPM Music
-Z21,2,vocal opm lyric artist performance karaoke tiktok,Entertainment,OPM Vocal Performances and Karaoke on TikTok
-Z11,3,performance band concert stage studio,Entertainment,Concert and Studio Music Performances
-Z15,3,karaoke machine,Entertainment,Karaoke machine
-Z13,3,vocal opm lyric tiktok,Entertainment,OPM and TikTok Trends
-Z17,3,technique control note,Entertainment,Music Performance Techniques
-Z14,3,listen mate sing-song range bloody ridiculous gentleman,Others,Hard to Categorize / Seems Useless
-Z12,3,artist industry,Entertainment,Artist Industry
-Z16,3,sound clip imagine breath environment,Entertainment,Environmental Sound Clips
-Z22,2,latino feature-feature podcast viral coach feature freak,Entertainment,Viral Latino Coach and Podcast Features
-Z18,3,feature-feature podcast feature,Entertainment,Podcast Features
-Z19,3,latino viral coach freak review,Entertainment,Viral Latino Coach Reactions and Reviews
-Z34,1,tour spot adventure cebu view explore boat,Travel,Adventure Tours and Boat Exploration in Cebu
-Z212,2,tour spot view boat sunset guide,Travel,Sunset Boat Tours 
-Z166,3,spot view sunset guide,Travel,Sunset Viewpoints Guide
-Z165,3,boat tour,Travel,Boat Tour
-Z211,2,adventure cebu explore hotel card ferry travel,Travel,Cebu Adventure
-Z160,3,travel offer meeting world hall queue tired,Travel,Travel Events and Meeting Experiences
-Z163,3,cebu cebu-cebu,Travel,Cebu
-Z164,3,card cash internet cost fee gas,Others,Expenses and Payment Options
-Z161,3,adventure explore,Travel,Adventure and Exploration
-Z162,3,hotel ferry seat wifus bohol terminal,Travel,Travel and Accommodation in Bohol
-Z311,1,taxi airport flight ride plane passport visa,Travel,"Airport Transportation, Flights, and Travel Documents"
-Z232,2,taxi airport flight ride plane,Travel,Taxi Rides and Flights
-Z1137,3,taxi flight ride,Travel,Taxi Rides and Flights
-Z1138,3,plane airport,Travel,Airport
-Z233,2,passport visa company office online immigration phone,Travel,Immigration and Visa Services
-Z1139,3,visa company online immigration phone tax,Travel,Immigration and Visa Services
-Z1140,3,passport office document shopping-mall,Travel,Passport Documents
-Z33,1,cheese dessert ice-cream snack meal restaurant menu,Food,Cheese and Ice Cream Desserts
-Z29,2,dessert ice-cream ube cream creamy caramel,Food,Ube and Caramel Ice Cream
-Z153,3,dessert ice-cream ube,Food,Ube Ice Cream
-Z152,3,cream creamy caramel,Food,Caramel and Cream
-Z27,2,cheese snack chocolate cheese-cheese chip corn yum,Food,Cheese Snacks
-Z136,3,chip snack-snack cracker brand,Food,Chips and Snacks
-Z133,3,cheese cheese-cheese,Food,Cheese
-Z135,3,snack chocolate corn,Food,Snack Foods: Chocolate and Corn
-Z134,3,yum peanut cheesy bun classic fan juicy,Food,Juicy and Cheesy Snack Treats
-Z28,2,ice spoon cold red butter mukbang sausage,Food,Mukbang: Cold Treats and Sausage
-Z150,3,sausage sandwich ketchup bacon steak italian french,Food,Italian and French-Inspired Meat Sandwiches
-Z140,3,ice grab bowl excited halo-halo flan,Food,Filipino Desserts: Halo-Halo and Leche Flan
-Z149,3,red purple stomach fine strawberry oreo baguio,Food,Baguio Strawberries
-Z141,3,spoon fork plate,Food,Kitchenware and Utensils
-Z151,3,pizza curry bubble,Food,"Pizza, Curry, and Bubble Drinks"
-Z145,3,mixed mexican lie dead,Others,Mexican Narratives
-Z146,3,mukbang candy lee,Food,Candy Mukbang
-Z147,3,color green brown white,Others,Colors
-Z148,3,butter heat dough pan package bet summer,Food,Baking Ingredients and Process
-Z142,3,spring regular tooth exotic today tofu energy,Food,Hard to Categorize / Seems Useless
-Z144,3,fat bone tender pig lechon,Food,Lechon
-Z137,3,dry wet season,Others,Philippine Weather
-Z138,3,combination item steam dinner total salamat rainy,Others,Hard to Categorize / Seems Useless
-Z143,3,leaf portion liver plain feed tongue complete,Food,Meat and Animal Feed
-Z139,3,warm cold,Others,Temperature
-Z210,2,meal restaurant menu spaghetti jollibee burger gravy,Food,Jollibee Menu Items
-Z154,3,gravy pie jolly jolly-bee jollybee,Food,Jollibee Menu Items
-Z157,3,meal restaurant menu,Food,Restaurant Menu
-Z159,3,chicken-chicken hungry table finish,Food,Hungry for Chicken
-Z156,3,burger mcdonald kfc,Food,Fast Food Burgers
-Z158,3,jollibee-jollibee jollibee,Food,Jollibee
-Z155,3,spaghetti hot-dog,Food,Spaghetti and Hotdog Meal
-Z314,1,school language english student speak study language-language,Lifestyle,English Language Learning and Education
-Z238,2,doctor hospital medical nurse health patient safety,Lifestyle,"Medical Staff, Health Safety, and Services"
-Z1151,3,hospital medical patient,Lifestyle,Medical and Hospital Services
-Z1150,3,doctor nurse health safety,Lifestyle,Medical Staff and Health Safety
-Z239,2,school student study university college teacher art,Lifestyle,University Art Education and Life
-Z1154,3,university art senior campus,Lifestyle,Senior Art University Students
-Z1152,3,school college teacher,Lifestyle,College Relations
-Z1153,3,study student,Lifestyle,Students
-Z240,2,english language speak tagalog language-language learn,Culture,English and Tagalog Education
-Z1155,3,learn english,Culture,English Education
-Z1156,3,language speak tagalog language-language,Culture,Tagalog Education
-Z241,2,relationship filipina girlfriend marry boyfriend marriage husband,Lifestyle,"Filipina Dating, Marriage, and Partnerships"
-Z1159,3,marry marriage husband,Lifestyle,Marriage and Spousal Relationships
-Z1158,3,filipina relationship,Lifestyle,Relationship with a Filipina
-Z1157,3,girlfriend boyfriend,Lifestyle,Romantic Relationships
-Z317,1,history spanish asian woman south true war,Politics,Philippine History: Spanish Occupation and War
-Z248,2,history spanish war population government american influence,Politics,Influence of Spanish and American Occupation
-Z1201,3,american influence north magellan base california,Politics,Magellan and American Influence in the PH
-Z1205,3,government economy law territory,Politics,"Government, Economy, and Legal Territory"
-Z1203,3,battle history,Politics,Historical battles
-Z1204,3,war nation military soldier president army fight,Politics,"War, Soldiers, and National Defense"
-Z1202,3,spain spanish,Culture,Spain and Spanish Culture
-Z1206,3,city major capital religion muslim,Culture,Muslim Religion in Major Cities
-Z1207,3,population national largest,Politics,Largest National Population
-Z247,2,asian woman south true story western business,Culture,Asian Women in Business
-Z1194,3,asian southeast european,Culture,Asian and European Culture
-Z1191,3,true story sense heart instagram,Entertainment,Heartfelt Stories on Instagram
-Z1190,3,woman single difference opinion,Others,Single Women and Opinions
-Z1188,3,personal difficult medium account term write bank,Lifestyle,Personal Finance
-Z1198,3,job opportunity position professional jersey pacquiao manny,Lifestyle,Professional Opportunities and Manny Pacquiao
-Z1192,3,western west common average,Culture,Western Culture
-Z1189,3,social smart race win black pandemic impressive,Culture,Social Dynamics During the Pandemic
-Z1196,3,diverse product field earlier native late exciting,Others,Product Diversity
-Z1197,3,business issue,Lifestyle,Business Issues
-Z1193,3,conversation comfortable english-english accent phrase,Others,Conversational English and Accents
-Z1200,3,plan planning,Others,Planning
-Z1195,3,east south,Others,Cardinal Directions
-Z1199,3,vacation expat cultural simple strong basic money-money,Travel,"Expat Culture, Vacations, and Finance"
-Z36,1,swim bed pool ocean swimming drink bathroom,Lifestyle,"Residential Features: Pool, Bedrooms, and Bathrooms"
-Z220,2,wall retire build house-house property province concrete,Lifestyle,Provincial House Construction
-Z189,3,wall concrete block hollow,Lifestyle,Masonry and Wall Building
-Z191,3,retire jane,Others,Hard to Categorize / Seems Useless
-Z192,3,province update culture-shock,Culture,Province Life Culture Shock
-Z190,3,build house-house property project,Lifestyle,House Construction
-Z219,2,christmas holiday christmas-christmas birthday gift party celebration,Lifestyle,Holiday and Birthday Celebrations
-Z186,3,holiday birthday gift special december santa,Lifestyle,"December Festivities: Birthdays, Gifts, and Santa"
-Z187,3,christmas christmas-christmas merry-christmas september,Lifestyle,Christmas Season
-Z188,3,party celebration spirit tradition king rule happy-birthday,Lifestyle,Birthday and Cultural Celebrations
-Z217,2,swim ocean swimming sea hop diving shark,Travel,Swimming and Diving with Sea Creatures
-Z181,3,swimming swim,Lifestyle,Swimming
-Z180,3,ocean sea diving,Lifestyle,Sea Diving
-Z182,3,hop shark whale-shark tropical gorgeous secret peace,Travel,Whale Sharks and Tropical Wonders
-Z218,2,drink beer drinking alcohol bottle juice drunk,Food,Alcoholic and Non-Alcoholic Beverages
-Z185,3,alcohol bottle drunk,Food,Alcohol Beverage
-Z184,3,juice drink,Food,Juices
-Z183,3,beer drinking san-miguel,Food,San Miguel Beer
-Z216,2,bed pool bathroom shower sleep roof bedroom,Lifestyle,Household Amenities
-Z177,3,bed bathroom sleep,Lifestyle,Household Amenities
-Z179,3,roof bedroom door ground pressure,Lifestyle,Household Amenities
-Z178,3,pool shower toilet private bar,Lifestyle,Household Amenities
-Z215,2,hole rock typhoon foot wind port pack,Others,Natural Disasters
-Z176,3,foot mark baby deep daniel,Others,Hard to Categorize / Seems Useless
-Z173,3,typhoon wind port activity ship mindanao cave,Travel,Storm Impact and Activities in Mindanao
-Z174,3,hole rock pack belly,Others,Hard to Categorize / Seems Useless
-Z175,3,wild sick van track careful vehicle paper,Others,Travel Safety
-Z39,1,impression bgc manila-manila friendly hand building camera,Travel,BGC Impressions
-Z226,2,impression friendly street-street hill fort church san,Travel,"Forts, Hills, and Churches"
-Z1114,3,tip daily luke blog,Lifestyle,Luke's Daily Blog
-Z1116,3,street-street chinatown barbecue squid,Travel,Chinatown Street Food
-Z1121,3,chocolate-hill hill,Travel,Chocolate Hills
-Z1118,3,slow glass horse bay,Others,Hard to Categorize / Seems Useless
-Z1110,3,impression friendly,Others,Friendly Impressions
-Z1111,3,vanilla chain tag alive queen avocado flip,Others,Hard to Categorize / Seems Useless
-Z1117,3,hot-hot club farm guest red-horse treat sardine,Lifestyle,Clubbing and Gathering Culture
-Z1120,3,pinoy pinay mom,Lifestyle,Pinay Moms
-Z1119,3,tank daddy mommy water-water truck timber,Others,Hard to Categorize / Seems Useless
-Z1112,3,church san fort jazz babe,Travel,Historic Landmarks
-Z1113,3,poverty lifestyle usa,Lifestyle,US Poverty
-Z1115,3,haircut barber shave hang,Lifestyle,Barber Services
-Z1122,3,quiet stair rodrigo davao reserve corporation,Politics,"Rodrigo Duterte, Davao, and Corporations"
-Z225,2,hand camera picture dangerous shoe safe clothes,Entertainment,Photography and Safety
-Z1105,3,hand short wave finger shirt,Others,Gesture and Style
-Z1109,3,picture photo funny,Entertainment,Funny Photos
-Z1107,3,dangerous safe scary,Others,Safety and Risk
-Z1108,3,camera film,Entertainment,Film Camera
-Z1106,3,shoe clothes pair monkey crocodile,Others,Outdoor Fashion
-Z227,2,bgc manila-manila building metro-manila makati makatus modern,Travel,Metro Manila Modern Development
-Z1125,3,building global museum grand,Travel,Global Museums
-Z1124,3,manila-manila metro-manila makati,Travel,Metro Manila
-Z1123,3,bgc makatus modern mall-mall venice,Travel,BGC and Venice Mall
-Z316,1,popular beauty incredible star movie actual power,Others,Movie Star Influence
-Z245,2,beauty incredible star movie actual power jesus,Others,"Celebrity, Faith, and Perception"
-Z1171,3,star jesus model flag lord gym,Others,Symbols and Icons Across Contexts
-Z1176,3,beauty natural universe,Entertainment,Miss Universe and Natural Beauty
-Z1184,3,heavy weight typical pound,Others,Weight and Measurement
-Z1180,3,book brain read singapore access comfort,Others,Reading Singapore Books
-Z1178,3,incredible unbelievable,Others,Hard to Categorize / Seems Useless
-Z1182,3,meter square giant,Others,Giant Land Area
-Z1172,3,movie scene actor attention actress match disney,Entertainment,Disney Movie and Actors
-Z1175,3,power attack arm solar,Others,Hard to Categorize / Seems Useless
-Z1179,3,actual key holy,Others,Hard to Categorize / Seems Useless
-Z1173,3,skill talent,Others,Skills and Talent
-Z1185,3,healthy positive curious episode easier stay,Others,Wellness and Personal Growth
-Z1181,3,magic tshirt excite yellow stupid shake rap,Culture,Pop Culture & Expression
-Z1177,3,earth lake human volcano,Travel,Geography and Human Interaction
-Z1183,3,plant garden flower,Others,Flower and Plant Garden
-Z1174,3,tough emotional,Others,Emotional Resilience
-Z246,2,popular famous original correct commercial festival standard,Entertainment,Pop Commercial Culture
-Z1187,3,original correct commercial festival standard tone judge,Entertainment,Pop Commercial Culture
-Z1186,3,famous popular,Others,Famous and Popular
-Z38,1,peso shop coffee dollar store cheap expensive,Politics,Shopping and Currency
-Z224,2,peso dollar cheap expensive price peso-peso pay,Politics,Dollar Peso Comparison
-Z1102,3,peso-peso peso,Politics,Philippines Peso
-Z1101,3,dollar price buck buddy,Others,Money and Slang
-Z1104,3,pay rent budget load close,Lifestyle,Budgeting and Rent Payment
-Z1103,3,cheap expensive cheaper kilometer,Others,Price and Distance Evaluation
-Z223,2,shop coffee store mall market fresh shopping,Lifestyle,Coffee and Shopping
-Z199,3,shopping mall,Lifestyle,Shopping Malls
-Z198,3,shop store market fresh,Lifestyle,Fresh Goods Shopping
-Z1100,3,coffee coffee-coffee,Food,Coffee
-Z310,1,sauce delicious spicy dish pork meat crispy,Food,Spicy Pork Dishes
-Z230,2,pork meat beef sour soup crunchy flavor,Food,Pork and Beef Soup Dishes
-Z1133,3,crunchy flavor mix cake skin version layer,Food,Crunchy and Flavorful Cakes
-Z1131,3,pork meat beef,Food,Types of Meat
-Z1130,3,sour soup cuisine lumpia,Food,Lumpi and Soup Dishes
-Z1132,3,lemon adobo lime sisig grill authentic intestine,Food,Adobo and Sisig Dishes
-Z231,2,egg noodle breakfast duck pancit balut,Food,"Filipino Breakfasts: Pancit, Balut, and More"
-Z1134,3,duck balut,Food,Balut
-Z1136,3,noodle pancit,Food,Pancit
-Z1135,3,egg breakfast,Food,Eggs and Breakfast
-Z228,2,delicious dish crispy smell fry tasty sugar,Food,Crispy and Tasty Fried Dishes
-Z1127,3,delicious dish smell fry,Food,Fried Food
-Z1126,3,crispy tasty sugar piece soft spice sweet-sweet,Food,Crispy and Soft Treats
-Z229,2,sauce spicy vinegar bite spicy-spicy,Food,Spicy Food/Sauce
-Z1128,3,sauce vinegar bite,Food,Vinegar Sauce
-Z1129,3,spicy-spicy spicy,Food,Spicy Food/Sauce
-Z32,1,road walk local car trip main busy,Travel,Road Trips and Walks
-Z23,2,local main tricycle bus driver service bigger,Travel,Local Transport Options
-Z120,3,mind deal negative,Others,Negative Mindsets
-Z119,3,construction tall wood chair pas tower fake,Lifestyle,Wooden Construction and Furniture
-Z117,3,sell owner plastic cafe motorcycle neighbor bakery,Lifestyle,Business and Neighborhood Life
-Z116,3,bus direction map jeepney station resort,Travel,Transit Routes near Resort
-Z110,3,local community,Lifestyle,Local Community
-Z114,3,service security apartment bag figure condo fit,Lifestyle,Condo Security and Services
-Z118,3,public transportation,Travel,Public Transportation
-Z111,3,main unique,Others,Hard to Categorize / Seems Useless
-Z113,3,extra light clean drop dog charge screen,Others,Hard to Categorize / Seems Useless
-Z112,3,tricycle driver option alina,Travel,Tricycle Driver
-Z115,3,size bigger,Others,Hard to Categorize / Seems Useless
-Z25,2,road walk car trip busy massive proper,Travel,Busy Road Trips and Urban Traffic
-Z123,3,walk car busy,Travel,Walking and Traffic
-Z125,3,massive proper straight lovely tiny previous vegan,Others,Hard to Categorize / Seems Useless
-Z124,3,trip road,Travel,Road Trip
-Z26,2,mountain bike river motorbike scooter blue sky,Travel,Mountain River Transportation
-Z127,3,scooter lunch village catch ticket drone distance,Travel,Village Travel and Exploration Logistics
-Z132,3,animal forest snake grass specie cow eagle,Travel,Forest Animals
-Z131,3,blue sky cloud,Travel,Blue Sky
-Z126,3,bike motorbike,Travel,Bikes and Motorbikes
-Z129,3,palm tree sand bamboo,Travel,Tropical Beach Elements
-Z128,3,mountain nature destination waterfall,Travel,Mountain and Waterfall Destinations
-Z130,3,river bridge jungle cross,Travel,Jungle River Crossing
-Z24,2,huge quick journey honest leave meet space,Others,Hard to Categorize / Seems Useless
-Z122,3,huge entire ton touch international,Others,Hard to Categorize / Seems Useless
-Z121,3,quick journey honest leave meet space level,Others,Hard to Categorize / Seems Useless
-Z313,1,garlic onion pepper chili ingredient cook salty,Food,Spices and Seasonings
-Z237,2,ingredient recipe cooking pinoy-planet baboy,Food,Pinoy-Planet: Pork Specialities
-Z1149,3,baboy pinoy-planet,Food,Pinoy-Planet: Pork Specialities
-Z1148,3,ingredient recipe cooking,Food,Cooking and Recipes
-Z236,2,garlic onion pepper chili cook salty salt,Food,Spices and Seasonings
-Z1145,3,garlic onion cook,Food,Sautaeing Aromatics
-Z1146,3,pepper chili salty salt,Food,Spices and Seasonings
-Z1147,3,oil soy-sauce chop,Food,Seasoning
+Id,Level,Texts,General Category,Specific Category,Conceptual Relation,Philippine Context
+Z35,1,mango fruit milk banana vegetable coconut bread,Food,Fruits & Dietary Items,4,4
+Z214,2,mango banana pineapple orange apple peach banana-banana,Food,Fruits ,5,4
+Z170,3,pineapple orange apple cut,Food,Fruits,4,3
+Z172,3,banana banana-banana,Food,Bananas,5,4
+Z171,3,mango peach,Food,Peach Mangoes,5,4
+Z213,2,fruit milk vegetable coconut bread bean dip,Food,Fruits & Dietary Items,3,4
+Z168,3,milk coconut,Food,Coconut Milk,3,5
+Z167,3,vegetable fruit,Food,Fruits & Vegetables,5,2
+Z169,3,bread bean tea dip jelly,Food,Snacks and Light Meals,3,3
+Z315,1,game play basketball dance competition player kick,Lifestyle,Basketball Competition,4,4
+Z242,2,dance competition kick winner training dancing knee,Lifestyle,Dance Competition,4,3
+Z1161,3,competition kick winner,Lifestyle,Competition,5,2
+Z1162,3,dance dancing,Lifestyle,Dancing,5,2
+Z1160,3,training train knee enemy leg mission final,Lifestyle,Physical Training,2,1
+Z244,2,brother mother father eye sister uncle blood,Lifestyle,Family Relations,4,3
+Z1170,3,eye pop poor fair decent nose perspective,Others,Facial Features,2,1
+Z1166,3,brother jay pipe,Others,Hard to Categorize / Seems Useless,1,1
+Z1169,3,girl-girl contact specific intense angry dress percent,Others,Hard to Categorize / Seems Useless,1,1
+Z1168,3,mother father,Lifestyle,Parents,5,2
+Z1167,3,sister uncle blood cousin speed afraid scared,Lifestyle,Family Relations,2,3
+Z243,2,game play basketball player sport shoot shot,Lifestyle,Basketball,5,4
+Z1163,3,game play,Lifestyle,Gaming,5,1
+Z1164,3,basketball player sport gold gun,Lifestyle,Basketball ,2,3
+Z1165,3,shoot shot ball,Lifestyle,Ball Sports,5,2
+Z37,1,singer song singing sing voice song-song fish,Entertainment,Music and Singing,4,3
+Z222,2,song singer singing sing voice song-song,Entertainment,Music and Singing,5,4
+Z196,3,song sing,Entertainment,Music and Singing,5,3
+Z197,3,singer singing voice song-song,Entertainment,Music and Singing,5,4
+Z221,2,fish shrimp seafood tomato rice-rice fish-fish pot,Food,Seafood Rice Dish,3,5
+Z193,3,fish-fish fish,Food,Fish,5,5
+Z195,3,tomato rice-rice pot chef pasta kitchen mushroom,Food,Tomato Pasta and Rice Dishes,4,4
+Z194,3,seafood shrimp,Food,Shrimp and Seafoods,5,5
+Z312,1,island beach palawan nido boracay tourist beach-beach,Travel,Philippine Beach Tourism,5,5
+Z235,2,palawan nido boracay paradise lagoon coron kayak,Travel,Tourism and Kayaking in Palawan and Boracay,5,5
+Z1144,3,nido boracay paradise kayak,Travel,Tourism and Kayaking in Palawan and Boracay,5,5
+Z1143,3,palawan lagoon coron coral,Travel,Coron Palawan Tourism,5,5
+Z234,2,island beach tourist beach-beach,Travel,Tourist Islands and Beaches,5,4
+Z1141,3,tourist island,Travel,Tourist Islands,5,4
+Z1142,3,beach beach-beach,Travel,Beaches,5,4
+Z31,1,vocal feature-feature latino podcast opm lyric artist,Entertainment,Vocal Features and Lyrics in Latino & OPM Music,3,2
+Z21,2,vocal opm lyric artist performance karaoke tiktok,Entertainment,OPM Vocal Performances and Karaoke on TikTok,4,3
+Z11,3,performance band concert stage studio,Entertainment,Concert and Studio Music Performances,5,1
+Z15,3,karaoke machine,Entertainment,Karaoke machine,5,4
+Z13,3,vocal opm lyric tiktok,Entertainment,OPM and TikTok Trends,4,3
+Z17,3,technique control note,Entertainment,Music Performance Techniques,5,1
+Z14,3,listen mate sing-song range bloody ridiculous gentleman,Others,Hard to Categorize / Seems Useless,2,1
+Z12,3,artist industry,Entertainment,Artist Industry,4,1
+Z16,3,sound clip imagine breath environment,Entertainment,Environmental Sound Clips,2,1
+Z22,2,latino feature-feature podcast viral coach feature freak,Entertainment,Viral Latino Coach and Podcast Features,2,1
+Z18,3,feature-feature podcast feature,Entertainment,Podcast Features,3,1
+Z19,3,latino viral coach freak review,Entertainment,Viral Latino Coach Reactions and Reviews,2,1
+Z34,1,tour spot adventure cebu view explore boat,Travel,Adventure Tours and Boat Exploration in Cebu,5,5
+Z212,2,tour spot view boat sunset guide,Travel,Sunset Boat Tours ,5,3
+Z166,3,spot view sunset guide,Travel,Sunset Viewpoints Guide,5,3
+Z165,3,boat tour,Travel,Boat Tour,5,3
+Z211,2,adventure cebu explore hotel card ferry travel,Travel,Cebu Adventure,5,5
+Z160,3,travel offer meeting world hall queue tired,Travel,Travel Events and Meeting Experiences,2,1
+Z163,3,cebu cebu-cebu,Travel,Cebu,5,5
+Z164,3,card cash internet cost fee gas,Others,Expenses and Payment Options,4,1
+Z161,3,adventure explore,Travel,Adventure and Exploration,5,1
+Z162,3,hotel ferry seat wifus bohol terminal,Travel,Travel and Accommodation in Bohol,4,2
+Z311,1,taxi airport flight ride plane passport visa,Travel,"Airport Transportation, Flights, and Travel Documents",5,2
+Z232,2,taxi airport flight ride plane,Travel,Taxi Rides and Flights,5,1
+Z1137,3,taxi flight ride,Travel,Taxi Rides and Flights,5,1
+Z1138,3,plane airport,Travel,Airport,5,1
+Z233,2,passport visa company office online immigration phone,Travel,Immigration and Visa Services,4,2
+Z1139,3,visa company online immigration phone tax,Travel,Immigration and Visa Services,4,2
+Z1140,3,passport office document shopping-mall,Travel,Passport Documents,3,1
+Z33,1,cheese dessert ice-cream snack meal restaurant menu,Food,Cheese and Ice Cream Desserts,5,1
+Z29,2,dessert ice-cream ube cream creamy caramel,Food,Ube and Caramel Ice Cream,5,5
+Z153,3,dessert ice-cream ube,Food,Ube Ice Cream,5,5
+Z152,3,cream creamy caramel,Food,Caramel and Cream,5,1
+Z27,2,cheese snack chocolate cheese-cheese chip corn yum,Food,Cheese Snacks,4,2
+Z136,3,chip snack-snack cracker brand,Food,Chips and Snacks,5,2
+Z133,3,cheese cheese-cheese,Food,Cheese,5,1
+Z135,3,snack chocolate corn,Food,Snack Foods: Chocolate and Corn,4,2
+Z134,3,yum peanut cheesy bun classic fan juicy,Food,Juicy and Cheesy Snack Treats,2,1
+Z28,2,ice spoon cold red butter mukbang sausage,Food,Mukbang: Cold Treats and Sausage,2,2
+Z150,3,sausage sandwich ketchup bacon steak italian french,Food,Italian and French-Inspired Meat Sandwiches,4,1
+Z140,3,ice grab bowl excited halo-halo flan,Food,Filipino Desserts: Halo-Halo and Leche Flan,4,5
+Z149,3,red purple stomach fine strawberry oreo baguio,Food,Baguio Strawberries,2,4
+Z141,3,spoon fork plate,Food,Kitchenware and Utensils,5,1
+Z151,3,pizza curry bubble,Food,"Pizza, Curry, and Bubble Drinks",3,1
+Z145,3,mixed mexican lie dead,Others,Mexican Narratives,1,1
+Z146,3,mukbang candy lee,Food,Candy Mukbang,3,2
+Z147,3,color green brown white,Others,Colors,5,1
+Z148,3,butter heat dough pan package bet summer,Food,Baking Ingredients and Process,3,1
+Z142,3,spring regular tooth exotic today tofu energy,Food,Hard to Categorize / Seems Useless,1,1
+Z144,3,fat bone tender pig lechon,Food,Lechon,5,5
+Z137,3,dry wet season,Others,Philippine Weather,5,4
+Z138,3,combination item steam dinner total salamat rainy,Others,Hard to Categorize / Seems Useless,2,2
+Z143,3,leaf portion liver plain feed tongue complete,Food,Meat and Animal Feed,2,1
+Z139,3,warm cold,Others,Temperature,5,1
+Z210,2,meal restaurant menu spaghetti jollibee burger gravy,Food,Jollibee Menu Items,5,5
+Z154,3,gravy pie jolly jolly-bee jollybee,Food,Jollibee Menu Items,5,5
+Z157,3,meal restaurant menu,Food,Restaurant Menu,5,1
+Z159,3,chicken-chicken hungry table finish,Food,Hungry for Chicken,3,1
+Z156,3,burger mcdonald kfc,Food,Fast Food Burgers,5,2
+Z158,3,jollibee-jollibee jollibee,Food,Jollibee,5,5
+Z155,3,spaghetti hot-dog,Food,Spaghetti and Hotdog Meal,5,3
+Z314,1,school language english student speak study language-language,Lifestyle,English Language Learning and Education,5,3
+Z238,2,doctor hospital medical nurse health patient safety,Lifestyle,"Medical Staff, Health Safety, and Services",5,1
+Z1151,3,hospital medical patient,Lifestyle,Medical and Hospital Services,5,1
+Z1150,3,doctor nurse health safety,Lifestyle,Medical Staff and Health Safety,5,1
+Z239,2,school student study university college teacher art,Lifestyle,University Art Education and Life,5,1
+Z1154,3,university art senior campus,Lifestyle,Senior Art University Students,4,1
+Z1152,3,school college teacher,Lifestyle,College Relations,5,1
+Z1153,3,study student,Lifestyle,Students,5,1
+Z240,2,english language speak tagalog language-language learn,Culture,English and Tagalog Education,5,5
+Z1155,3,learn english,Culture,English Education,5,4
+Z1156,3,language speak tagalog language-language,Culture,Tagalog Education,5,5
+Z241,2,relationship filipina girlfriend marry boyfriend marriage husband,Lifestyle,"Filipina Dating, Marriage, and Partnerships",5,5
+Z1159,3,marry marriage husband,Lifestyle,Marriage and Spousal Relationships,5,1
+Z1158,3,filipina relationship,Lifestyle,Relationship with a Filipina,5,5
+Z1157,3,girlfriend boyfriend,Lifestyle,Romantic Relationships,5,1
+Z317,1,history spanish asian woman south true war,Politics,Philippine History: Spanish Occupation and War,2,3
+Z248,2,history spanish war population government american influence,Politics,Influence of Spanish and American Occupation,5,5
+Z1201,3,american influence north magellan base california,Politics,Magellan and American Influence in the PH,4,5
+Z1205,3,government economy law territory,Politics,"Government, Economy, and Legal Territory",5,1
+Z1203,3,battle history,Politics,Historical battles,5,1
+Z1204,3,war nation military soldier president army fight,Politics,"War, Soldiers, and National Defense",5,1
+Z1202,3,spain spanish,Culture,Spain and Spanish Culture,5,4
+Z1206,3,city major capital religion muslim,Culture,Muslim Religion in Major Cities,3,3
+Z1207,3,population national largest,Politics,Largest National Population,5,1
+Z247,2,asian woman south true story western business,Culture,Asian Women in Business,2,2
+Z1194,3,asian southeast european,Culture,Asian and European Culture,5,3
+Z1191,3,true story sense heart instagram,Entertainment,Heartfelt Stories on Instagram,2,1
+Z1190,3,woman single difference opinion,Others,Single Women and Opinions,2,1
+Z1188,3,personal difficult medium account term write bank,Lifestyle,Personal Finance,3,1
+Z1198,3,job opportunity position professional jersey pacquiao manny,Lifestyle,Professional Opportunities and Manny Pacquiao,4,5
+Z1192,3,western west common average,Culture,Western Culture,3,1
+Z1189,3,social smart race win black pandemic impressive,Culture,Social Dynamics During the Pandemic,2,1
+Z1196,3,diverse product field earlier native late exciting,Others,Product Diversity,2,1
+Z1197,3,business issue,Lifestyle,Business Issues,5,1
+Z1193,3,conversation comfortable english-english accent phrase,Others,Conversational English and Accents,5,3
+Z1200,3,plan planning,Others,Planning,5,1
+Z1195,3,east south,Others,Cardinal Directions,5,1
+Z1199,3,vacation expat cultural simple strong basic money-money,Travel,"Expat Culture, Vacations, and Finance",3,3
+Z36,1,swim bed pool ocean swimming drink bathroom,Lifestyle,"Residential Features: Pool, Bedrooms, and Bathrooms",4,2
+Z220,2,wall retire build house-house property province concrete,Lifestyle,Provincial House Construction,3,3
+Z189,3,wall concrete block hollow,Lifestyle,Masonry and Wall Building,5,3
+Z191,3,retire jane,Others,Hard to Categorize / Seems Useless,2,1
+Z192,3,province update culture-shock,Culture,Province Life Culture Shock,3,3
+Z190,3,build house-house property project,Lifestyle,House Construction,5,3
+Z219,2,christmas holiday christmas-christmas birthday gift party celebration,Lifestyle,Holiday and Birthday Celebrations,5,4
+Z186,3,holiday birthday gift special december santa,Lifestyle,"December Festivities: Birthdays, Gifts, and Santa",5,4
+Z187,3,christmas christmas-christmas merry-christmas september,Lifestyle,Christmas Season,5,5
+Z188,3,party celebration spirit tradition king rule happy-birthday,Lifestyle,Birthday and Cultural Celebrations,4,1
+Z217,2,swim ocean swimming sea hop diving shark,Travel,Swimming and Diving with Sea Creatures,5,4
+Z181,3,swimming swim,Lifestyle,Swimming,5,1
+Z180,3,ocean sea diving,Lifestyle,Sea Diving,5,3
+Z182,3,hop shark whale-shark tropical gorgeous secret peace,Travel,Whale Sharks and Tropical Wonders,3,5
+Z218,2,drink beer drinking alcohol bottle juice drunk,Food,Alcoholic and Non-Alcoholic Beverages,5,2
+Z185,3,alcohol bottle drunk,Food,Alcohol Beverage,5,1
+Z184,3,juice drink,Food,Juices,5,1
+Z183,3,beer drinking san-miguel,Food,San Miguel Beer,5,5
+Z216,2,bed pool bathroom shower sleep roof bedroom,Lifestyle,Household Amenities,5,1
+Z177,3,bed bathroom sleep,Lifestyle,Household Amenities,5,1
+Z179,3,roof bedroom door ground pressure,Lifestyle,Household Amenities,3,1
+Z178,3,pool shower toilet private bar,Lifestyle,Household Amenities,4,1
+Z215,2,hole rock typhoon foot wind port pack,Others,Natural Disasters,2,3
+Z176,3,foot mark baby deep daniel,Others,Hard to Categorize / Seems Useless,1,1
+Z173,3,typhoon wind port activity ship mindanao cave,Travel,Storm Impact and Activities in Mindanao,4,5
+Z174,3,hole rock pack belly,Others,Hard to Categorize / Seems Useless,2,1
+Z175,3,wild sick van track careful vehicle paper,Others,Travel Safety,2,1
+Z39,1,impression bgc manila-manila friendly hand building camera,Travel,BGC Impressions,3,5
+Z226,2,impression friendly street-street hill fort church san,Travel,"Forts, Hills, and Churches",4,4
+Z1114,3,tip daily luke blog,Lifestyle,Luke's Daily Blog,3,1
+Z1116,3,street-street chinatown barbecue squid,Travel,Chinatown Street Food,5,5
+Z1121,3,chocolate-hill hill,Travel,Chocolate Hills,5,5
+Z1118,3,slow glass horse bay,Others,Hard to Categorize / Seems Useless,2,1
+Z1110,3,impression friendly,Others,Friendly Impressions,5,1
+Z1111,3,vanilla chain tag alive queen avocado flip,Others,Hard to Categorize / Seems Useless,1,2
+Z1117,3,hot-hot club farm guest red-horse treat sardine,Lifestyle,Clubbing and Gathering Culture,3,4
+Z1120,3,pinoy pinay mom,Lifestyle,Pinay Moms,5,5
+Z1119,3,tank daddy mommy water-water truck timber,Others,Hard to Categorize / Seems Useless,2,1
+Z1112,3,church san fort jazz babe,Travel,Historic Landmarks,3,4
+Z1113,3,poverty lifestyle usa,Lifestyle,US Poverty,3,3
+Z1115,3,haircut barber shave hang,Lifestyle,Barber Services,4,1
+Z1122,3,quiet stair rodrigo davao reserve corporation,Politics,"Rodrigo Duterte, Davao, and Corporations",2,5
+Z225,2,hand camera picture dangerous shoe safe clothes,Entertainment,Photography and Safety,2,1
+Z1105,3,hand short wave finger shirt,Others,Gesture and Style,3,1
+Z1109,3,picture photo funny,Entertainment,Funny Photos,5,1
+Z1107,3,dangerous safe scary,Others,Safety and Risk,5,1
+Z1108,3,camera film,Entertainment,Film Camera,5,1
+Z1106,3,shoe clothes pair monkey crocodile,Others,Outdoor Fashion,2,1
+Z227,2,bgc manila-manila building metro-manila makati makatus modern,Travel,Metro Manila Modern Development,5,5
+Z1125,3,building global museum grand,Travel,Global Museums,4,1
+Z1124,3,manila-manila metro-manila makati,Travel,Metro Manila,5,5
+Z1123,3,bgc makatus modern mall-mall venice,Travel,BGC and Venice Mall,5,5
+Z316,1,popular beauty incredible star movie actual power,Others,Movie Star Influence,3,1
+Z245,2,beauty incredible star movie actual power jesus,Others,"Celebrity, Faith, and Perception",2,1
+Z1171,3,star jesus model flag lord gym,Others,Symbols and Icons Across Contexts,1,2
+Z1176,3,beauty natural universe,Entertainment,Miss Universe and Natural Beauty,5,1
+Z1184,3,heavy weight typical pound,Others,Weight and Measurement,5,1
+Z1180,3,book brain read singapore access comfort,Others,Reading Singapore Books,3,1
+Z1178,3,incredible unbelievable,Others,Hard to Categorize / Seems Useless,5,1
+Z1182,3,meter square giant,Others,Giant Land Area,5,1
+Z1172,3,movie scene actor attention actress match disney,Entertainment,Disney Movie and Actors,5,1
+Z1175,3,power attack arm solar,Others,Hard to Categorize / Seems Useless,2,1
+Z1179,3,actual key holy,Others,Hard to Categorize / Seems Useless,2,1
+Z1173,3,skill talent,Others,Skills and Talent,5,1
+Z1185,3,healthy positive curious episode easier stay,Others,Wellness and Personal Growth,2,1
+Z1181,3,magic tshirt excite yellow stupid shake rap,Culture,Pop Culture & Expression,1,1
+Z1177,3,earth lake human volcano,Travel,Geography and Human Interaction,4,4
+Z1183,3,plant garden flower,Others,Flower and Plant Garden,5,1
+Z1174,3,tough emotional,Others,Emotional Resilience,5,1
+Z246,2,popular famous original correct commercial festival standard,Entertainment,Pop Commercial Culture,4,2
+Z1187,3,original correct commercial festival standard tone judge,Entertainment,Pop Commercial Culture,3,1
+Z1186,3,famous popular,Others,Famous and Popular,5,1
+Z38,1,peso shop coffee dollar store cheap expensive,Politics,Shopping and Currency,5,5
+Z224,2,peso dollar cheap expensive price peso-peso pay,Politics,Dollar Peso Comparison,5,5
+Z1102,3,peso-peso peso,Politics,Philippines Peso,5,5
+Z1101,3,dollar price buck buddy,Others,Money and Slang,3,1
+Z1104,3,pay rent budget load close,Lifestyle,Budgeting and Rent Payment,4,3
+Z1103,3,cheap expensive cheaper kilometer,Others,Price and Distance Evaluation,4,1
+Z223,2,shop coffee store mall market fresh shopping,Lifestyle,Coffee and Shopping,5,3
+Z199,3,shopping mall,Lifestyle,Shopping Malls,5,4
+Z198,3,shop store market fresh,Lifestyle,Fresh Goods Shopping,5,3
+Z1100,3,coffee coffee-coffee,Food,Coffee,5,2
+Z310,1,sauce delicious spicy dish pork meat crispy,Food,Spicy Pork Dishes,5,3
+Z230,2,pork meat beef sour soup crunchy flavor,Food,Pork and Beef Soup Dishes,5,4
+Z1133,3,crunchy flavor mix cake skin version layer,Food,Crunchy and Flavorful Cakes,3,1
+Z1131,3,pork meat beef,Food,Types of Meat,5,2
+Z1130,3,sour soup cuisine lumpia,Food,Lumpi and Soup Dishes,5,5
+Z1132,3,lemon adobo lime sisig grill authentic intestine,Food,Adobo and Sisig Dishes,5,5
+Z231,2,egg noodle breakfast duck pancit balut,Food,"Filipino Breakfasts: Pancit, Balut, and More",5,5
+Z1134,3,duck balut,Food,Balut,5,5
+Z1136,3,noodle pancit,Food,Pancit,5,5
+Z1135,3,egg breakfast,Food,Eggs and Breakfast,5,1
+Z228,2,delicious dish crispy smell fry tasty sugar,Food,Crispy and Tasty Fried Dishes,5,2
+Z1127,3,delicious dish smell fry,Food,Fried Food,5,1
+Z1126,3,crispy tasty sugar piece soft spice sweet-sweet,Food,Crispy and Soft Treats,5,2
+Z229,2,sauce spicy vinegar bite spicy-spicy,Food,Spicy Food/Sauce,5,4
+Z1128,3,sauce vinegar bite,Food,Vinegar Sauce,5,4
+Z1129,3,spicy-spicy spicy,Food,Spicy Food/Sauce,5,2
+Z32,1,road walk local car trip main busy,Travel,Road Trips and Walks,4,2
+Z23,2,local main tricycle bus driver service bigger,Travel,Local Transport Options,5,5
+Z120,3,mind deal negative,Others,Negative Mindsets,3,1
+Z119,3,construction tall wood chair pas tower fake,Lifestyle,Wooden Construction and Furniture,2,1
+Z117,3,sell owner plastic cafe motorcycle neighbor bakery,Lifestyle,Business and Neighborhood Life,3,2
+Z116,3,bus direction map jeepney station resort,Travel,Transit Routes near Resort,5,5
+Z110,3,local community,Lifestyle,Local Community,5,1
+Z114,3,service security apartment bag figure condo fit,Lifestyle,Condo Security and Services,3,2
+Z118,3,public transportation,Travel,Public Transportation,5,3
+Z111,3,main unique,Others,Hard to Categorize / Seems Useless,5,1
+Z113,3,extra light clean drop dog charge screen,Others,Hard to Categorize / Seems Useless,1,1
+Z112,3,tricycle driver option alina,Travel,Tricycle Driver,3,5
+Z115,3,size bigger,Others,Hard to Categorize / Seems Useless,5,1
+Z25,2,road walk car trip busy massive proper,Travel,Busy Road Trips and Urban Traffic,4,2
+Z123,3,walk car busy,Travel,Walking and Traffic,5,1
+Z125,3,massive proper straight lovely tiny previous vegan,Others,Hard to Categorize / Seems Useless,1,1
+Z124,3,trip road,Travel,Road Trip,5,1
+Z26,2,mountain bike river motorbike scooter blue sky,Travel,Mountain River Transportation,5,3
+Z127,3,scooter lunch village catch ticket drone distance,Travel,Village Travel and Exploration Logistics,2,2
+Z132,3,animal forest snake grass specie cow eagle,Travel,Forest Animals,5,3
+Z131,3,blue sky cloud,Travel,Blue Sky,5,1
+Z126,3,bike motorbike,Travel,Bikes and Motorbikes,5,3
+Z129,3,palm tree sand bamboo,Travel,Tropical Beach Elements,5,5
+Z128,3,mountain nature destination waterfall,Travel,Mountain and Waterfall Destinations,5,3
+Z130,3,river bridge jungle cross,Travel,Jungle River Crossing,4,3
+Z24,2,huge quick journey honest leave meet space,Others,Hard to Categorize / Seems Useless,1,1
+Z122,3,huge entire ton touch international,Others,Hard to Categorize / Seems Useless,2,1
+Z121,3,quick journey honest leave meet space level,Others,Hard to Categorize / Seems Useless,2,1
+Z313,1,garlic onion pepper chili ingredient cook salty,Food,Spices and Seasonings,5,5
+Z237,2,ingredient recipe cooking pinoy-planet baboy,Food,Pinoy-Planet: Pork Specialities,5,5
+Z1149,3,baboy pinoy-planet,Food,Pinoy-Planet: Pork Specialities,5,5
+Z1148,3,ingredient recipe cooking,Food,Cooking and Recipes,5,1
+Z236,2,garlic onion pepper chili cook salty salt,Food,Spices and Seasonings,5,5
+Z1145,3,garlic onion cook,Food,Sautaeing Aromatics,5,4
+Z1146,3,pepper chili salty salt,Food,Spices and Seasonings,5,3
+Z1147,3,oil soy-sauce chop,Food,Seasoning,5,4
