@@ -248,7 +248,7 @@ def show_hlta_section():
             for topic in video_info['topics']:
                 levels.setdefault(topic['level'], []).append(topic)
 
-            for level in sorted(levels.keys()):
+            for level in sorted(levels.keys(), reverse=True):
                 st.markdown(f"#### Level {level} Topics")
                 level_data = sorted(levels[level], key=lambda x: x['probability'], reverse=True)
                 
