@@ -343,7 +343,7 @@ def show_hlta_section():
                     # Display by general category
                     for cat, topics in general_group.items():
                         st.markdown("---")
-                        with st.expander(f"📂 General Category: {cat} ({len(topics)} topic{'s' if len(topics) != 1 else ''})"):
+                        with st.expander(f"📂 General Category: {cat} ({len(topics)} videos under topic{'s' if len(topics) != 1 else ''})"):
                             for topic_label, videos in topics.items():
                                 # Split the label into parts for better formatting
                                 label_parts = topic_label.split('\n')
