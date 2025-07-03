@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import re
+import json
 
 def show_hlta_section():
     st.header("HLTA Analysis")
@@ -12,6 +13,13 @@ def show_hlta_section():
         topics_df = pd.read_csv(path + 'T3_categories.csv', encoding='utf-8')
         videos_df = pd.read_csv(path + 'T3-topics-per-vid-with-channels.csv', encoding='latin1')
         return topics_df, videos_df
+    
+    @st.cache_data
+    def load_topic_tree():
+        json_path = './HLTM/output-jsons/T3.nodes.json'
+        with open(json_path, 'r', encoding='utf-8') as f:
+            tree_data = json.load(f)
+        return tree_data
 
     @st.cache_data
     def load_coherence_scores():
@@ -376,6 +384,24 @@ def show_hlta_section():
                                 for title, data in videos.items():
                                     st.markdown(f"- [{title}]({data['link']}) — {data['count']} mention(s)")
 
+        elif tab == "Tree View":
+            st.session_state.hlta_active_tab = "tree"
+            st.header("📚 HLTA Topic Tree View")
+
+            topic_tree = load_topic_tree()
+
+            def render_node(node, level=0):
+                label = f"{'  ' * level}▶ **{node['id']}** — {node['text'][:60]}..."
+                with st.expander(label):
+                    st.markdown(f"- **Node ID:** `{node['id']}`")
+                    st.markdown(f"- **Level:** {node['data'].get('level')}")
+                    st.markdown(f"- **Prevalence:** {node['data'].get('percentage'):.2%}")
+                    st.markdown(f"- **Words:** `{node['text']}`")
+                    for child in node.get('children', []):
+                        render_node(child, level + 1)
+
+            for top_node in topic_tree:
+                render_node(top_node)
 
 
     except FileNotFoundError as e:
