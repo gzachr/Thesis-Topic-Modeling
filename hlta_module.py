@@ -281,7 +281,7 @@ def show_hlta_section():
                 
                 # Reorder columns (Specific Category first)
                 column_order = [
-                    "Topic Number"
+                    "Topic Number",
                     "Topic Label",
                     "Topic Words",
                     "General Category",
