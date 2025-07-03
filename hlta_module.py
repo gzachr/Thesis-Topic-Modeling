@@ -112,8 +112,8 @@ def show_hlta_section():
 
         tab = st.radio(
             "Navigate HLTA Section",
-            ["Model Summary", "Topics Summary", "Video Summary", "Channel Summary"],
-            index=["metrics", "topics", "videos", "channels"].index(st.session_state.hlta_active_tab)
+            ["Model Summary", "Topics Summary", "Video Summary", "Channel Summary", "Tree View"],
+            index=["metrics", "topics", "videos", "channels", "tree"].index(st.session_state.hlta_active_tab)
         )
         st.markdown("---")
 
