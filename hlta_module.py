@@ -25,7 +25,9 @@ def show_hlta_section():
     @st.cache_data
     def process_data(topics_df, videos_df):
         topics_df["Id"] = topics_df["Id"].astype(str).str.strip()
-        id_to_category = topics_df.set_index("Id")[["General Category", "Specific Category"]].to_dict("index")
+        topics_df["Topic Number"] = topics_df["Topic Number"].astype(str).str.strip()
+
+        id_to_category = topics_df.set_index("Id")[["General Category", "Specific Category", "Topic Number"]].to_dict("index")
 
         def extract_topics(row):
             levels = []
@@ -58,13 +60,18 @@ def show_hlta_section():
 
             for level_idx, level in enumerate(row['Topics'], 1):
                 for topic, topic_id, score in level:
-                    cat_info = id_to_category.get(topic_id, {"General Category": "Unknown", "Specific Category": "Unknown"})
+                    cat_info = id_to_category.get(topic_id, {
+                        "General Category": "Unknown",
+                        "Specific Category": "Unknown",
+                        "Topic Number": "N/A"
+                    })
 
                     if topic not in topic_to_videos:
                         topic_to_videos[topic] = {
                             'videos': [],
                             'general_category': cat_info["General Category"],
-                            'specific_category': cat_info["Specific Category"]
+                            'specific_category': cat_info["Specific Category"],
+                            'topic_number': cat_info["Topic Number"]
                         }
 
                     topic_to_videos[topic]['videos'].append((video_title, link, score, topic_id))
@@ -75,12 +82,14 @@ def show_hlta_section():
                         'level': level_idx,
                         'probability': score,
                         'general_category': cat_info["General Category"],
-                        'specific_category': cat_info["Specific Category"]
+                        'specific_category': cat_info["Specific Category"],
+                        'topic_number': cat_info["Topic Number"]
                     })
 
             video_to_topics[video_title] = {'link': link, 'topics': video_topics}
 
         return topic_to_videos, video_to_topics
+
 
     try:
         topics_df, videos_df = load_data()
@@ -189,7 +198,10 @@ def show_hlta_section():
 
                     # Create tabs for each topic in this specific category
                     if len(topics_in_category) > 1:
-                        topic_tabs = st.tabs([f"Topic {i+1}" for i in range(len(topics_in_category))])
+                        topic_tabs = st.tabs([
+                            f"Topic {topic_to_videos[topic].get('topic_number', 'N/A')}" 
+                            for topic in topics_in_category
+                        ])
                     else:
                         topic_tabs = [st.container()]  # Single container if only one topic
 
@@ -198,6 +210,9 @@ def show_hlta_section():
                             if i < len(topics_in_category):
                                 topic = topics_in_category[i]
                                 topic_info = topic_to_videos[topic]
+
+                                topic_number = topic_info.get("topic_number", "N/A")
+                                st.markdown(f"**Topic Number:** {topic_number}")
 
                                 if len(topics_in_category) > 1:
                                     st.markdown(f"**Topic Words:** {topic}")
@@ -259,16 +274,19 @@ def show_hlta_section():
                     "topic": "Topic Words",
                     "probability": "Probability",
                     "general_category": "General Category",
-                    "topic_id": "Topic ID"
+                    "topic_id": "Topic ID",
+                    "topic_number": "Topic Number"  # NEW COLUMN
                 })
+
                 
                 # Reorder columns (Specific Category first)
                 column_order = [
+                    "Topic Number"
                     "Topic Label",
                     "Topic Words",
                     "General Category",
                     "Probability",
-                    "Topic ID"
+                    "Topic ID",
                 ]
                 df = df[column_order]
 
@@ -327,6 +345,7 @@ def show_hlta_section():
                                 f"Topic: {topic['topic']} | "
                                 f"Level: {topic['level']} | "
                                 f"Probability: {topic['probability']:.2f}"
+                                f"Topic Number: {topic.get('topic_number', 'N/A')}"
                             )
 
                             if general_cat not in general_group:
