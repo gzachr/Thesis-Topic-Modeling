@@ -394,8 +394,6 @@ def show_hlta_section():
                 label = f"{'  ' * level}▶ **{node['id']}** — {node['text'][:60]}..."
                 with st.expander(label):
                     st.markdown(f"- **Node ID:** `{node['id']}`")
-                    st.markdown(f"- **Level:** {node['data'].get('level')}")
-                    st.markdown(f"- **Prevalence:** {node['data'].get('percentage'):.2%}")
                     st.markdown(f"- **Words:** `{node['text']}`")
                     for child in node.get('children', []):
                         render_node(child, level + 1)
