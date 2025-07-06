@@ -192,7 +192,7 @@ def show_lda_section():
 
                             # Show videos in this subtopic
                             if "subtopic_to_videos" in data and subtopic in data["subtopic_to_videos"]:
-                                subtopic_videos = data["subtopic_to_videos"][subtopic]
+                                subtopic_videos = data["subtopic_to_videos"][subtopic].get(selected_topic, set())
                                 st.write(f"**Videos in this subtopic:** {len(subtopic_videos)}")
 
                                 # Pagination
