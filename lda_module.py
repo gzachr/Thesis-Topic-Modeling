@@ -83,10 +83,7 @@ def show_lda_section():
                             # Keywords
                             keywords = data.get("subtopic_keywords", {}).get(subtopic, {}).get(topic_id, [])
 
-                            # Video count
-                            video_count = len(data.get("subtopic_to_videos", {}).get(subtopic, []))
-
-                            st.markdown(f"- #### **{subtopic}** ({video_count} videos)")
+                            st.markdown(f"- #### **{subtopic}**")
                             if keywords:
                                 st.markdown(f"  - **Keywords:** {', '.join(keywords)}")
                             else:
