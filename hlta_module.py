@@ -222,8 +222,8 @@ def show_hlta_section():
                                 topic_number = topic_info.get("topic_number", "N/A")
                                 st.markdown(f"**Topic Number:** {topic_number}")
 
-                                if len(topics_in_category) > 1:
-                                    st.markdown(f"**Topic Words:** {topic}")
+                                #if len(topics_in_category) > 1:
+                                st.markdown(f"**Topic Words:** {topic}")
 
                                 videos = topic_info['videos']
                                 st.markdown(f"**Videos containing this topic ({len(videos)} total):**")
