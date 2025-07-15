@@ -150,9 +150,18 @@ def show_hlta_section():
                 # Sort by Video Count
                 stats_df = stats_df.sort_values("Video Count", ascending=False)
 
+                # Add general category filter
+                general_categories = ["All"] + sorted(stats_df["General Category"].dropna().unique())
+                selected_category = st.selectbox("Filter by General Category", general_categories)
+
+                # Filter the DataFrame
+                if selected_category != "All":
+                    stats_df = stats_df[stats_df["General Category"] == selected_category]
+
                 # Format the count nicely
                 stats_df["Video Count"] = stats_df["Video Count"].apply(lambda x: f"{x:,}")
 
+                # Display the filtered DataFrame
                 st.dataframe(stats_df, use_container_width=True, hide_index=True)
 
             except Exception as e:
