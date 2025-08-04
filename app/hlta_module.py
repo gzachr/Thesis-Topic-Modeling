@@ -10,8 +10,8 @@ def show_hlta_section():
     @st.cache_data
     def load_data():
         path = './HLTM/!POSTRUN/'
-        topics_df = pd.read_csv(path + 'T3_categories.csv', encoding='utf-8')
-        videos_df = pd.read_csv(path + 'T3-topics-per-vid-with-channels.csv', encoding='latin1')
+        topics_df = pd.read_csv('T3_categories.csv', encoding='utf-8')
+        videos_df = pd.read_csv('T3-topics-per-vid-with-channels.csv', encoding='latin1')
         return topics_df, videos_df
     
     @st.cache_data
