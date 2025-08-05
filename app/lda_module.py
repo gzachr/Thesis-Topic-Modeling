@@ -1,10 +1,12 @@
 import streamlit as st
 import json
+import os
 
 # Load data
 @st.cache_data
 def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
+    abs_path = os.path.join(os.path.dirname(__file__), path)
+    with open(abs_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 data = load_json("lda_results.json")

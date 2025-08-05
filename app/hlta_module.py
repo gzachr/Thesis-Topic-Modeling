@@ -4,30 +4,37 @@ import os
 import re
 import json
 
+# Base path relative to this script's location
+BASE_DIR = os.path.dirname(__file__)
+
 def show_hlta_section():
     st.header("HLTA Analysis")
 
     @st.cache_data
     def load_data():
-        path = './HLTM/!POSTRUN/'
-        topics_df = pd.read_csv('T3_categories.csv', encoding='utf-8')
-        videos_df = pd.read_csv('T3-topics-per-vid-with-channels.csv', encoding='latin1')
+        topics_path = os.path.join(BASE_DIR, 'T3_categories.csv')
+        videos_path = os.path.join(BASE_DIR, 'T3-topics-per-vid-with-channels.csv')
+        topics_df = pd.read_csv(topics_path, encoding='utf-8')
+        videos_df = pd.read_csv(videos_path, encoding='latin1')
         return topics_df, videos_df
     
     @st.cache_data
     def load_topic_tree():
-        json_path = './HLTM/output-jsons/T3.nodes.json'
+        json_path = os.path.join(BASE_DIR, 'T3.nodes.json')
         with open(json_path, 'r', encoding='utf-8') as f:
             tree_data = json.load(f)
         return tree_data
 
     @st.cache_data
     def load_coherence_scores():
-        csv_path = "hlta-coherence.csv"
+        base_dir = os.path.dirname(__file__)
+        csv_path = os.path.join(base_dir, "hlta-coherence.csv")
+        
         if os.path.exists(csv_path):
             scores_df = pd.read_csv(csv_path)
             scores_df["score"] = scores_df["score"].round(3)
             return scores_df
+
         return None
 
     @st.cache_data
